@@ -31,6 +31,7 @@
     --first-color : #F0733B;
     --first-color-2 : #EB5C4F;
     --second-color : #E32481;
+    --second-color-2 : #a00550;
     --black-color : #000000;
     --white-color : #ffffff;
 
@@ -61,8 +62,23 @@ body{
     }
     .header{
         background-color: var(--white-color);
-        padding: 15px;
+        padding: 20px 15px;
+        position: relative;
+        z-index: 1000;
+    }
+    .header.sticky{
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        position: fixed;
+        width: 100%;
+        animation: showNavbar .6s ease-in-out;
+    }
+    @keyframes showNavbar {
+        from {
+          top: -100%;
+        }
+        to {
+          top: 0;
+        }
     }
     .header .header-content{
         display: flex;
@@ -98,7 +114,7 @@ body{
     }
     .header .header-content .toggle-menu-nav button i,
     .header .header-content .toggle-menu-nav button svg{
-        font-size: 25px;
+        font-size: 30px;
     }
     .header .menu-nav{
         display: none;
@@ -139,7 +155,7 @@ body{
     }
     .header .menu-nav div button i,
     .header .menu-nav div button svg{
-        font-size: 26px;
+        font-size: 30px;
     }
     .header .menu-nav div ul{
         list-style: none;
@@ -284,7 +300,51 @@ body{
         color: var(--white-color);
         font-size: 15px;
     }
-    .footer .footer-foot p{}
-    .footer .footer-foot p{}
+    .section-hero{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 40px;
+        background: linear-gradient(to right, var(--first-color), var(--first-color-2));
+    }
+    .section-hero p{
+        color: var(--white-color);
+        font-size: 32px;
+        text-align: center;
+    }
+    .section-hero .hero-action{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .section-hero .hero-action a{
+        text-decoration: none;
+        width: 250px;
+        text-align: center;
+        margin-bottom: 20px;
+        padding: 10px;
+        color: var(--white-color);
+        font-size: 22px;
+        text-transform: uppercase;
+        border-radius: 20px;
+        transition: ease-in-out .3s;
+    }
+    .section-hero .hero-action a:first-child{
+        background-color: var(--second-color);
+    }
+    .section-hero .hero-action a:first-child:hover{
+        background-color: var(--second-color-2);
+    }
+    .section-hero .hero-action a:last-child{
+        border: 2px solid var(--second-color);
+    }
+    .section-hero .hero-action a:last-child:hover{
+        border: 2px solid var(--second-color-2);
+        background-color: var(--second-color-2);
+    }
+    .section-hero{}
+    .section-hero{}
 }
 /* Mobile end */

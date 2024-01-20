@@ -41,3 +41,14 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
+
+
+document.addEventListener('scroll', function() {
+  var navbar = document.getElementById('topBar');
+  
+  if (window.scrollY > 50) {
+    navbar.classList.add('sticky');
+  } else {
+    navbar.classList.remove('sticky');
+  }
+});
