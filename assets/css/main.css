@@ -29,6 +29,7 @@
 :root{
     /* Colors */
     --first-color : #F0733B;
+    --first-color-2 : #EB5C4F;
     --second-color : #E32481;
     --black-color : #000000;
     --white-color : #ffffff;
@@ -81,7 +82,7 @@ body{
     .header .header-content .logo span{
         position: absolute;
         bottom: 0px;
-        right: -36px;
+        right: -35px;
         font-size: 9px;
         font-weight: bold;
         font-family: var(--first-font);
@@ -109,6 +110,7 @@ body{
         height: 100vh;
         width: 100vw;
         transition: right 0.5s ease;
+        z-index: 1000;
     }
     .header .menu-nav.open {
         right: 0;
@@ -158,10 +160,19 @@ body{
         color: var(--first-color);
     }
     /* Footer Mobile */
-    /* .footer .logo{
+    .footer{
+        margin-top: 30px;
+        /* background-color: var(--white-color); */
+        background: linear-gradient(to right, var(--first-color), var(--first-color-2));
+        padding: 15px;
+        box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+    }
+    .footer .logo{
         display: flex;
         flex-direction: column;
         position: relative;
+        align-items: center;
+        justify-content: center;
     }
     .footer .logo img{
         position: relative;
@@ -171,13 +182,43 @@ body{
     .footer .logo span{
         position: absolute;
         bottom: 0px;
-        right: -36px;
+        right: 33px;
         font-size: 9px;
         font-weight: bold;
         font-family: var(--first-font);
         color: var(--black-color);
-    } */
+    }
+    .footer .footer-toggle{
+        margin-top: 20px !important;
+        padding-bottom: 10px;
+        border-bottom: 2px solid var(--white-color);
+    }
+    .footer .footer-toggle button{
+        width: 100%;
+        border: none;
+        background-color: transparent;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: var(--white-color);
+        font-size: 18px;
+    }
+    .footer .footer-toggle ul{
+        list-style: none;
+        padding-left: 20px;
+        margin-bottom: 0 !important;
+    }
+    .footer .footer-toggle ul li{
+    }
+    .footer .footer-toggle ul li a{
+        text-decoration: none;
+        color: var(--white-color);
+        font-size: 16px;
+        transition: ease-in-out .3s;
+    }
+    .footer .footer-toggle ul li a:hover{
 
+    }
 
 }
 /* Mobile end */
