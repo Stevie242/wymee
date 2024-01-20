@@ -210,7 +210,6 @@ body{
         bottom: -2px;
         right: -37px;
         font-size: 9px;
-        /* font-weight: bold; */
         font-family: var(--first-font);
         color: var(--white-color);
     }
@@ -300,6 +299,7 @@ body{
         color: var(--white-color);
         font-size: 15px;
     }
+    /* Section Hero */
     .section-hero{
         display: flex;
         flex-direction: column;
@@ -344,7 +344,7 @@ body{
         border: 2px solid var(--second-color-2);
         background-color: var(--second-color-2);
     }
-    .section-hero{}
-    .section-hero{}
+    /* Section About Us */
+    
 }
 /* Mobile end */
