@@ -54,6 +54,10 @@ body{
 
 /* Mobile start */
 @media only screen and (max-width: 767px) {
+    /* Header Mobile */
+    body{
+        overflow: hidden;
+    }
     .header{
         background-color: var(--white-color);
         padding: 15px;
@@ -105,7 +109,6 @@ body{
         height: 100vh;
         width: 100vw;
         transition: right 0.5s ease;
-        overflow: hidden;
     }
     .header .menu-nav.open {
         right: 0;
@@ -154,6 +157,26 @@ body{
     .header .menu-nav div ul li a:hover{
         color: var(--first-color);
     }
+    /* Footer Mobile */
+    /* .footer .logo{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    .footer .logo img{
+        position: relative;
+        height: 50px;
+        width: 130px;
+    }
+    .footer .logo span{
+        position: absolute;
+        bottom: 0px;
+        right: -36px;
+        font-size: 9px;
+        font-weight: bold;
+        font-family: var(--first-font);
+        color: var(--black-color);
+    } */
 
 
 }

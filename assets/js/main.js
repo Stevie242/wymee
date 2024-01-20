@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
     menuToggle.addEventListener('click', function (event) {
       // Inverser l'état du menu (ouvrir/fermer)
       event.stopPropagation();
-      menu.classList.toggle('open');
+      menu.classList.add('open');
     });
 
     closeMenu.addEventListener('click', function (event) {
