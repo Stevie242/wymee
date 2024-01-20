@@ -57,7 +57,7 @@ body{
 @media only screen and (max-width: 767px) {
     /* Header Mobile */
     body{
-        overflow: hidden;
+        overflow-x: hidden;
     }
     .header{
         background-color: var(--white-color);
@@ -167,31 +167,40 @@ body{
         padding: 15px;
         box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
     }
-    .footer .logo{
+    .footer .footer-head{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer .footer-head .logo{
         display: flex;
         flex-direction: column;
         position: relative;
         align-items: center;
         justify-content: center;
+        width: 130px;
+        margin-bottom: 10px;
     }
-    .footer .logo img{
+    .footer .footer-head .logo img{
         position: relative;
         height: 50px;
         width: 130px;
     }
-    .footer .logo span{
+    .footer .footer-head .logo span{
         position: absolute;
-        bottom: 0px;
-        right: 33px;
+        bottom: -2px;
+        right: -37px;
         font-size: 9px;
-        font-weight: bold;
+        /* font-weight: bold; */
         font-family: var(--first-font);
-        color: var(--black-color);
+        color: var(--white-color);
     }
     .footer .footer-toggle{
-        margin-top: 20px !important;
-        padding-bottom: 10px;
-        border-bottom: 2px solid var(--white-color);
+        margin-top: 10px !important;
+    }
+    .footer .footer-toggle h5{
+        color: var(--white-color);
+        font-size: 20px;
     }
     .footer .footer-toggle button{
         width: 100%;
@@ -203,22 +212,60 @@ body{
         color: var(--white-color);
         font-size: 18px;
     }
-    .footer .footer-toggle ul{
+    .footer .footer-toggle .dropdown-list{
+        display: block;
         list-style: none;
         padding-left: 20px;
         margin-bottom: 0 !important;
     }
-    .footer .footer-toggle ul li{
+    .footer .footer-toggle .dropdown-list li{
+        margin-bottom: 5px !important;
     }
-    .footer .footer-toggle ul li a{
+    .footer .footer-toggle .dropdown-list li:first-child{
+        margin-top: 5px !important;
+    }
+    .footer .footer-toggle .dropdown-list li:last-child{
+        margin-bottom: 0px !important;
+    }
+    .footer .footer-toggle .dropdown-list li a{
         text-decoration: none;
         color: var(--white-color);
         font-size: 16px;
         transition: ease-in-out .3s;
     }
-    .footer .footer-toggle ul li a:hover{
-
+    .footer .footer-toggle .dropdown-list li a:hover{
+        color: var(--second-color);
     }
-
+    .footer .footer-foot{
+        margin-top: 10px;
+        padding-top: 10px;
+        border-top: 1px solid var(--white-color);
+    }
+    .footer .footer-foot ul{
+        list-style: none;
+        padding-left: 20px;
+        margin-bottom: 0 !important;
+    }
+    .footer .footer-foot ul li{
+        color: var(--white-color);
+    }
+    .footer .footer-foot ul li a{
+        text-decoration: none;
+        color: var(--white-color);
+        font-size: 16px;
+        transition: ease-in-out .3s;
+    }
+    .footer .footer-foot ul li a:hover{
+        color: var(--second-color);
+    }
+    
+    .footer .footer-foot .link-sociaux{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+    .footer .footer-foot .link-sociaux li{
+        margin-right: 20px;
+    }
 }
 /* Mobile end */
