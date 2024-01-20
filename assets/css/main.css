@@ -135,6 +135,7 @@ body{
         border: none;
         background-color: var(--white-color);
         padding: 10px;
+        outline: none;
     }
     .header .menu-nav div button i,
     .header .menu-nav div button svg{
