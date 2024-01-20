@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
       menu.classList.remove('open');
       var timeShow = setTimeout(function () {
         menu.classList.remove('show');
-      }, 1000);
+      }, 1);
       timeShow();
       clearInterval(timeShow,1);
     }
