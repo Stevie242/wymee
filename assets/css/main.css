@@ -101,7 +101,7 @@ body{
         font-size: 25px;
     }
     .header .menu-nav{
-        display: block;
+        display: none;
         position: absolute;
         top: 0;
         right: -850px;
@@ -111,6 +111,9 @@ body{
         width: 100vw;
         transition: right 0.5s ease;
         z-index: 1000;
+    }
+    .header .menu-nav.show{
+        display: block;
     }
     .header .menu-nav.open {
         right: 0;
