@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('scroll', function() {
   var navbar = document.getElementById('topBar');
   
-  if (window.scrollY > 50) {
+  if (window.scrollY > 100) {
     navbar.classList.add('sticky');
   } else {
     navbar.classList.remove('sticky');
