@@ -354,5 +354,176 @@ body{
         color: var(--first-color);
         font-weight: 700;
     }
+    /* Section Create Talent */
+    .section-create-talent{
+        padding: 20px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        background: linear-gradient(to right, var(--first-color), var(--first-color-2));
+        border-radius: 20px;
+    }
+    .section-create-talent .create-content{
+        border-radius: 20px;
+        background: var(--white-color);
+        padding: 20px 10px;
+    }
+    .section-create-talent .create-talent-head h5{
+        text-align: center;
+        font-size: 20px;
+        color: var(--black-color);
+        font-weight: 700;
+        font-family: var(--main-font);
+    }
+    .section-create-talent .create-talent-head h5 a{
+        text-decoration: none;
+        color: var(--second-color);
+        transition: ease-in-out .3s;
+    }
+    .section-create-talent .create-talent-head h5 a:hover{
+        color: var(--second-color-2);
+    }
+    .section-create-talent .create-talent-body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .section-create-talent .create-talent-body p{
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    .section-create-talent .create-talent-body .talent-skill{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 370px;
+        width: 230px;
+        padding: 10px;
+        background-image: url(./../img/people/talent.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 100px;
+    }
+    .section-create-talent .create-talent-body .talent-skill h5{
+        font-size: 22px;
+        font-weight: 700;
+        color: var(--second-color);
+    }
+    .section-create-talent .create-talent-body .talent-skill span{
+        width: 95%;
+        background-color: var(--second-color-2);
+        opacity: .9;
+        color: var(--white-color);
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    .section-create-talent .create-talent-foot {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .section-create-talent .create-talent-foot a{
+        text-decoration: none;
+        border-radius: 20px;
+        padding: 10px;
+        background-color: var(--second-color);
+        color: var(--white-color);
+        font-size: 18px;
+        text-transform: uppercase;
+        border-radius: 20px;
+        transition: ease-in-out .3s;
+        font-family: var(--main-font);
+    }
+    .section-create-talent .create-talent-foot a:hover{
+        background-color: var(--second-color-2);
+    }
+    /* Section create work */
+    .section-create-work{
+        padding: 20px;
+        margin-top: 10px;
+        background: linear-gradient(to right, var(--second-color), var(--second-color-2));
+        border-radius: 20px;
+    }
+    .section-create-work .create-content{
+        border-radius: 20px;
+        background: var(--white-color);
+        padding: 20px 10px;
+    }
+    .section-create-work .create-work-head h5{
+        text-align: center;
+        font-size: 20px;
+        color: var(--black-color);
+        font-weight: 700;
+        font-family: var(--main-font);
+    }
+    .section-create-work .create-work-head h5 a{
+        text-decoration: none;
+        color: var(--first-color);
+        transition: ease-in-out .3s;
+    }
+    .section-create-work .create-work-head h5 a:hover{
+        color: var(--first-color-2);
+    }
+    .section-create-work .create-work-body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .section-create-work .create-work-body p{
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    .section-create-work .create-work-body .work-skill{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 370px;
+        width: 230px;
+        padding: 10px;
+        background-image: url(./../img/people/talent.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 100px;
+    }
+    .section-create-work .create-work-body .work-skill h5{
+        font-size: 22px;
+        font-weight: 700;
+        color: var(--first-color);
+    }
+    .section-create-work .create-work-body .work-skill span{
+        width: 95%;
+        background-color: var(--first-color-2);
+        opacity: .9;
+        color: var(--white-color);
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    .section-create-work .create-work-foot {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .section-create-work .create-work-foot a{
+        text-decoration: none;
+        border-radius: 20px;
+        padding: 10px;
+        background-color: var(--first-color);
+        color: var(--white-color);
+        font-size: 18px;
+        text-transform: uppercase;
+        border-radius: 20px;
+        transition: ease-in-out .3s;
+        font-family: var(--main-font);
+    }
+    .section-create-work .create-work-foot a:hover{
+        background-color: var(--first-color-2);
+    }
 }
 /* Mobile end */
