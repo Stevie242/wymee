@@ -37,6 +37,28 @@ document.addEventListener('DOMContentLoaded', function () {
       clearTimeout();
     }
   });
+
+  var btnTalent = document.getElementById('talent');
+  var btnBusiness = document.getElementById('business');
+
+  btnTalent.addEventListener('click', function (event) {
+    event.stopPropagation();
+    btnBusiness.classList.remove('active');
+    btnTalent.classList.add('active');
+    var showTalent = document.getElementById('for-talent');
+    var showBusiness = document.getElementById('for-business');
+    showBusiness.classList.remove('active');
+    showTalent.classList.add('active');
+  });
+  btnBusiness.addEventListener('click', function (event) {
+    event.stopPropagation();
+    btnTalent.classList.remove('active');
+    btnBusiness.classList.add('active');
+    var showTalent = document.getElementById('for-talent');
+    var showBusiness = document.getElementById('for-business');
+    showTalent.classList.remove('active');
+    showBusiness.classList.add('active');
+  });
 });
 
 
@@ -49,3 +71,5 @@ document.addEventListener('scroll', function() {
     navbar.classList.remove('sticky');
   }
 });
+
+
