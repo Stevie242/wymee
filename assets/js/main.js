@@ -7,22 +7,20 @@ document.addEventListener('DOMContentLoaded', function () {
     // Inverser l'état du menu (ouvrir/fermer)
     event.stopPropagation();
     menu.classList.add('show');
-    var timeShow = setTimeout(function () {
+    setTimeout(function () {
       menu.classList.add('open');
     }, 1);
-    timeShow();
-    clearInterval(timeShow,1);
+    clearTimeout();  // Utilisez clearTimeout au lieu de clearInterval
   });
 
   closeMenu.addEventListener('click', function (event) {
     // Inverser l'état du menu (ouvrir/fermer)
     event.stopPropagation();
     menu.classList.remove('open');
-    var timeShow = setTimeout(function () {
+    setTimeout(function () {
       menu.classList.remove('show');
     }, 1000);
-    timeShow();
-    clearInterval(timeShow,1);
+    clearTimeout();
   });
 
   // Fermer le menu lorsqu'on clique en dehors de la zone du menu
@@ -33,11 +31,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (!isClickInsideMenu && !isClickOnToggle) {
       menu.classList.remove('open');
-      var timeShow = setTimeout(function () {
+      setTimeout(function () {
         menu.classList.remove('show');
       }, 1);
-      timeShow();
-      clearInterval(timeShow,1);
+      clearTimeout();
     }
   });
 });

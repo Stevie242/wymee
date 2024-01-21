@@ -1,30 +1,16 @@
 @font-face {
-    font-family: 'Arial';
-    src: url('./../font/arial.ttf') format('truetype');
-    font-weight: normal;
+    font-family: 'Museo';
+    src: url('./../font/Museo700-Regular.otf') format('truetype');
+    font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Arial';
-    src: url('./../font/arial-bold.ttf') format('truetype');
-    font-weight: bold;
+    font-family: 'Museo';
+    src: url('./../font/Museo300-Regular.otf') format('truetype');
+    font-weight: 300;
     font-style: normal;
 }
-
-@font-face {
-    font-family: 'Helvetica';
-    src: url('./../font/Helvetica-roman.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-/* @font-face {
-    font-family: 'Helvetica';
-    src: url('./../font/Helvetica-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-} */
 
 :root{
     /* Colors */
@@ -36,12 +22,11 @@
     --white-color : #ffffff;
 
     /* Fonts */
-    --first-font: 'Helvetica';
-    --second-font: 'Arial';
+    --main-font: 'Museo';
 }
 
 *{
-    font-family: var(--first-font);
+    font-family: var(--main-font);
 }
 
 body{
@@ -101,7 +86,7 @@ body{
         right: -35px;
         font-size: 9px;
         font-weight: bold;
-        font-family: var(--first-font);
+        font-family: var(--main-font);
         color: var(--black-color);
     }
     .header .header-content .toggle-menu-nav{
@@ -125,7 +110,7 @@ body{
         backdrop-filter: blur(1px);
         height: 100vh;
         width: 100vw;
-        transition: right 0.4s ease;
+        transition: right 0.3s ease;
         z-index: 1000;
     }
     .header .menu-nav.show{
@@ -133,7 +118,7 @@ body{
     }
     .header .menu-nav.open {
         right: 0;
-        transition: right 0.4s ease;
+        transition: right 0.3s ease;
     }
     .header .menu-nav div{
         position: absolute;
@@ -210,7 +195,7 @@ body{
         bottom: -2px;
         right: -37px;
         font-size: 9px;
-        font-family: var(--first-font);
+        font-family: var(--main-font);
         color: var(--white-color);
     }
     .footer .footer-toggle{
@@ -310,8 +295,9 @@ body{
     }
     .section-hero p{
         color: var(--white-color);
-        font-size: 32px;
+        font-size: 28px;
         text-align: center;
+        font-family: var(--main-font);
     }
     .section-hero .hero-action{
         display: flex;
@@ -326,10 +312,11 @@ body{
         margin-bottom: 20px;
         padding: 10px;
         color: var(--white-color);
-        font-size: 22px;
+        font-size: 18px;
         text-transform: uppercase;
         border-radius: 20px;
         transition: ease-in-out .3s;
+        font-family: var(--main-font);
     }
     .section-hero .hero-action a:first-child{
         background-color: var(--second-color);
@@ -345,6 +332,29 @@ body{
         background-color: var(--second-color-2);
     }
     /* Section About Us */
-    
+    .section-about-us{
+        padding: 20px;
+        margin-top: 10px;
+    }
+    .section-about-us .about-us-head h5{
+        text-align: center;
+        font-size: 20px;
+        color: var(--first-color);
+        font-weight: 700;
+        font-family: var(--main-font);
+    }
+    .section-about-us .about-us-head h5 span{
+        display: inline-block;
+    }
+    .section-about-us .about-us-body p{
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    .section-about-us .about-us-body span{
+        color: var(--first-color);
+        font-weight: 700;
+    }
+    .section-about-us .about-us-body{}
+    .section-about-us .about-us-body{}
 }
 /* Mobile end */
