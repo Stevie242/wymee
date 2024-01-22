@@ -46,6 +46,9 @@ body {
     padding: 20px 15px;
     position: relative;
     z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header.sticky {
@@ -94,7 +97,7 @@ body {
 }
 
 .header .header-content .toggle-menu-nav {
-    display: block;
+    display: none;
 }
 
 .header .header-content .toggle-menu-nav button {
@@ -109,69 +112,30 @@ body {
 }
 
 .header .menu-nav {
-    display: none;
-    position: absolute;
-    top: 0;
-    right: -850px;
-    background-color: rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(1px);
-    height: 100vh;
-    width: 100vw;
-    transition: right 0.3s ease;
-    z-index: 1000;
-}
-
-.header .menu-nav.show {
     display: block;
 }
 
-.header .menu-nav.open {
-    right: 0;
-    transition: right 0.3s ease;
-}
-
-.header .menu-nav div {
-    position: absolute;
-    right: 0;
-    padding-top: 100px;
-    padding-left: 30px;
-    background-color: #000000;
-    height: 100vh;
-    width: 90vw;
-}
-
 .header .menu-nav div button {
-    position: absolute;
-    top: 15px;
-    right: 40px;
-    border: none;
-    background-color: var(--white-color);
-    padding: 10px;
-    outline: none;
-}
-
-.header .menu-nav div button i,
-.header .menu-nav div button svg {
-    font-size: 30px;
+    display: none;
 }
 
 .header .menu-nav div ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     list-style: none;
     padding-left: 0 !important;
     margin-bottom: 0 !important;
 }
 
 .header .menu-nav div ul li {
-    margin-bottom: 30px;
-}
-
-.header .menu-nav div ul li:last-child {
     margin-bottom: 0 !important;
+    margin-left: 20px !important;
 }
 
 .header .menu-nav div ul li a {
     text-decoration: none;
-    color: var(--white-color);
+    color: var(--black-color);
     font-size: 18px;
     font-weight: normal;
     transition: ease-in-out .3s;
@@ -220,7 +184,11 @@ body {
     font-family: var(--main-font);
     color: var(--white-color);
 }
-
+.footer .footer-body{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    text-align: center;
+}
 .footer .footer-toggle {
     margin-top: 10px !important;
 }
@@ -281,10 +249,14 @@ body {
     list-style: none;
     padding-left: 20px;
     margin-bottom: 0 !important;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 .footer .footer-foot ul li {
     color: var(--white-color);
+    margin-right: 50px;
 }
 
 .footer .footer-foot ul li a {
@@ -382,7 +354,7 @@ body {
 
 /* Section About Us */
 .section-about-us {
-    padding: 20px;
+    padding: 20px 100px;
     margin-top: 10px;
 }
 
@@ -409,18 +381,26 @@ body {
 }
 
 /* Section Create Talent */
+.create-talent-work{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 100px;
+    padding: 0px 100px;
+}
 .section-create-talent {
     padding: 20px;
     margin-top: 10px;
     margin-bottom: 20px;
     background: linear-gradient(to right, var(--first-color), var(--first-color-2));
     border-radius: 20px;
+    height: 850px;
 }
 
 .section-create-talent .create-content {
     border-radius: 20px;
     background: var(--white-color);
     padding: 20px 10px;
+    height: 100%;
 }
 
 .section-create-talent .create-talent-head h5 {
@@ -429,6 +409,7 @@ body {
     color: var(--black-color);
     font-weight: 700;
     font-family: var(--main-font);
+    margin-bottom: 35px;
 }
 
 .section-create-talent .create-talent-head h5 a {
@@ -536,12 +517,14 @@ body {
     margin-top: 10px;
     background: linear-gradient(to right, var(--second-color), var(--second-color-2));
     border-radius: 20px;
+    height: 850px;
 }
 
 .section-create-work .create-content {
     border-radius: 20px;
     background: var(--white-color);
     padding: 20px 10px;
+    height: 100%;
 }
 
 .section-create-work .create-work-head h5 {
@@ -653,7 +636,7 @@ body {
 
 /* How it Work */
 .section-how-work {
-    padding: 20px;
+    padding: 20px 100px;
     margin-top: 10px;
 }
 
@@ -822,7 +805,7 @@ body {
 
 .section-partner .partner-body {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     justify-items: center;
 }
@@ -833,7 +816,8 @@ body {
 
 .section-partner .partner-body img:last-child {
     height: 80px;
-    width: 100%;
+    /* width: 100%; */
+    max-width: 188px;
 }
 
 /* Matching Section */
@@ -859,7 +843,11 @@ body {
 }
 
 .section-matching .matching-body {
-    padding: 0px 20px;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .section-matching .matching-body p {
@@ -872,13 +860,16 @@ body {
 }
 
 .section-matching .matching-body img {
-    width: 100%;
-    height: 150px;
+    /* width: 100%; */
+    height: 250px;
 }
 
 .section-matching .matching-body ul {
-    padding: 20px 50px;
-    margin-bottom: 0 !important;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 15px;
+    /* justify-items: center; */
 }
 
 .section-matching .matching-body ul li:nth-child(1) {
@@ -899,7 +890,7 @@ body {
 
 
 /* Mobile start */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1070px) {
 
     /* Header Mobile */
     body {
@@ -911,6 +902,7 @@ body {
         padding: 20px 15px;
         position: relative;
         z-index: 1000;
+        display: block;
     }
 
     .header.sticky {
@@ -1013,6 +1005,7 @@ body {
         background-color: var(--white-color);
         padding: 10px;
         outline: none;
+        display: block;
     }
 
     .header .menu-nav div button i,
@@ -1024,10 +1017,14 @@ body {
         list-style: none;
         padding-left: 0 !important;
         margin-bottom: 0 !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
     }
 
     .header .menu-nav div ul li {
-        margin-bottom: 30px;
+        margin-bottom: 30px !important;
     }
 
     .header .menu-nav div ul li:last-child {
@@ -1084,6 +1081,11 @@ body {
         font-size: 9px;
         font-family: var(--main-font);
         color: var(--white-color);
+    }
+
+    .footer .footer-body{
+        display: block;
+        text-align: start;
     }
 
     .footer .footer-toggle {
@@ -1146,6 +1148,11 @@ body {
         list-style: none;
         padding-left: 20px;
         margin-bottom: 0 !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        text-align: start;
     }
 
     .footer .footer-foot ul li {
@@ -1165,6 +1172,7 @@ body {
 
     .footer .footer-foot .link-sociaux {
         display: flex;
+        flex-direction: row;
         justify-content: start;
         align-items: center;
         padding-top: 10px;
@@ -1274,12 +1282,19 @@ body {
     }
 
     /* Section Create Talent */
+    .create-talent-work{
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        gap: 0px;
+    }
     .section-create-talent {
         padding: 20px;
         margin-top: 10px;
         margin-bottom: 20px;
         background: linear-gradient(to right, var(--first-color), var(--first-color-2));
         border-radius: 20px;
+        height: 100%;
     }
 
     .section-create-talent .create-content {
@@ -1294,6 +1309,7 @@ body {
         color: var(--black-color);
         font-weight: 700;
         font-family: var(--main-font);
+        margin-bottom: 0 !important;
     }
 
     .section-create-talent .create-talent-head h5 a {
@@ -1401,6 +1417,7 @@ body {
         margin-top: 10px;
         background: linear-gradient(to right, var(--second-color), var(--second-color-2));
         border-radius: 20px;
+        height: 100%;
     }
 
     .section-create-work .create-content {
@@ -1698,7 +1715,8 @@ body {
 
     .section-partner .partner-body img:last-child {
         height: 80px;
-        width: 100%;
+        /* width: 100%; */
+        max-width: 188px;
     }
 
     /* Matching Section */
@@ -1744,6 +1762,8 @@ body {
     .section-matching .matching-body ul {
         padding: 20px 50px;
         margin-bottom: 0 !important;
+        display: flex;
+        flex-direction: column;
     }
 
     .section-matching .matching-body ul li:nth-child(1) {
