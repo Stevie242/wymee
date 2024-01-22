@@ -425,6 +425,24 @@ body{
         margin-top: 20px;
         text-align: center;
     }
+    .section-create-talent .create-talent-foot h5{
+        font-size: 22px;
+    }
+    .section-create-talent .create-talent-foot h5 span{
+        color: var(--second-color);
+        font-weight: 700;
+    }
+    .section-create-talent .create-talent-foot ul{
+        padding: 0px 30px;
+        margin-bottom: 20px !important;
+        text-align: start;
+    }
+    .section-create-talent .create-talent-foot ul li{
+        font-size: 16px;
+    }
+    .section-create-talent .create-talent-foot ul li span{
+        color: var(--second-color);
+    }
     .section-create-talent .create-talent-foot a{
         text-decoration: none;
         border-radius: 20px;
@@ -487,7 +505,7 @@ body{
         height: 370px;
         width: 230px;
         padding: 10px;
-        background-image: url(./../img/people/talent.jpg);
+        background-image: url(./../img/people/business.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -509,6 +527,24 @@ body{
     .section-create-work .create-work-foot {
         margin-top: 20px;
         text-align: center;
+    }
+    .section-create-work .create-work-foot h5{
+        font-size: 22px;
+    }
+    .section-create-work .create-work-foot h5 span{
+        color: var(--first-color);
+        font-weight: 700;
+    }
+    .section-create-work .create-work-foot ul{
+        padding: 0px 30px;
+        margin-bottom: 20px !important;
+        text-align: start;
+    }
+    .section-create-work .create-work-foot ul li{
+        font-size: 16px;
+    }
+    .section-create-work .create-work-foot ul li span{
+        color: var(--first-color);
     }
     .section-create-work .create-work-foot a{
         text-decoration: none;
@@ -649,5 +685,83 @@ body{
         margin-bottom: 0 !important;
         padding-left: 50px;
     }
+    /* Partner sction */
+    .section-partner{
+        padding: 20px;
+        margin-top: 10px;
+    }
+    .section-partner .partner-head{
+        margin-bottom: 20px;
+    }
+    .section-partner .partner-head h5{
+        text-align: center;
+        font-size: 20px;
+        color: var(--first-color);
+        font-weight: 700;
+        font-family: var(--main-font);
+    }
+    .section-partner .partner-body{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        justify-items: center;
+    }
+    .section-partner .partner-body img{
+        height: 140px;
+    }
+    .section-partner .partner-body img:last-child{
+        height: 100px;
+        width: 100%;
+    }
+    /* Matching Section */
+    .section-matching{
+        margin-top: 10px;
+    }
+    .section-matching .matching-head{
+        margin-bottom: 20px;
+        padding: 20px;
+        margin-top: 10px;
+        background: linear-gradient(to right, var(--second-color), var(--second-color-2));
+        width: 100%;
+    }
+    .section-matching .matching-head h5{
+        text-align: center;
+        font-size: 20px;
+        color: var(--white-color);
+        font-weight: 700;
+        font-family: var(--main-font);
+        margin-bottom: 0 !important;
+    }
+    .section-matching .matching-body{
+        padding: 0px 20px;
+    }
+    .section-matching .matching-body p{
+        margin-bottom: 0 !important;
+        font-size: 16px;
+    }
+    .section-matching .matching-body p span{
+        color: var(--first-color);
+    }
+    .section-matching .matching-body img{
+        width: 100%;
+        height: 150px;
+    }
+    .section-matching .matching-body ul{
+        padding: 20px 50px;
+        margin-bottom: 0 !important;
+    }
+    .section-matching .matching-body ul li:nth-child(1){
+        color: #F80000;
+    }
+    .section-matching .matching-body ul li:nth-child(2){
+        color: #00B1F5;
+    }
+    .section-matching .matching-body ul li:nth-child(3){
+        color: #F38900;
+    }
+    .section-matching .matching-body ul li:nth-child(4){
+        color: #F20079;
+    }
+
 }
 /* Mobile end */
