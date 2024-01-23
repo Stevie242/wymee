@@ -131,8 +131,13 @@ body {
 .header .menu-nav div ul li {
     margin-bottom: 0 !important;
     margin-left: 20px !important;
+    border-right: 1px solid gray;
+    padding-right: 20px !important;
 }
-
+.header .menu-nav div ul li:last-child{
+    border-right:none;
+    padding-right: 0px !important;
+}
 .header .menu-nav div ul li a {
     text-decoration: none;
     color: var(--black-color);
@@ -1185,6 +1190,12 @@ body {
         flex-direction: column;
         justify-content: start;
         align-items: start;
+    }
+    .header .menu-nav div ul li {
+        border-right: none;
+        border-bottom: 1px solid gray;
+        padding-bottom: 5px !important;
+        padding-right: 0px !important;
     }
 
     .header .menu-nav div ul li {
