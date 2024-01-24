@@ -1065,6 +1065,194 @@ body {
     color: var(--first-color-2);
 }
 
+/* Page Register */
+.register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100vh;
+    padding: 20px;
+}
+
+.register .register-head {
+    margin-bottom: 20px;
+}
+
+.register .register-head .logo {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 303px;
+}
+
+.register .register-head .logo img {
+    position: relative;
+    width: 250px;
+    height: 150px;
+}
+
+.register .register-head .logo span {
+    position: absolute;
+    bottom: 20px;
+    right: 7px;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: var(--main-font);
+    color: var(--black-color);
+}
+
+.register .register-head h5 {
+    text-align: center;
+    font-size: 20px;
+    color: var(--first-color);
+    font-weight: 700;
+    font-family: var(--main-font);
+}
+
+.register .register-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.register .register-body .choose {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.register .register-body .choose button {
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 20px;
+    width: 120px;
+    transition: ease-in-out .3s;
+}
+
+.register .register-body .choose button:first-child {
+    border: 2px solid var(--first-color);
+    background-color: transparent;
+    color: var(--black-color);
+    margin-right: 30px;
+}
+
+.register .register-body .choose button:first-child.active {
+    border: 2px solid var(--first-color);
+    background-color: var(--first-color);
+    color: var(--white-color);
+    margin-right: 30px;
+}
+
+.register .register-body .choose button:first-child:hover {
+    border: 2px solid var(--first-color-2);
+    background-color: var(--first-color-2);
+    color: var(--white-color);
+}
+
+.register .register-body .choose button:last-child {
+    border: 2px solid var(--second-color);
+    background-color: transparent;
+    color: var(--black-color);
+}
+
+.register .register-body .choose button:last-child.active {
+    border: 2px solid var(--second-color);
+    background-color: var(--second-color);
+    color: var(--white-color);
+}
+
+.register .register-body .choose button:last-child:hover {
+    border: 2px solid var(--second-color-2);
+    background-color: var(--second-color-2);
+    color: var(--white-color);
+}
+.register .register-body #for-talent .form-drag-drop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.register .register-body #for-talent .form-drag-drop label{
+    width: 250px;
+    height: 75px;
+    border: 2px dashed gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.register .register-body #for-talent .form-drag-drop {}
+.register .register-body #for-talent .form-drag-drop input{
+    visibility: hidden;
+}
+.register .register-body #for-talent {}
+
+.register .register-body form .input-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.register .register-body form .input-button button {
+    width: 200px;
+    padding: 10px 15px;
+    color: var(--white-color);
+    border: none;
+    border-radius: 20px;
+    transition: ease-in-out .3s;
+}
+
+.register .register-body #for-talent .input-button button {
+    background-color: var(--first-color);
+}
+
+.register .register-body #for-talent .input-button button:hover {
+    background-color: var(--first-color-2);
+}
+
+.register .register-body #for-business {}
+
+.register .register-body #for-business .input-button button {
+    background-color: var(--second-color);
+}
+
+.register .register-body #for-business .input-button button:hover {
+    background-color: var(--second-color-2);
+}
+
+.register .register-body #for-talent{
+    display: none;
+}
+.register .register-body #for-talent.active{
+    display: block;
+}
+.register .register-body #for-business{
+    display: none;
+}
+.register .register-body #for-business.active{
+    display: block;
+}
+.register .register-foot {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.register .register-foot p a {
+    text-decoration: none;
+    color: var(--first-color);
+    transition: ease-in-out .3s;
+}
+
+.register .register-foot p a:hover {
+    text-decoration: underline;
+    color: var(--first-color-2);
+}
+
 
 /* Manifesto & Equipe */
 .section-hero .hero-img.teams {
