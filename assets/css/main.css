@@ -432,7 +432,7 @@ body {
     margin-bottom: 20px;
     background: linear-gradient(to right, var(--first-color), var(--first-color-2));
     border-radius: 20px;
-    height: 850px;
+    height: 100%;
 }
 
 .section-create-talent .create-content {
@@ -557,7 +557,7 @@ body {
     margin-top: 10px;
     background: linear-gradient(to right, var(--second-color), var(--second-color-2));
     border-radius: 20px;
-    height: 850px;
+    height: 100%;
 }
 
 .section-create-work .create-content {
@@ -1591,6 +1591,197 @@ body {
 }
 
 /* Talent */
+.section-talent {
+    margin-top: 20px;
+    padding: 20px 100px;
+}
+
+/* .section-talent .talent-head {
+    padding: 20px 100px;
+} */
+
+.section-talent .talent-head h5 {
+    text-align: center;
+    font-size: 20px;
+    color: var(--first-color);
+    font-weight: 700;
+    font-family: var(--main-font);
+    margin-bottom: 0 !important;
+}
+.section-talent .talent-head p {}
+.section-talent .talent-body{}
+.section-talent .talent-body > h5{
+    text-align: center;
+    font-size: 20px;
+    color: var(--first-color);
+    font-weight: 700;
+    font-family: var(--main-font);
+    margin-bottom: 10px !important;
+}
+
+
+.section-talent .talent-body .step .step-description .step-number {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.section-talent .talent-body .step .step-description .step-number span {
+    font-size: 18px;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--white-color);
+}
+
+.section-talent .talent-body .step .step-description .step-number span {
+    background-color: var(--first-color);
+}
+
+
+.section-talent .talent-body .step .step-description .step-number h5 {
+    font-size: 18px;
+    margin-bottom: 0 !important;
+}
+
+.section-talent .talent-body .step .step-description .step-number h5 {
+    color: var(--first-color);
+}
+
+.section-talent .talent-body .step .step-description p {
+    margin-bottom: 0 !important;
+    padding-left: 50px;
+}
+
+
+.section-talent .create-talent-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.section-talent .create-talent-body p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.section-talent .create-talent-body .talent-skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 370px;
+    width: 230px;
+    padding: 10px;
+    background-image: url(./../img/people/talent.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 100px;
+    box-shadow: 0 0px 9px 6px rgba(0, 0, 0, 0.3);
+}
+
+.section-talent .create-talent-body .talent-skill h5 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--second-color);
+}
+
+.section-talent .create-talent-body .talent-skill span {
+    width: 95%;
+    background-color: var(--second-color-2);
+    opacity: .9;
+    color: var(--white-color);
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.section-talent .create-talent-foot {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.section-talent .create-talent-foot h5 {
+    font-size: 22px;
+}
+
+.section-talent .create-talent-foot h5 span {
+    color: var(--second-color);
+    font-weight: 700;
+}
+
+.section-talent .create-talent-foot ul {
+    padding: 0px 30px;
+    margin-bottom: 20px !important;
+    text-align: start;
+}
+
+.section-talent .create-talent-foot ul li {
+    font-size: 16px;
+}
+
+.section-talent .create-talent-foot ul li span {
+    color: var(--second-color);
+}
+
+.section-talent .create-talent-foot a {
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: var(--second-color);
+    color: var(--white-color);
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    transition: ease-in-out .3s;
+    font-family: var(--main-font);
+}
+
+.section-talent .create-talent-foot a:hover {
+    background-color: var(--second-color-2);
+}
+
+.section-talent .talent-foot{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: linear-gradient(to right, var(--second-color), var(--second-color-2));
+    width: 100%;
+    text-align: center;
+}
+
+.section-talent .talent-foot h5 {
+    text-align: center;
+    font-size: 20px;
+    color: var(--white-color);
+    font-weight: 700;
+    font-family: var(--main-font);
+    margin-bottom: 0 !important;
+}
+.section-talent .talent-foot .talent-foot-action{
+    margin-top: 20px;
+}
+.section-talent .talent-foot .talent-foot-action a{
+    text-decoration: none;
+    text-align: center;
+    margin-top: 10px !important;
+    color: var(--white-color);
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-color: var(--first-color);
+    transition: ease-in-out .3s;
+}
+.section-talent .talent-foot .talent-foot-action a:hover{
+    background-color: var(--first-color-2);
+}
 /* Entreprise */
 /* Consulting */
 /* Contact */
@@ -2846,6 +3037,10 @@ body {
     }
 
     /* Talent */
+    .section-talent {
+    margin-top: 20px;
+    padding: 20px;
+}
     /* Entreprise */
     /* Consulting */
     /* Contact */
