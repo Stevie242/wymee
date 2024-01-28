@@ -1171,14 +1171,16 @@ body {
     background-color: var(--second-color-2);
     color: var(--white-color);
 }
-.register .register-body #for-talent .form-drag-drop{
+
+.register .register-body #for-talent .form-drag-drop {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-top: 20px;
 }
-.register .register-body #for-talent .form-drag-drop label{
+
+.register .register-body #for-talent .form-drag-drop label {
     width: 250px;
     height: 75px;
     border: 2px dashed gray;
@@ -1186,17 +1188,21 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .register .register-body #for-talent .form-drag-drop {}
-.register .register-body #for-talent .form-drag-drop input{
+
+.register .register-body #for-talent .form-drag-drop input {
     visibility: hidden;
 }
+
 .register .register-body #for-talent {}
 
-.register .register-body form .input-button{
+.register .register-body form .input-button {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .register .register-body form .input-button button {
     width: 200px;
     padding: 10px 15px;
@@ -1224,18 +1230,22 @@ body {
     background-color: var(--second-color-2);
 }
 
-.register .register-body #for-talent{
+.register .register-body #for-talent {
     display: none;
 }
-.register .register-body #for-talent.active{
+
+.register .register-body #for-talent.active {
     display: block;
 }
-.register .register-body #for-business{
+
+.register .register-body #for-business {
     display: none;
 }
-.register .register-body #for-business.active{
+
+.register .register-body #for-business.active {
     display: block;
 }
+
 .register .register-foot {
     text-align: center;
     margin-top: 20px;
@@ -1596,10 +1606,6 @@ body {
     padding: 20px 100px;
 }
 
-/* .section-talent .talent-head {
-    padding: 20px 100px;
-} */
-
 .section-talent .talent-head h5 {
     text-align: center;
     font-size: 20px;
@@ -1608,9 +1614,12 @@ body {
     font-family: var(--main-font);
     margin-bottom: 0 !important;
 }
-.section-talent .talent-head p {}
-.section-talent .talent-body{}
-.section-talent .talent-body > h5{
+
+.section-talent .talent-head p {
+    font-size: 16px;
+}
+
+.section-talent .talent-body>h5 {
     text-align: center;
     font-size: 20px;
     color: var(--first-color);
@@ -1749,7 +1758,7 @@ body {
     background-color: var(--second-color-2);
 }
 
-.section-talent .talent-foot{
+.section-talent .talent-foot {
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 20px;
@@ -1766,10 +1775,12 @@ body {
     font-family: var(--main-font);
     margin-bottom: 0 !important;
 }
-.section-talent .talent-foot .talent-foot-action{
+
+.section-talent .talent-foot .talent-foot-action {
     margin-top: 20px;
 }
-.section-talent .talent-foot .talent-foot-action a{
+
+.section-talent .talent-foot .talent-foot-action a {
     text-decoration: none;
     text-align: center;
     margin-top: 10px !important;
@@ -1779,11 +1790,283 @@ body {
     background-color: var(--first-color);
     transition: ease-in-out .3s;
 }
-.section-talent .talent-foot .talent-foot-action a:hover{
+
+.section-talent .talent-foot .talent-foot-action a:hover {
     background-color: var(--first-color-2);
 }
+
 /* Entreprise */
+.section-business {
+    margin-top: 20px;
+    padding: 20px 100px;
+}
+
+.section-business .business-head h5 {
+    text-align: center;
+    font-size: 20px;
+    color: var(--second-color);
+    font-weight: 700;
+    font-family: var(--main-font);
+    margin-bottom: 0 !important;
+}
+
+.section-business .business-head p {
+    font-size: 16px;
+}
+
+.section-business .business-body>h5 {
+    text-align: center;
+    font-size: 20px;
+    color: var(--second-color);
+    font-weight: 700;
+    font-family: var(--main-font);
+    margin-bottom: 10px !important;
+}
+
+
+.section-business .business-body .step .step-description .step-number {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.section-business .business-body .step .step-description .step-number span {
+    font-size: 18px;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--white-color);
+}
+
+.section-business .business-body .step .step-description .step-number span {
+    background-color: var(--second-color);
+}
+
+
+.section-business .business-body .step .step-description .step-number h5 {
+    font-size: 18px;
+    margin-bottom: 0 !important;
+}
+
+.section-business .business-body .step .step-description .step-number h5 {
+    color: var(--second-color);
+}
+
+.section-business .business-body .step .step-description p {
+    margin-bottom: 0 !important;
+    padding-left: 50px;
+}
+
+
+.section-business .create-business-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.section-business .create-business-body p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.section-business .create-business-body .business-skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 370px;
+    width: 230px;
+    padding: 10px;
+    background-image: url(./../img/people/business.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 100px;
+    box-shadow: 0 0px 9px 6px rgba(0, 0, 0, 0.3);
+}
+
+.section-business .create-business-body .business-skill h5 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--first-color);
+}
+
+.section-business .create-business-body .business-skill span {
+    width: 95%;
+    background-color: var(--first-color-2);
+    opacity: .9;
+    color: var(--white-color);
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.section-business .create-business-foot {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.section-business .create-business-foot h5 {
+    font-size: 22px;
+}
+
+.section-business .create-business-foot h5 span {
+    color: var(--first-color);
+    font-weight: 700;
+}
+
+.section-business .create-business-foot ul {
+    padding: 0px 30px;
+    margin-bottom: 20px !important;
+    text-align: start;
+}
+
+.section-business .create-business-foot ul li {
+    font-size: 16px;
+}
+
+.section-business .create-business-foot ul li span {
+    color: var(--first-color);
+}
+
+.section-business .create-business-foot a {
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: var(--first-color);
+    color: var(--white-color);
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    transition: ease-in-out .3s;
+    font-family: var(--main-font);
+}
+
+.section-business .create-business-foot a:hover {
+    background-color: var(--first-color-2);
+}
+
+.section-business .business-foot {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: linear-gradient(to right, var(--first-color), var(--first-color-2));
+    width: 100%;
+    text-align: center;
+}
+
+.section-business .business-foot h5 {
+    text-align: center;
+    font-size: 20px;
+    color: var(--white-color);
+    font-weight: 700;
+    font-family: var(--main-font);
+    margin-bottom: 0 !important;
+    text-transform: uppercase;
+}
+
+.section-business .business-foot .business-foot-action {
+    margin-top: 20px;
+}
+
+.section-business .business-foot .business-foot-action a {
+    text-decoration: none;
+    text-align: center;
+    margin-top: 10px !important;
+    color: var(--white-color);
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-color: var(--second-color);
+    transition: ease-in-out .3s;
+}
+
+.section-business .business-foot .business-foot-action a:hover {
+    background-color: var(--second-color-2);
+}
+
 /* Consulting */
+.consulting{
+    margin-top: 20px;
+    padding: 20px 100px;
+}
+.consulting .consulting-head h5{
+    text-align: center;
+    font-size: 20px;
+    color: var(--first-color);
+    font-weight: 700;
+    font-family: var(--main-font);
+    margin-bottom: 0 !important;
+}
+.consulting .consulting-body{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat( 2 , 1fr);
+    gap: 30px;
+    justify-items: center;
+}
+.consulting .consulting-body .theme{
+    border-radius: 0px;
+}
+.consulting .consulting-body .theme .theme-title h5{
+    font-size: 18px;
+    color: var(--second-color);
+    border-bottom: 3px solid var(--second-color);
+    margin-bottom: 0 !important;
+    text-transform: uppercase;
+}
+.consulting .consulting-body .theme .theme-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.consulting .consulting-body .theme .theme-content img{
+    max-width: 100%;
+    height: 370px;
+    margin: 20px 0;
+}
+.consulting .consulting-body .theme .theme-content #imgTalent{
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 370px;
+    width: 230px;
+    padding: 10px;
+    background-image: url(./../img/people/talent.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 100px;
+    box-shadow: 0 0px 9px 6px rgba(0, 0, 0, 0.3);
+}
+
+.consulting .consulting-body .theme .theme-content #imgTalent h5 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--second-color);
+}
+
+.consulting .consulting-body .theme .theme-content #imgTalent span {
+    width: 95%;
+    background-color: var(--second-color-2);
+    opacity: .9;
+    color: var(--white-color);
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.consulting .consulting-body .theme .theme-content p{
+    font-size: 16px;
+}
 /* Contact */
 
 
@@ -3038,13 +3321,44 @@ body {
 
     /* Talent */
     .section-talent {
-    margin-top: 20px;
-    padding: 20px;
-}
+        margin-top: 20px;
+        padding: 20px;
+    }
+
     /* Entreprise */
+    .section-business {
+        margin-top: 20px;
+        padding: 20px;
+    }
     /* Consulting */
+    .consulting {
+        margin-top: 20px;
+        padding: 20px;
+    }
+    .consulting .consulting-body{
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat( 1 , 1fr);
+        gap: 20px;
+        justify-items: center;
+    }
+    .consulting .consulting-body .theme .theme-content img#diag{
+        object-fit: cover;
+    }
     /* Contact */
 
+}
+
+@media only screen and (max-width: 940px) {
+
+    /* Consulting */
+    .consulting .consulting-body{
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat( 1 , 1fr);
+        gap: 20px;
+        justify-items: center;
+    }
 }
 
 @media only screen and (max-width: 596px) {
