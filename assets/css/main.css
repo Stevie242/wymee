@@ -2342,6 +2342,7 @@ body {
 .section-recruitment .recruitment-head .recruitment-search .group-form .group-input .input-form{
     width: 100%;
 }
+.section-recruitment .recruitment-head .recruitment-search .group-form .group-input select,
 .section-recruitment .recruitment-head .recruitment-search .group-form .group-input input{
     padding: 10px 15px;
     outline: none;
