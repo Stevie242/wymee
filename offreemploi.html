@@ -18,7 +18,7 @@ Trouver la meilleure entreprise pour le talent et le meilleur talent pour l'entr
     <meta property="og:image" content="https://stevie242.github.io/wymee/assets/img/logo/logo.png">
     <meta property="og:url" content="https://stevie242.github.io/wymee/">
 
-    <title>Offres d'emplois | WyMee</title>
+    <title>Recrutement | WyMee</title>
     <!-- Styles css start -->
     <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css">
@@ -66,7 +66,8 @@ Trouver la meilleure entreprise pour le talent et le meilleur talent pour l'entr
     <section class="section-hero">
         <div class="hero-text">
             <p>
-                Créez votre WyMee 😉 ... et nous vous alerterons dès que l'on rentre un poste et une entreprise qui vous correspondent. 
+                Créez votre WyMee 😉 ... et nous vous alerterons dès que l'on rentre un poste et une entreprise qui vous
+                correspondent.
             </p>
         </div>
         <div class="hero-action mt-4">
@@ -76,197 +77,347 @@ Trouver la meilleure entreprise pour le talent et le meilleur talent pour l'entr
     </section>
     <!-- Hero section end -->
 
-    <!-- Jobs section start -->
-    <section class="section-jobs">
-        <div class="jobs-head">
+    <!-- section recruitment start -->
+    <section class="section-recruitment">
+        <div class="recruitment-head">
             <h5>Parce que tu es fait(e) pour ce poste</h5>
-        </div>
-        <div class="jobs-search">
-            <form action="#">
-                <div class="input-form">
-                    <button>
-                        <i class="fa fa-search"></i>
-                    </button>
-                    <input type="search" name="search" id="search">
-                </div>
-            </form>
-        </div>
-        <div class="jobs-body">
-            <div class="jobs-filter">
+            <div class="recruitment-search">
                 <form action="#">
-                    <div class="input-form">
-                        <label for="category">Catégorie</label>
-                        <select name="category" id="category">
-                            <option value="0" selected>Sélectionnez une categorie</option>
-                            <optgroup label="Technique">
-                                <option value="">Développeur Front</option>
-                                <option value="">Développeur Back</option>
-                                <option value="">Développeur Fullstack</option>
-                                <option value="">Devops</option>
-                            </optgroup>
-                            <optgroup label="Projets et méthodes">
-                                <option value="">Chef de Projet MOA</option>
-                                <option value="">Chef de Projet MOE</option>
-                                <option value="">Coach Agile</option>
-                                <option value="">Scrum Master</option>
-                            </optgroup>
-                            <optgroup label="Marketing Produit / Projet">
-                                <option value="">Responsable Marketing</option>
-                                <option value="">Chargé d’études</option>
-                                <option value="">Business Analyst</option>
-                                <option value="">Product Owner</option>
-                            </optgroup>
-                        </select>
-                    </div>
-                    <div class="input-form">
-                        <label for="">Type de contrat</label>
-                        <div class="check">
-                            <input type="checkbox" class="checkbox" name="contrat" id="cdi">
-                            <label for="">CDI</label>
+                    <div class="group-form">
+                        <div class="group-input">
+                            <div class="input-form">
+                                <!-- <input type="text" placeholder="Rechercher un metier" name="job"> -->
+                                <select name="category" id="category">
+                                    <option value="" selected disabled hidden>Sélectionnez une categorie</option>
+                                    <optgroup label="Technique">
+                                        <option value="">Développeur Front</option>
+                                        <option value="">Développeur Back</option>
+                                        <option value="">Développeur Fullstack</option>
+                                        <option value="">Devops</option>
+                                    </optgroup>
+                                    <optgroup label="Projets et méthodes">
+                                        <option value="">Chef de Projet MOA</option>
+                                        <option value="">Chef de Projet MOE</option>
+                                        <option value="">Coach Agile</option>
+                                        <option value="">Scrum Master</option>
+                                    </optgroup>
+                                    <optgroup label="Marketing Produit / Projet">
+                                        <option value="">Responsable Marketing</option>
+                                        <option value="">Chargé d’études</option>
+                                        <option value="">Business Analyst</option>
+                                        <option value="">Product Owner</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <div class="input-form">
+                                <input type="text" placeholder="Localisation" name="location" id="location">
+                            </div>
+                            <div class="input-form">
+                                <!-- <input type="text" placeholder="Type de contrat" name="contrat"> -->
+                                <select name="contrat" id="contrat">
+                                    <option value="" disabled selected hidden>Type de contrat</option>
+                                    <option value="1">CDD</option>
+                                    <option value="2">CDI</option>
+                                    <option value="3">Stage</option>
+                                    <option value="4">Itérim</option>
+                                    <option value="5">Non renseigné</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="check">
-                            <input type="checkbox" class="checkbox" name="contrat" id="cdd">
-                            <label for="">CDD</label>
-                        </div>
-                    </div>
-                    <div class="input-form">
-                        <label for="">Localisation</label>
-                        <div class="check">
-                            <input type="checkbox" class="checkbox" name="position" id="remote">
-                            <label for="">Remote</label>
-                        </div>
-                        <div class="check">
-                            <input type="checkbox" class="checkbox" name="position" id="presentiel">
-                            <label for="">Presentiel</label>
+                        <div class="input-button">
+                            <button type="button">Voir les offres</button>
                         </div>
                     </div>
                 </form>
+                <p>Ou</p>
+                <form action="#">
+                    <div class="form-drag-drop">
+                        <label for="cv">
+                            Ajoutez votre cv on s'occupe du reste
+                        </label>
+                        <input type="file" name="cv" id="cv">
+                    </div>
+                </form>
             </div>
-            <div class="jobs-lists">
-                <div class="job-detail">
+        </div>
+        <div class="recruitment-body">
+            <h5>Nos offres</h5>
+            <div class="offer-list">
+                <div class="offer">
                     <span class="published">Publié il y'a 2 semaine</span>
-                    <h5>Lean manager</h5>
-                    <h6>Type de contrat : <span>CDI</span></h6>
-                    <h6>Localisation : <span>Paris</span>-<span>Remote</span></h6>
-                    <h6>Salire : <span>70-90K</span> selon le profil</h6>
-                    <p>Notre client est une start-up qui développe une solution de paiement basée sur la BlockChain. Intégrée sur une plateforme e-commerce, elle permet de payer un produit ou un service affiché en euro en cryptomonnaies.</p>
-                    <ul class="skill">
-                        <li>Java</li>
-                        <li>Spring</li>
-                        <li>Block Chain</li>
-                    </ul>
+                    <div class="offer-title">
+                        <h5>Lead développeur java</h5>
+                    </div>
+                    <div class="offer-details">
+                        <h6>Type de contrat : <span>CDI</span></h6>
+                        <h6>Localisation : <span>Paris</span>-<span>Remote</span></h6>
+                        <h6>Salire : <span>70-90K</span> selon le profil</h6>
+                        <p>Notre client est une start-up qui développe une solution de paiement basée sur la BlockChain.
+                            Intégrée sur une plateforme e-commerce, elle permet de payer un produit ou un service
+                            affiché en euro en cryptomonnaies.</p>
+                        <ul class="skill">
+                            <li>Java</li>
+                            <li>Spring</li>
+                            <li>Block Chain</li>
+                        </ul>
+                    </div>
+                    <div class="offer-action">
+                        <a href="./detailoffre.html">Voir l'offre <i class="fa fa-eye"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="job-detail">
+                <div class="offer">
                     <span class="published">Publié il y'a 2 semaine</span>
-                    <h5>Lean manager</h5>
-                    <h6>Type de contrat : <span>CDI</span></h6>
-                    <h6>Localisation : <span>Paris</span>-<span>Remote</span></h6>
-                    <h6>Salire : <span>70-90K</span> selon le profil</h6>
-                    <p>Notre client est une start-up qui développe une solution de paiement basée sur la BlockChain. Intégrée sur une plateforme e-commerce, elle permet de payer un produit ou un service affiché en euro en cryptomonnaies.</p>
-                    <ul class="skill">
-                        <li>Java</li>
-                        <li>Spring</li>
-                        <li>Block Chain</li>
-                    </ul>
+                    <div class="offer-title">
+                        <h5>Lead développeur java</h5>
+                    </div>
+                    <div class="offer-details">
+                        <h6>Type de contrat : <span>CDI</span></h6>
+                        <h6>Localisation : <span>Paris</span>-<span>Remote</span></h6>
+                        <h6>Salire : <span>70-90K</span> selon le profil</h6>
+                        <p>Notre client est une start-up qui développe une solution de paiement basée sur la BlockChain.
+                            Intégrée sur une plateforme e-commerce, elle permet de payer un produit ou un service
+                            affiché en euro en cryptomonnaies.</p>
+                        <ul class="skill">
+                            <li>Java</li>
+                            <li>Spring</li>
+                            <li>Block Chain</li>
+                        </ul>
+                    </div>
+                    <div class="offer-action">
+                        <a href="./detailoffre.html">Voir l'offre <i class="fa fa-eye"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="job-detail">
+                <div class="offer">
                     <span class="published">Publié il y'a 2 semaine</span>
-                    <h5>Lean manager</h5>
-                    <h6>Type de contrat : <span>CDI</span></h6>
-                    <h6>Localisation : <span>Paris</span>-<span>Remote</span></h6>
-                    <h6>Salire : <span>70-90K</span> selon le profil</h6>
-                    <p>Notre client est une start-up qui développe une solution de paiement basée sur la BlockChain. Intégrée sur une plateforme e-commerce, elle permet de payer un produit ou un service affiché en euro en cryptomonnaies.</p>
-                    <ul class="skill">
-                        <li>Java</li>
-                        <li>Spring</li>
-                        <li>Block Chain</li>
-                    </ul>
+                    <div class="offer-title">
+                        <h5>Lead développeur java</h5>
+                    </div>
+                    <div class="offer-details">
+                        <h6>Type de contrat : <span>CDI</span></h6>
+                        <h6>Localisation : <span>Paris</span>-<span>Remote</span></h6>
+                        <h6>Salire : <span>70-90K</span> selon le profil</h6>
+                        <p>Notre client est une start-up qui développe une solution de paiement basée sur la BlockChain.
+                            Intégrée sur une plateforme e-commerce, elle permet de payer un produit ou un service
+                            affiché en euro en cryptomonnaies.</p>
+                        <ul class="skill">
+                            <li>Java</li>
+                            <li>Spring</li>
+                            <li>Block Chain</li>
+                        </ul>
+                    </div>
+                    <div class="offer-action">
+                        <a href="./detailoffre.html">Voir l'offre <i class="fa fa-eye"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="job-detail">
+                <div class="offer">
                     <span class="published">Publié il y'a 2 semaine</span>
-                    <h5>Lean manager</h5>
-                    <h6>Type de contrat : <span>CDI</span></h6>
-                    <h6>Localisation : <span>Paris</span>-<span>Remote</span></h6>
-                    <h6>Salire : <span>70-90K</span> selon le profil</h6>
-                    <p>Notre client est une start-up qui développe une solution de paiement basée sur la BlockChain. Intégrée sur une plateforme e-commerce, elle permet de payer un produit ou un service affiché en euro en cryptomonnaies.</p>
-                    <ul class="skill">
-                        <li>Java</li>
-                        <li>Spring</li>
-                        <li>Block Chain</li>
-                    </ul>
+                    <div class="offer-title">
+                        <h5>Lead développeur java</h5>
+                    </div>
+                    <div class="offer-details">
+                        <h6>Type de contrat : <span>CDI</span></h6>
+                        <h6>Localisation : <span>Paris</span>-<span>Remote</span></h6>
+                        <h6>Salire : <span>70-90K</span> selon le profil</h6>
+                        <p>Notre client est une start-up qui développe une solution de paiement basée sur la BlockChain.
+                            Intégrée sur une plateforme e-commerce, elle permet de payer un produit ou un service
+                            affiché en euro en cryptomonnaies.</p>
+                        <ul class="skill">
+                            <li>Java</li>
+                            <li>Spring</li>
+                            <li>Block Chain</li>
+                        </ul>
+                    </div>
+                    <div class="offer-action">
+                        <a href="./detailoffre.html">Voir l'offre <i class="fa fa-eye"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="job-detail">
+                <div class="offer">
                     <span class="published">Publié il y'a 2 semaine</span>
-                    <h5>Lean manager</h5>
-                    <h6>Type de contrat : <span>CDI</span></h6>
-                    <h6>Localisation : <span>Paris</span>-<span>Remote</span></h6>
-                    <h6>Salire : <span>70-90K</span> selon le profil</h6>
-                    <p>Notre client est une start-up qui développe une solution de paiement basée sur la BlockChain. Intégrée sur une plateforme e-commerce, elle permet de payer un produit ou un service affiché en euro en cryptomonnaies.</p>
-                    <ul class="skill">
-                        <li>Java</li>
-                        <li>Spring</li>
-                        <li>Block Chain</li>
-                    </ul>
+                    <div class="offer-title">
+                        <h5>Lead développeur java</h5>
+                    </div>
+                    <div class="offer-details">
+                        <h6>Type de contrat : <span>CDI</span></h6>
+                        <h6>Localisation : <span>Paris</span>-<span>Remote</span></h6>
+                        <h6>Salire : <span>70-90K</span> selon le profil</h6>
+                        <p>Notre client est une start-up qui développe une solution de paiement basée sur la BlockChain.
+                            Intégrée sur une plateforme e-commerce, elle permet de payer un produit ou un service
+                            affiché en euro en cryptomonnaies.</p>
+                        <ul class="skill">
+                            <li>Java</li>
+                            <li>Spring</li>
+                            <li>Block Chain</li>
+                        </ul>
+                    </div>
+                    <div class="offer-action">
+                        <a href="./detailoffre.html">Voir l'offre <i class="fa fa-eye"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="job-detail">
+                <div class="offer">
                     <span class="published">Publié il y'a 2 semaine</span>
-                    <h5>Lean manager</h5>
-                    <h6>Type de contrat : <span>CDI</span></h6>
-                    <h6>Localisation : <span>Paris</span>-<span>Remote</span></h6>
-                    <h6>Salire : <span>70-90K</span> selon le profil</h6>
-                    <p>Notre client est une start-up qui développe une solution de paiement basée sur la BlockChain. Intégrée sur une plateforme e-commerce, elle permet de payer un produit ou un service affiché en euro en cryptomonnaies.</p>
-                    <ul class="skill">
-                        <li>Java</li>
-                        <li>Spring</li>
-                        <li>Block Chain</li>
-                    </ul>
+                    <div class="offer-title">
+                        <h5>Lead développeur java</h5>
+                    </div>
+                    <div class="offer-details">
+                        <h6>Type de contrat : <span>CDI</span></h6>
+                        <h6>Localisation : <span>Paris</span>-<span>Remote</span></h6>
+                        <h6>Salire : <span>70-90K</span> selon le profil</h6>
+                        <p>Notre client est une start-up qui développe une solution de paiement basée sur la BlockChain.
+                            Intégrée sur une plateforme e-commerce, elle permet de payer un produit ou un service
+                            affiché en euro en cryptomonnaies.</p>
+                        <ul class="skill">
+                            <li>Java</li>
+                            <li>Spring</li>
+                            <li>Block Chain</li>
+                        </ul>
+                    </div>
+                    <div class="offer-action">
+                        <a href="./detailoffre.html">Voir l'offre <i class="fa fa-eye"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="wymee-paginate">
-                    <ul class="paginate-block">
-                        <li><a href="#" class="prev first">Précédent</a></li>
-                        <li><a href="#" class="active">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#" class="next">Suivant</a></li>
-                    </ul>
+                <div class="offer">
+                    <span class="published">Publié il y'a 2 semaine</span>
+                    <div class="offer-title">
+                        <h5>Lead développeur java</h5>
+                    </div>
+                    <div class="offer-details">
+                        <h6>Type de contrat : <span>CDI</span></h6>
+                        <h6>Localisation : <span>Paris</span>-<span>Remote</span></h6>
+                        <h6>Salire : <span>70-90K</span> selon le profil</h6>
+                        <p>Notre client est une start-up qui développe une solution de paiement basée sur la BlockChain.
+                            Intégrée sur une plateforme e-commerce, elle permet de payer un produit ou un service
+                            affiché en euro en cryptomonnaies.</p>
+                        <ul class="skill">
+                            <li>Java</li>
+                            <li>Spring</li>
+                            <li>Block Chain</li>
+                        </ul>
+                    </div>
+                    <div class="offer-action">
+                        <a href="./detailoffre.html">Voir l'offre <i class="fa fa-eye"></i>
+                        </a>
+                    </div>
                 </div>
+                <div class="offer">
+                    <span class="published">Publié il y'a 2 semaine</span>
+                    <div class="offer-title">
+                        <h5>Lead développeur java</h5>
+                    </div>
+                    <div class="offer-details">
+                        <h6>Type de contrat : <span>CDI</span></h6>
+                        <h6>Localisation : <span>Paris</span>-<span>Remote</span></h6>
+                        <h6>Salire : <span>70-90K</span> selon le profil</h6>
+                        <p>Notre client est une start-up qui développe une solution de paiement basée sur la BlockChain.
+                            Intégrée sur une plateforme e-commerce, elle permet de payer un produit ou un service
+                            affiché en euro en cryptomonnaies.</p>
+                        <ul class="skill">
+                            <li>Java</li>
+                            <li>Spring</li>
+                            <li>Block Chain</li>
+                        </ul>
+                    </div>
+                    <div class="offer-action">
+                        <a href="./detailoffre.html">Voir l'offre <i class="fa fa-eye"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="offer">
+                    <span class="published">Publié il y'a 2 semaine</span>
+                    <div class="offer-title">
+                        <h5>Lead développeur java</h5>
+                    </div>
+                    <div class="offer-details">
+                        <h6>Type de contrat : <span>CDI</span></h6>
+                        <h6>Localisation : <span>Paris</span>-<span>Remote</span></h6>
+                        <h6>Salire : <span>70-90K</span> selon le profil</h6>
+                        <p>Notre client est une start-up qui développe une solution de paiement basée sur la BlockChain.
+                            Intégrée sur une plateforme e-commerce, elle permet de payer un produit ou un service
+                            affiché en euro en cryptomonnaies.</p>
+                        <ul class="skill">
+                            <li>Java</li>
+                            <li>Spring</li>
+                            <li>Block Chain</li>
+                        </ul>
+                    </div>
+                    <div class="offer-action">
+                        <a href="./detailoffre.html">Voir l'offre <i class="fa fa-eye"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="offer">
+                    <span class="published">Publié il y'a 2 semaine</span>
+                    <div class="offer-title">
+                        <h5>Lead développeur java</h5>
+                    </div>
+                    <div class="offer-details">
+                        <h6>Type de contrat : <span>CDI</span></h6>
+                        <h6>Localisation : <span>Paris</span>-<span>Remote</span></h6>
+                        <h6>Salire : <span>70-90K</span> selon le profil</h6>
+                        <p>Notre client est une start-up qui développe une solution de paiement basée sur la BlockChain.
+                            Intégrée sur une plateforme e-commerce, elle permet de payer un produit ou un service
+                            affiché en euro en cryptomonnaies.</p>
+                        <ul class="skill">
+                            <li>Java</li>
+                            <li>Spring</li>
+                            <li>Block Chain</li>
+                        </ul>
+                    </div>
+                    <div class="offer-action">
+                        <a href="./detailoffre.html">Voir l'offre <i class="fa fa-eye"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="recruitment-foot">
+            <div class="wymee-paginate">
+                <ul class="paginate-block">
+                    <li><a href="#" class="prev first">Précédent</a></li>
+                    <li><a href="#" class="active">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#" class="next">Suivant</a></li>
+                </ul>
             </div>
         </div>
     </section>
-    <!-- Jobs section end -->
-
+    <!-- section recruitment end -->
 
     <!-- Bottom Bar start -->
     <footer class="footer">
-        <div class="footer-head">
-            <div class="logo">
-                <img src="./assets/img/logo/logo_w.png" alt="Logo WyMee">
-                <span>Here to recruit your talents</span>
+        <div class="">
+            <div class="footer-head">
+                <div class="logo">
+                    <img src="./assets/img/logo/logo_w.png" alt="Logo WyMee">
+                    <span>Here to recruit your talents</span>
+                </div>
             </div>
-        </div>
-        <div class="footer-body">
             <div class="footer-toggle">
                 <h5>Pour les Recruteur</h5>
                 <ul class="dropdown-list">
-                    <li><a href="./commentrecruter.html"><i class="fa fa-arrow-turn-right"></i>Comment Recruter</a>
-                    </li>
-                    <li><a href="./marchetalent.html"><i class="fa fa-arrow-turn-right"> </i>Marché des talents</a></li>
+                    <li><a href="./commentrecruter.html">Comment Recruter</a></li>
+                    <li><a href="./marchetalent.html">Marché des talents</a></li>
                 </ul>
             </div>
             <div class="footer-toggle">
                 <h5>Pour les candidats</h5>
                 <ul class="dropdown-list">
-                    <li><a href="./commentsefairerecruter.html"><i class="fa fa-arrow-turn-right"> </i>Comment se fair
-                            recruter</a></li>
+                    <li><a href="./commentsefairerecruter.html">Comment se fair recruter</a></li>
                     <!-- <li>Marché des talents</li> -->
                 </ul>
             </div>
             <div class="footer-toggle">
                 <h5>Notre Entreprise</h5>
                 <ul class="dropdown-list">
-                    <li><a href="./manifestoetequipe.html"><i class="fa fa-arrow-turn-right"> </i>Manifesto</a></li>
-                    <li><a href="./manifestoetequipe.html"><i class="fa fa-arrow-turn-right"> </i>Equipe</a></li>
-                    <li><a href="./contact.html"><i class="fa fa-arrow-turn-right"> </i>Contact</a></li>
+                    <li><a href="./manifestoetequipe.html">Manifesto</a></li>
+                    <li><a href="./manifestoetequipe.html">Equipe</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
