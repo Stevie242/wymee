@@ -1246,15 +1246,25 @@ body {
 }
 
 .register .register-body #for-talent .form-drag-drop label {
-    width: 250px;
+    padding: 10px 15px;
     height: 75px;
     border: 2px dashed gray;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    transition: ease-in-out .3s;
+    min-width: 345px;
 }
 
-.register .register-body #for-talent .form-drag-drop {}
+.register .register-body #for-talent .form-drag-drop label #spinner {
+    display: none;
+}
+
+.register .register-body #for-talent .form-drag-drop label.drag-over,
+.register .register-body #for-talent .form-drag-drop label:hover {
+    background-color: #5e5c5c5e;
+}
 
 .register .register-body #for-talent .form-drag-drop input {
     visibility: hidden;
@@ -2314,42 +2324,49 @@ body {
 .section-all-skill .all-skill-body .list-skill {}
 
 /* Section recruitment */
-.section-recruitment{
+.section-recruitment {
     padding: 20px 100px;
 }
-.section-recruitment .recruitment-head{
+
+.section-recruitment .recruitment-head {
     text-align: center;
 }
-.section-recruitment .recruitment-head h5{
+
+.section-recruitment .recruitment-head h5 {
     font-size: 18px;
     color: var(--black-color);
     font-weight: 700;
 }
-.section-recruitment .recruitment-head .recruitment-search .group-form{
+
+.section-recruitment .recruitment-head .recruitment-search .group-form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.section-recruitment .recruitment-head .recruitment-search .group-form .group-input{
+
+.section-recruitment .recruitment-head .recruitment-search .group-form .group-input {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-bottom: 20px;
     gap: 20px;
 }
+
 .section-recruitment .recruitment-head .recruitment-search .group-form .group-input,
-.section-recruitment .recruitment-head .recruitment-search .group-form .group-input .input-form{
+.section-recruitment .recruitment-head .recruitment-search .group-form .group-input .input-form {
     width: 100%;
 }
+
 .section-recruitment .recruitment-head .recruitment-search .group-form .group-input select,
-.section-recruitment .recruitment-head .recruitment-search .group-form .group-input input{
+.section-recruitment .recruitment-head .recruitment-search .group-form .group-input input {
     padding: 10px 15px;
     outline: none;
     border: 2px solid var(--first-color);
     width: 100%;
 }
-.section-recruitment .recruitment-head .recruitment-search .group-form .input-button button{
+
+.section-recruitment .recruitment-head .recruitment-search .group-form .input-button button {
     padding: 10px 15px;
     border: none;
     color: var(--white-color);
@@ -2358,22 +2375,30 @@ body {
     border-radius: 20px;
     transition: ease-in-out .3s;
 }
-.section-recruitment .recruitment-head .recruitment-search .group-form .input-button button:hover{
+
+.section-recruitment .recruitment-head .recruitment-search .group-form .input-button button:hover {
     background-color: var(--first-color-2);
 }
-.section-recruitment .recruitment-head .recruitment-search p{
+
+.section-recruitment .recruitment-head .recruitment-search p {
     display: block;
     margin: 20px 0;
     font-size: 16px;
 }
-.section-recruitment .recruitment-head .recruitment-search .form-drag-drop{
+
+.section-recruitment .recruitment-head .recruitment-search .form-drag-drop {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     /* margin-top: 20px; */
 }
-.section-recruitment .recruitment-head .recruitment-search .form-drag-drop label{
+
+.section-recruitment .recruitment-head .recruitment-search .form-drag-drop label #spinner {
+    display: none;
+}
+
+.section-recruitment .recruitment-head .recruitment-search .form-drag-drop label {
     padding: 10px 15px;
     height: 75px;
     border: 2px dashed gray;
@@ -2382,14 +2407,19 @@ body {
     align-items: center;
     cursor: pointer;
     transition: ease-in-out .3s;
+    min-width: 345px;
 }
-.section-recruitment .recruitment-head .recruitment-search .form-drag-drop label:hover{
+
+.section-recruitment .recruitment-head .recruitment-search .form-drag-drop label.drag-over,
+.section-recruitment .recruitment-head .recruitment-search .form-drag-drop label:hover {
     background-color: #5e5c5c5e;
 }
-.section-recruitment .recruitment-head .recruitment-search .form-drag-drop input{
+
+.section-recruitment .recruitment-head .recruitment-search .form-drag-drop input {
     visibility: hidden;
 }
-.section-recruitment .recruitment-body > h5{
+
+.section-recruitment .recruitment-body>h5 {
     width: 100%;
     padding: 20px;
     text-align: center;
@@ -2399,37 +2429,43 @@ body {
     background: linear-gradient(to right, var(--second-color), var(--second-color-2));
 }
 
-.section-recruitment .recruitment-body .offer-list{
+.section-recruitment .recruitment-body .offer-list {
     gap: 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 
-.section-recruitment .recruitment-body .offer-list .offer{
+.section-recruitment .recruitment-body .offer-list .offer {
     padding: 10px;
     border: 2px solid var(--second-color-light);
     position: relative;
 }
-.section-recruitment .recruitment-body .offer-list .offer .published{
+
+.section-recruitment .recruitment-body .offer-list .offer .published {
     font-size: 14px;
 }
-.section-recruitment .recruitment-body .offer-list .offer .offer-title h5{
+
+.section-recruitment .recruitment-body .offer-list .offer .offer-title h5 {
     font-size: 20px;
     font-weight: 700;
     /* color: var(--black-color); */
 }
-.section-recruitment .recruitment-body .offer-list .offer .offer-details{
+
+.section-recruitment .recruitment-body .offer-list .offer .offer-details {
     position: relative;
 }
+
 .section-recruitment .recruitment-body .offer-list .offer .offer-details h6,
-.section-recruitment .recruitment-body .offer-list .offer .offer-details p{
+.section-recruitment .recruitment-body .offer-list .offer .offer-details p {
     font-size: 16px;
 }
-.section-recruitment .recruitment-body .offer-list .offer .offer-details h6 span{
+
+.section-recruitment .recruitment-body .offer-list .offer .offer-details h6 span {
     color: var(--first-color);
     font-weight: 700;
 }
-.section-recruitment .recruitment-body .offer-list .offer .offer-details .skill{
+
+.section-recruitment .recruitment-body .offer-list .offer .offer-details .skill {
     list-style: none;
     display: flex;
     justify-content: start;
@@ -2437,7 +2473,8 @@ body {
     padding-left: 0px !important;
     margin-bottom: 0 !important;
 }
-.section-recruitment .recruitment-body .offer-list .offer .offer-details .skill li{
+
+.section-recruitment .recruitment-body .offer-list .offer .offer-details .skill li {
     padding: 10px 15px;
     background-color: var(--second-color);
     border-radius: 20px;
@@ -2447,13 +2484,15 @@ body {
     justify-content: center;
     font-size: 14px;
 }
-.section-recruitment .recruitment-body .offer-list .offer .offer-action{
+
+.section-recruitment .recruitment-body .offer-list .offer .offer-action {
     margin-top: 0px !important;
     width: 100%;
     position: relative;
     bottom: -12px;
 }
-.section-recruitment .recruitment-body .offer-list .offer .offer-action a{
+
+.section-recruitment .recruitment-body .offer-list .offer .offer-action a {
     display: block;
     text-align: center;
     width: 100%;
@@ -2467,59 +2506,70 @@ body {
     border-top-right-radius: 20px;
     transition: ease-in-out .3s;
 }
-.section-recruitment .recruitment-body .offer-list .offer .offer-action a:hover{
+
+.section-recruitment .recruitment-body .offer-list .offer .offer-action a:hover {
     background-color: var(--second-color-2);
 }
 
 /* Section details offer */
-.section-detail-recruitment{
+.section-detail-recruitment {
     padding: 20px 100px;
 }
-.section-detail-recruitment .detail-recruitment-head{
+
+.section-detail-recruitment .detail-recruitment-head {
     text-align: center;
     margin: 20px 0;
 }
-.section-detail-recruitment .detail-recruitment-head span{
+
+.section-detail-recruitment .detail-recruitment-head span {
     font-size: 14px;
     padding: 10px;
     border-radius: 20px;
     background-color: var(--first-color-light);
 }
-.section-detail-recruitment .detail-recruitment-head h5{
+
+.section-detail-recruitment .detail-recruitment-head h5 {
     margin-top: 20px;
     font-size: 20px;
     color: var(--first-color);
     font-weight: 700;
     text-transform: uppercase;
 }
-.section-detail-recruitment .detail-recruitment-head ul{
+
+.section-detail-recruitment .detail-recruitment-head ul {
     list-style: none;
     display: flex;
     justify-content: center;
     padding: 0 !important;
 }
-.section-detail-recruitment .detail-recruitment-head ul li{
+
+.section-detail-recruitment .detail-recruitment-head ul li {
     font-size: 16px;
     color: var(--black-color);
 }
-.section-detail-recruitment .detail-recruitment-head ul li::after{
+
+.section-detail-recruitment .detail-recruitment-head ul li::after {
     content: '|';
     margin: 0px 10px;
 }
-.section-detail-recruitment .detail-recruitment-head ul li:last-child::after{
+
+.section-detail-recruitment .detail-recruitment-head ul li:last-child::after {
     content: '';
     margin: 0px;
 }
+
 .section-detail-recruitment .detail-recruitment-head ul li svg,
-.section-detail-recruitment .detail-recruitment-head ul li i{
+.section-detail-recruitment .detail-recruitment-head ul li i {
     font-size: 18px;
     color: var(--first-color);
 }
-.section-detail-recruitment .action-offer{
+
+.section-detail-recruitment .action-offer {
     display: flex;
     justify-content: center;
 }
-.section-detail-recruitment .action-offer a{
+
+.section-detail-recruitment .action-offer a {
     padding: 10px 15px;
     text-transform: uppercase;
     text-decoration: none;
@@ -2528,38 +2578,293 @@ body {
     font-size: 16px;
     transition: ease-in-out .3s;
 }
-.section-detail-recruitment .detail-recruitment-head .action-offer a:hover{
+
+.section-detail-recruitment .detail-recruitment-head .action-offer a:hover {
     background-color: var(--first-color-2);
 }
 
 .section-detail-recruitment .detail-recruitment-body {
     margin-top: 20px;
 }
-.section-detail-recruitment .detail-recruitment-body h6{
+
+.section-detail-recruitment .detail-recruitment-body h6 {
     color: var(--first-color);
     font-weight: 700;
     text-transform: uppercase;
     font-size: 18px;
 }
-.section-detail-recruitment .detail-recruitment-body p{
+
+.section-detail-recruitment .detail-recruitment-body p {
     font-size: 16px;
 }
-.section-detail-recruitment .detail-recruitment-body ul{
+
+.section-detail-recruitment .detail-recruitment-body ul {
     padding-left: 1rem !important;
-    list-style:decimal ;
+    list-style: decimal;
     font-weight: 700;
     margin-bottom: 15px !important;
 }
-.section-detail-recruitment .detail-recruitment-body ul li{
+
+.section-detail-recruitment .detail-recruitment-body ul li {
     margin-bottom: 15px !important;
 }
+
 .section-detail-recruitment .detail-recruitment-body .required-profile ul,
-.section-detail-recruitment .detail-recruitment-body ul ul{
-    list-style:circle;
+.section-detail-recruitment .detail-recruitment-body ul ul {
+    list-style: circle;
     font-weight: 300;
     margin-bottom: 0px !important;
 }
 
+/* Matching page */
+.section-match {
+    padding: 20px 100px;
+}
+
+.section-match .match-body {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 20px;
+}
+
+.section-match .match-body .left-match {
+    min-width: 250px;
+    background-color: rgb(235, 231, 231);
+    border-radius: 20px;
+}
+
+.section-match .match-body .left-match .profil-match .profil-match-head {
+    background: linear-gradient(to right, var(--second-color), var(--second-color-2));
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 20px;
+    color: var(--white-color);
+}
+
+.section-match .match-body .left-match .profil-match .profil-match-head .action-pro {
+    display: flex;
+    justify-content: end;
+    /* margin-bottom: 20px; */
+}
+
+.section-match .match-body .left-match .profil-match .profil-match-head .action-pro button,
+.section-match .match-body .left-match .profil-match .profil-match-head .action-pro a {
+    text-decoration: none;
+    background-color: var(--first-color);
+    padding: 5px 10px;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    color: var(--white-color);
+    transition: ease-in-out .3s;
+}
+
+.section-match .match-body .left-match .profil-match .profil-match-head .action-pro button:hover,
+.section-match .match-body .left-match .profil-match .profil-match-head .action-pro a:hover {
+    background-color: var(--first-color-2);
+}
+
+.section-match .match-body .left-match .profil-match .profil-match-head .prof img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--white-color);
+    padding: 5px;
+}
+
+.section-match .match-body .left-match .profil-match .profil-match-head .prof span {
+    font-size: 20px;
+    color: var(--white-color);
+    margin-left: 15px;
+}
+
+.section-match .match-body .left-match .profil-match .profil-match-body {
+    padding: 20px;
+}
+
+.section-match .match-body .left-match .profil-match .profil-match-body .location,
+.section-match .match-body .left-match .profil-match .profil-match-body .jobs {
+    margin-bottom: 20px;
+}
+
+.section-match .match-body .left-match .profil-match .profil-match-body .location h6,
+.section-match .match-body .left-match .profil-match .profil-match-body .skill h6,
+.section-match .match-body .left-match .profil-match .profil-match-body .jobs h6 {
+    font-size: 18px;
+    color: var(--black-color);
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.section-match .match-body .left-match .profil-match .profil-match-body .location h6 i,
+.section-match .match-body .left-match .profil-match .profil-match-body .location h6 svg,
+.section-match .match-body .left-match .profil-match .profil-match-body .skill h6 i,
+.section-match .match-body .left-match .profil-match .profil-match-body .skill h6 svg,
+.section-match .match-body .left-match .profil-match .profil-match-body .jobs h6 i,
+.section-match .match-body .left-match .profil-match .profil-match-body .jobs h6 svg {
+    color: var(--black-color);
+    margin-right: 10px;
+}
+
+.section-match .match-body .left-match .profil-match .profil-match-body .location .list-locations ul,
+.section-match .match-body .left-match .profil-match .profil-match-body .skill .list-skills ul,
+.section-match .match-body .left-match .profil-match .profil-match-body .jobs .list-jobs ul {
+    padding-left: 0 !important;
+    list-style: none;
+}
+
+.section-match .match-body .left-match .profil-match .profil-match-body .location .list-locations ul li,
+.section-match .match-body .left-match .profil-match .profil-match-body .skill .list-skills ul li,
+.section-match .match-body .left-match .profil-match .profil-match-body .jobs .list-jobs ul li {
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: var(--first-color-light);
+    border-radius: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--black-color);
+}
+
+.section-match .match-body .left-match .profil-match .profil-match-body .location .list-locations ul li button,
+.section-match .match-body .left-match .profil-match .profil-match-body .skill .list-skills ul li button,
+.section-match .match-body .left-match .profil-match .profil-match-body .jobs .list-jobs ul li button {
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    transition: ease-in-out .3s;
+}
+
+.section-match .match-body .left-match .profil-match .profil-match-body .location .list-locations ul li button:hover,
+.section-match .match-body .left-match .profil-match .profil-match-body .skill .list-skills ul li button:hover,
+.section-match .match-body .left-match .profil-match .profil-match-body .jobs .list-jobs ul li button:hover {
+    color: #F80000;
+}
+
+.section-match .match-body .left-match .profil-match .profil-match-body .location .add-location,
+.section-match .match-body .left-match .profil-match .profil-match-body .skill .add-skill .add-action,
+.section-match .match-body .left-match .profil-match .profil-match-body .jobs .add-job .add-action {
+    position: relative;
+}
+
+.section-match .match-body .left-match .profil-match .profil-match-body .location .add-location input,
+.section-match .match-body .left-match .profil-match .profil-match-body .skill .add-skill div input,
+.section-match .match-body .left-match .profil-match .profil-match-body .jobs .add-job div input {
+    width: 100%;
+    position: relative;
+    padding: 10px 15px;
+    outline: none;
+}
+
+.section-match .match-body .left-match .profil-match .profil-match-body .location .add-location button,
+.section-match .match-body .left-match .profil-match .profil-match-body .skill .add-skill button,
+.section-match .match-body .left-match .profil-match .profil-match-body .jobs .add-job button {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    padding: 10px 10px;
+    background-color: var(--second-color);
+    color: var(--white-color);
+    border: 2px solid var(--second-color);
+    font-size: 16px;
+    transition: ease-in-out .3s;
+}
+
+.section-match .match-body .left-match .profil-match .profil-match-body .location .add-location button:hover,
+.section-match .match-body .left-match .profil-match .profil-match-body .skill .add-skill button:hover,
+.section-match .match-body .left-match .profil-match .profil-match-body .jobs .add-job button:hover {
+    background-color: var(--second-color-2);
+    border: 2px solid var(--second-color-2);
+}
+
+.section-match .match-body .right-match .offer-list {
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.section-match .match-body .right-match .offer-list .offer {
+    padding: 10px;
+    border: 2px solid var(--second-color-light);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: relative;
+}
+
+.section-match .match-body .right-match .offer-list .offer .published {
+    font-size: 14px;
+}
+
+.section-match .match-body .right-match .offer-list .offer .offer-title h5 {
+    font-size: 20px;
+    font-weight: 700;
+    /* color: var(--black-color); */
+}
+
+.section-match .match-body .right-match .offer-list .offer .offer-details {
+    position: relative;
+}
+
+.section-match .match-body .right-match .offer-list .offer .offer-details h6,
+.section-match .match-body .right-match .offer-list .offer .offer-details p {
+    font-size: 16px;
+}
+
+.section-match .match-body .right-match .offer-list .offer .offer-details h6 span {
+    color: var(--first-color);
+    font-weight: 700;
+}
+
+.section-match .match-body .right-match .offer-list .offer .offer-details .skill {
+    list-style: none;
+    display: flex;
+    justify-content: start;
+    column-gap: 20px;
+    padding-left: 0px !important;
+    margin-bottom: 0 !important;
+}
+
+.section-match .match-body .right-match .offer-list .offer .offer-details .skill li {
+    padding: 10px 15px;
+    background-color: var(--second-color);
+    border-radius: 20px;
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.section-match .match-body .right-match .offer-list .offer .offer-action {
+    margin-top: 0px !important;
+    width: 100%;
+    position: relative;
+    bottom: -12px;
+}
+
+.section-match .match-body .right-match .offer-list .offer .offer-action a {
+    display: block;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    font-size: 18px;
+    background-color: var(--second-color);
+    color: var(--white-color);
+    padding: 10px;
+    /* border: 2px solid var(--second-color-light); */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    transition: ease-in-out .3s;
+}
+
+.section-match .match-body .right-match .offer-list .offer .offer-action a:hover {
+    background-color: var(--second-color-2);
+}
+
+.section-match .match-foot {}
+
+.section-match .match-foot {}
 
 /* Mobile start */
 @media only screen and (max-width: 768px) {
@@ -3896,25 +4201,28 @@ body {
     }
 
     /* Section recruitment */
-    .section-recruitment{
+    .section-recruitment {
         padding: 20px;
     }
-    .section-recruitment .recruitment-head .recruitment-search .group-form .group-input{
+
+    .section-recruitment .recruitment-head .recruitment-search .group-form .group-input {
         display: flex;
         flex-direction: column;
         justify-content: center;
         margin-bottom: 20px;
         gap: 20px;
     }
-    .section-recruitment .recruitment-body .offer-list{
+
+    .section-recruitment .recruitment-body .offer-list {
         gap: 20px;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
+
     /* Section details offer */
-.section-detail-recruitment{
-    padding: 20px;
-}
+    .section-detail-recruitment {
+        padding: 20px;
+    }
 }
 
 @media only screen and (max-width: 940px) {
@@ -4138,8 +4446,20 @@ body {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
-    .section-recruitment{
+
+    .section-recruitment {
         padding: 20px;
+    }
+
+    /* Matching page */
+    .section-match {
+        padding: 10px;
+    }
+
+    .section-match .match-body {
+        display: grid;
+        grid-template-columns: repeat(1 , 1fr);
+        gap: 20px;
     }
 }
 
@@ -4162,16 +4482,18 @@ body {
         position: relative;
         justify-items: center;
     }
-        /* All Skill */
-.section-all-skill{
-    padding: 20px;
-}
-.section-all-skill .all-skill-body{
-    margin-top: 30px;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 20px;
-}
+
+    /* All Skill */
+    .section-all-skill {
+        padding: 20px;
+    }
+
+    .section-all-skill .all-skill-body {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
 }
 
 /* Mobile end */

@@ -130,12 +130,17 @@ Trouver la meilleure entreprise pour le talent et le meilleur talent pour l'entr
                     </div>
                 </form>
                 <p>Ou</p>
-                <form action="#">
+                <form action="./matching.html" id="matchingForm">
                     <div class="form-drag-drop">
-                        <label for="cv">
-                            Ajoutez votre cv on s'occupe du reste
+                        <label for="fileInputCv" id="drag-container">
+                            <div id="draggable-element" draggable="true">
+                                <div id="spinner" class="spinner-border" role="status">
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+                                <span id="file-name-text">Ajoutez votre cv on s'occupe du reste</span>
+                            </div>
                         </label>
-                        <input type="file" name="cv" id="cv">
+                        <input type="file" name="cv" id="fileInputCv">
                     </div>
                 </form>
             </div>
