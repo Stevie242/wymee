@@ -128,13 +128,17 @@ if (dragContainer != null) {
         spinner.style.display = 'inline-block';
         fileNameText.style.display = 'none';
   
-        // Simulation d'un délai (remplacez cela par votre logique réelle)
+        // Simulation d'un délai
         setTimeout(() => {
           // Affiche le nom du fichier et cache le spinner une fois le traitement terminé
           fileNameText.textContent = `PDF File: ${fileName}`;
           spinner.style.display = 'none';
           fileNameText.style.display = 'inline-block';
-        }, 2000); // Remplacez 2000 par la durée réelle de votre traitement
+        }, 2000); // La durée réelle de votre traitement
+        //Redirection vers la page matching
+        setTimeout(()=>{
+          myForm.submit();
+        }, 3000);
       } else {
         alert('Veuillez sélectionner un fichier PDF.');
       }
