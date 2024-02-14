@@ -108,13 +108,13 @@ if (dragContainer != null) {
     const files = e.target.files;
     handleFiles(files);
   });
-
+  /*
   myForm.addEventListener('submit', (e) => {
     e.preventDefault();
     // Ajoutez ici la logique de soumission du formulaire si nécessaire
     alert('Form submitted!');
   });
-
+  */
   function handleFiles(files) {
     const spinner = document.getElementById('spinner');
     const fileNameText = document.getElementById('file-name-text');
@@ -356,8 +356,6 @@ if (loader !=null) {
             if (width === 115) {
                 clearInterval(interval);
                 loader.style.display = 'none';
-
-                // Affichez le contenu du site ici
             }
         }, 15);
 }

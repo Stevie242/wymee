@@ -24,14 +24,14 @@ Trouver la meilleure entreprise pour le talent et le meilleur talent pour l'entr
     <!-- Styles css end -->
 </head>
 <body>
-    <div id="loader">
+    <!-- <div id="loader">
         <div class="loader-img">
             <img src="./assets/img/logo/logo.png" alt="Logo WyMee">
         </div>
         <div id="progress-bar">
             <span></span>
         </div>
-    </div>
+    </div> -->
     <section class="register">
         <div class="register-head">
             <div class="logo">
@@ -56,10 +56,199 @@ Trouver la meilleure entreprise pour le talent et le meilleur talent pour l'entr
                                 <div id="spinner" class="spinner-border" role="status">
                                     <span class="sr-only">Loading...</span>
                                 </div>
-                                <span id="file-name-text">Ajoutez votre cv on s'occupe du reste</span>
+                                <!-- <span id="file-name-text">Ajoutez votre cv on s'occupe du reste</span> -->
+                                <div id="file-name-text">
+                                    <span>Ajoutez votre cv on s'occupe du reste</span>
+                                    <div>
+                                        <span>Glisser-déposer votre CV dans la zone</span>
+                                        <span>OU</span>
+                                        <span>Choisir un fichier</span>
+                                        <!-- <span>(facultatif)</span> -->
+                                    </div>
+                                </div>
                             </div>
                         </label>
                         <input type="file" name="cv" id="fileInputCv">
+                    </div>
+                    <div class="register-info">
+                        <div class="personal-info">
+                            <div class="head">
+                                <h6>Informations personnelles</h6>
+                            </div>
+                            <div class="body">
+                                <div class="input-form">
+                                    <label for="firstname">Prénom<span>*</span></label>
+                                    <input type="text" id="firstname" placeholder="Votre prénom">
+                                </div>
+                                <div class="input-form">
+                                    <label for="lastname">Nom<span>*</span></label>
+                                    <input type="text" id="lastname" placeholder="Votre nom">
+                                </div>
+                                <div class="input-form">
+                                    <label for="email">E-mail<span>*</span></label>
+                                    <input type="email" id="email" placeholder="Votre email">
+                                </div>
+                                <div class="input-form">
+                                    <label for="email-confirmation">Confirmez e-mail<span>*</span></label>
+                                    <input type="email" id="email-confirmation" placeholder="Confirmez votre email">
+                                </div>
+                                <div class="input-form">
+                                    <label for="position">Lieu de résidence<span>*</span></label>
+                                    <input type="text" id="position" placeholder="Votre localisation">
+                                </div>
+                                <div class="input-form">
+                                    <label for="phone">Numéro de téléphone<span>*</span></label>
+                                    <input type="tel" id="phone" placeholder="Votre numéro de téléphone">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="experience-info">
+                            <div class="head">
+                                <h6>Expérience professionnelle</h6>
+                                <button type="button"><i class="fa fa-plus"></i>Ajouter</button>
+                            </div>
+                            <div class="body">
+                                <div class="list-xp" id="list-xp">
+                                    <div class="experience-detail">
+                                        <div class="group-input">
+                                            <div class="input-form">
+                                                <label>Developpeur Java</label>
+                                                <label>2022 - 2024</label>
+                                                <input type="text" name="date">
+                                                <input type="text"name="title">
+                                            </div>
+                                            <div class="input-form">
+                                                <label>Ubisoft</label>
+                                                <label>Paris 28 rue Armand Carrel</label>
+                                                <input type="text" name="sociaty">
+                                                <input type="text" name="address">
+                                            </div>
+                                            <div class="input-form">
+                                                <span>J'avais pour rôle de concevoir, développer et maintenir du code Java pour des jeux vidéo </span>
+                                                <textarea name="description"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="action">
+                                            <button type="button">
+                                                <i class="fa-solid fa-ellipsis"></i>
+                                            </button>
+                                            <div class="menu-action"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-xp-add" id="list-xp-add">
+                                    <div class="experience-add" id="experience-add">
+                                        <div class="place">
+                                            <input type="text" id="title-add" placeholder="Titre">
+                                            <input type="text" id="sociaty-add" placeholder="Nom de la société">
+                                        </div>
+                                        <input type="text" id="address-add" placeholder="Adresse de la société">
+                                        <textarea  id="description-add" placeholder="Description"></textarea>
+                                        <div class="place">
+                                            <input type="text" id="date-start-add" placeholder="Date debut MM/AAAA">
+                                            <input type="text" id="date-end-add" placeholder="Date fin MM/AAAA">
+                                        </div>
+                                        <div class="button-action">
+                                            <button type="button">Supprimer</button>
+                                            <button type="button">Ajouter</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="training-info">
+                            <div class="head">
+                                <h6>Formation</h6>
+                                <button type="button"><i class="fa fa-plus"></i>Ajouter</button>
+                            </div>
+                            <div class="body">
+                                <div class="list-training" id="list-training">
+                                    <div class="training-detail">
+                                        <div class="group-input">
+                                            <div class="input-form">
+                                                <label>Universté Nantes</label>
+                                                <label>2022 - 2024</label>
+                                                <input type="text" name="date">
+                                                <input type="text"name="school">
+                                            </div>
+                                            <div class="input-form">
+                                                <label>Informatique</label>
+                                                <label>Licence</label>
+                                                <input type="text" name="speciality">
+                                                <input type="text" name="level">
+                                            </div>
+                                            <div class="input-form">
+                                                <label class="none">Nantes, 23 rue recteur Schmitt</label>
+                                                <input type="text" name="school-city">
+                                                <input type="text" name="address">
+                                            </div>
+                                            <div class="input-form">
+                                                <span>Apprendre à concevoir, développer et maintenir du code Java pour des jeux vidéo </span>
+                                                <textarea name="description-b"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="action">
+                                            <button type="button">
+                                                <i class="fa-solid fa-ellipsis"></i>
+                                            </button>
+                                            <div class="menu-action"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-training-add" id="list-training-add">
+                                    <div class="training-add" id="training-add">
+                                        <div class="place">
+                                            <input type="text" id="school-add" placeholder="Nom de l'établissement">
+                                            <input type="text" id="speciality" placeholder="Formation">
+                                        </div>
+                                        <div class="place">
+                                            <input type="text" id="level-add" placeholder="Niveau d'étude">
+                                            <input type="text" id="address-add" placeholder="Adresse de l'établissement'">
+                                        </div>
+                                        <textarea  id="description-b-add" placeholder="Description"></textarea>
+                                        <div class="place">
+                                            <input type="text" id="date-start-add" placeholder="Date debut MM/AAAA">
+                                            <input type="text" id="date-end-add" placeholder="Date fin MM/AAAA">
+                                        </div>
+                                        <div class="button-action">
+                                            <button type="button">Supprimer</button>
+                                            <button type="button">Ajouter</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-info">
+                            <div class="head">
+                                <h6>Compétence</h6>
+                                <button type="button"><i class="fa fa-plus"></i>Ajouter</button>
+                            </div>
+                            <div class="body">
+                                <div class="skill-list">
+                                    <div class="skill-detail" id="skill-detail">
+                                        <span>Java</span>
+                                        <button class="deleteSkill"><i class="fa-solid fa-xmark"></i>
+                                    </div>
+                                    <div class="skill-detail" id="skill-detail">
+                                        <span>Java</span>
+                                        <button class="deleteSkill"><i class="fa-solid fa-xmark"></i>
+                                    </div>
+                                    <div class="skill-detail" id="skill-detail">
+                                        <span>Java</span>
+                                        <button class="deleteSkill"><i class="fa-solid fa-xmark"></i>
+                                    </div>
+                                </div>
+                                <div class="skill-list-add" id="skill-list-add">
+                                    <div class="skill-add">
+                                        <input type="text" id="skill-text" placeholder="Ajouter une compétence">
+                                        <div class="button-action">
+                                            <button type="button">Supprimer</button>
+                                            <button type="button">Ajouter</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="input-button">
                         <button type="submit">Créez votre WyMee</button>
