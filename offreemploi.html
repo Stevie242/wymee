@@ -27,6 +27,14 @@ Trouver la meilleure entreprise pour le talent et le meilleur talent pour l'entr
 </head>
 
 <body>
+    <div id="loader">
+        <div class="loader-img">
+            <img src="./assets/img/logo/logo.png" alt="Logo WyMee">
+        </div>
+        <div id="progress-bar">
+            <span></span>
+        </div>
+    </div>
     <!-- Top Bar start -->
     <header class="header" id="topBar">
         <div class="header-content">
@@ -147,7 +155,12 @@ Trouver la meilleure entreprise pour le talent et le meilleur talent pour l'entr
         </div>
         <div class="recruitment-body">
             <h5>Nos offres</h5>
-            <div class="offer-list">
+            <div class="d-flex justify-content-center my-4" id="zoneSpin">
+                <div id="spinner" class="spinner-border" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+            <div class="offer-list" id="offerList">
                 <div class="offer">
                     <span class="published">Publié il y'a 2 semaine</span>
                     <div class="offer-title">
@@ -382,7 +395,7 @@ Trouver la meilleure entreprise pour le talent et le meilleur talent pour l'entr
         </div>
         <div class="recruitment-foot">
             <div class="wymee-paginate">
-                <ul class="paginate-block">
+                <ul class="paginate-block" id="paginateWymee">
                     <li><a href="#" class="prev first">Précédent</a></li>
                     <li><a href="#" class="active">1</a></li>
                     <li><a href="#">2</a></li>

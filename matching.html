@@ -82,8 +82,8 @@ Trouver la meilleure entreprise pour le talent et le meilleur talent pour l'entr
                 <div class="profil-match">
                     <div class="profil-match-head">
                         <div class="action-pro">
-                            <button><i class="fa-solid fa-xmark"></i></button>
-                            <!-- <a href="#"><i class="fa-solid fa-xmark"></i></a> -->
+                            <!-- <button id="deleteMatch"><i class="fa-solid fa-xmark"></i></button> -->
+                            <a href="./offreemploi.html"><i class="fa-solid fa-xmark"></i></a>
                         </div>
                         <div class="prof">
                             <img src="./assets/img/man-2.png" alt="profil talent">
@@ -94,54 +94,48 @@ Trouver la meilleure entreprise pour le talent et le meilleur talent pour l'entr
                         <div class="location">
                             <h6><i class="fa-solid fa-briefcase"></i>Lieux de travail</h6>
                             <div class="list-locations">
-                                <ul>
-                                    <li>Paris<button><i class="fa-solid fa-xmark"></i></button></li>
+                                <ul id="listLocation">
+                                    <li><span>Paris</span><button class="deleteLocationBtn"><i class="fa-solid fa-xmark"></i></button>
                                 </ul>
                             </div>
                             <div class="add-location">
-                                <form action="#" id="add-location">
-                                    <div class="add-action">
-                                        <input type="text" placeholder="Ajouter une ville">
-                                        <button type="button">+</button>
-                                    </div>
-                                </form>
+                                <div class="add-action">
+                                    <input type="text" placeholder="Ajouter une ville" id="addLocationText">
+                                    <button type="button" id="addLocationBtn">+</button>
+                                </div>
                             </div>
                         </div>
                         <div class="jobs">
                             <h6><i class="fa-solid fa-briefcase"></i>Vos jobs</h6>
                             <div class="list-jobs">
-                                <ul>
-                                    <li>Developpeur Front-End <button><i class="fa-solid fa-xmark"></i></button></li>
+                                <ul id="listJob">
+                                    <li>Developpeur Front-End <button class="deleteJobBtn"><i class="fa-solid fa-xmark"></i></button>
                                 </ul>
                             </div>
                             <div class="add-job">
-                                <form action="#" id="add-job">
-                                    <div class="add-action">
-                                        <input type="text" placeholder="Ajouter un job">
-                                        <button type="button">+</button>
-                                    </div>
-                                </form>
+                                <div class="add-action">
+                                    <input type="text" placeholder="Ajouter un job" id="addJobText">
+                                    <button type="button" id="addJobBtn">+</button>
+                                </div>
                             </div>
                         </div>
                         <div class="skill">
                             <h6><i class="fa-solid fa-gears"></i>Vos compétences</h6>
                             <div class="list-skills">
-                                <ul>
-                                    <li>Html <button><i class="fa-solid fa-xmark"></i></li>
-                                    <li>Css <button><i class="fa-solid fa-xmark"></i></li>
-                                    <li>JavaScript <button><i class="fa-solid fa-xmark"></i></li>
-                                    <li>Php <button><i class="fa-solid fa-xmark"></i></li>
-                                    <li>Python <button><i class="fa-solid fa-xmark"></i></li>
-                                    <li>Java <button><i class="fa-solid fa-xmark"></i></li>
+                                <ul id="listSkills">
+                                    <li><span>Html</span> <button class="deleteSkillBtn"><i class="fa-solid fa-xmark"></i></li>
+                                    <li><span>Css</span> <button class="deleteSkillBtn"><i class="fa-solid fa-xmark"></i></li>
+                                    <li><span>JavaScript</span> <button class="deleteSkillBtn"><i class="fa-solid fa-xmark"></i></li>
+                                    <li><span>Php</span> <button class="deleteSkillBtn"><i class="fa-solid fa-xmark"></i></li>
+                                    <li><span>Python</span> <button class="deleteSkillBtn"><i class="fa-solid fa-xmark"></i></li>
+                                    <li><span>Java</span> <button class="deleteSkillBtn"><i class="fa-solid fa-xmark"></i></li>
                                 </ul>
                             </div>
                             <div class="add-skill">
-                                <form action="#" id="add-skill">
-                                    <div class="add-action">
-                                        <input type="text" placeholder="Ajouter une compétence">
-                                        <button type="button">+</button>
-                                    </div>
-                                </form>
+                                <div class="add-action">
+                                    <input type="text" placeholder="Ajouter une compétence" id="addSkillText">
+                                    <button type="button" id="addSkillBtn">+</button>
+                                </div>
                             </div>
                         </div>
                     </div>
