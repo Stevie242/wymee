@@ -105,17 +105,17 @@ Trouver la meilleure entreprise pour le talent et le meilleur talent pour l'entr
                         <div class="experience-info">
                             <div class="head">
                                 <h6>Expérience professionnelle</h6>
-                                <button type="button"><i class="fa fa-plus"></i>Ajouter</button>
+                                <!-- <button type="button"><i class="fa fa-plus"></i>Ajouter</button> -->
                             </div>
                             <div class="body">
                                 <div class="list-xp" id="list-xp">
-                                    <div class="experience-detail">
+                                    <!-- <div class="experience-detail">
                                         <div class="group-input">
                                             <div class="input-form">
                                                 <label>Developpeur Java</label>
                                                 <label>2022 - 2024</label>
-                                                <input type="text" name="date">
                                                 <input type="text"name="title">
+                                                <input type="text" name="date">
                                             </div>
                                             <div class="input-form">
                                                 <label>Ubisoft</label>
@@ -134,7 +134,7 @@ Trouver la meilleure entreprise pour le talent et le meilleur talent pour l'entr
                                             </button>
                                             <div class="menu-action"></div>
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <div class="list-xp-add" id="list-xp-add">
                                     <div class="experience-add" id="experience-add">
@@ -149,8 +149,8 @@ Trouver la meilleure entreprise pour le talent et le meilleur talent pour l'entr
                                             <input type="text" id="date-end-add" placeholder="Date fin MM/AAAA">
                                         </div>
                                         <div class="button-action">
-                                            <button type="button">Supprimer</button>
-                                            <button type="button">Ajouter</button>
+                                            <button type="button" id="del-xp">Supprimer</button>
+                                            <button type="button" id="add-xp">Ajouter</button>
                                         </div>
                                     </div>
                                 </div>
@@ -159,17 +159,17 @@ Trouver la meilleure entreprise pour le talent et le meilleur talent pour l'entr
                         <div class="training-info">
                             <div class="head">
                                 <h6>Formation</h6>
-                                <button type="button"><i class="fa fa-plus"></i>Ajouter</button>
+                                <!-- <button type="button"><i class="fa fa-plus"></i>Ajouter</button> -->
                             </div>
                             <div class="body">
                                 <div class="list-training" id="list-training">
-                                    <div class="training-detail">
+                                    <!-- <div class="training-detail">
                                         <div class="group-input">
                                             <div class="input-form">
                                                 <label>Universté Nantes</label>
                                                 <label>2022 - 2024</label>
-                                                <input type="text" name="date">
                                                 <input type="text"name="school">
+                                                <input type="text" name="date">
                                             </div>
                                             <div class="input-form">
                                                 <label>Informatique</label>
@@ -193,26 +193,26 @@ Trouver la meilleure entreprise pour le talent et le meilleur talent pour l'entr
                                             </button>
                                             <div class="menu-action"></div>
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <div class="list-training-add" id="list-training-add">
                                     <div class="training-add" id="training-add">
                                         <div class="place">
                                             <input type="text" id="school-add" placeholder="Nom de l'établissement">
-                                            <input type="text" id="speciality" placeholder="Formation">
+                                            <input type="text" id="speciality-add" placeholder="Formation">
                                         </div>
                                         <div class="place">
                                             <input type="text" id="level-add" placeholder="Niveau d'étude">
-                                            <input type="text" id="address-add" placeholder="Adresse de l'établissement'">
+                                            <input type="text" id="training-address-add" placeholder="Adresse de l'établissement'">
                                         </div>
                                         <textarea  id="description-b-add" placeholder="Description"></textarea>
                                         <div class="place">
-                                            <input type="text" id="date-start-add" placeholder="Date debut MM/AAAA">
-                                            <input type="text" id="date-end-add" placeholder="Date fin MM/AAAA">
+                                            <input type="text" id="training-date-start-add" placeholder="Date debut MM/AAAA">
+                                            <input type="text" id="training-date-end-add" placeholder="Date fin MM/AAAA">
                                         </div>
                                         <div class="button-action">
-                                            <button type="button">Supprimer</button>
-                                            <button type="button">Ajouter</button>
+                                            <button type="button" id="delTraining">Supprimer</button>
+                                            <button type="button" id="addTraining">Ajouter</button>
                                         </div>
                                     </div>
                                 </div>
@@ -221,29 +221,32 @@ Trouver la meilleure entreprise pour le talent et le meilleur talent pour l'entr
                         <div class="skill-info">
                             <div class="head">
                                 <h6>Compétence</h6>
-                                <button type="button"><i class="fa fa-plus"></i>Ajouter</button>
+                                <!-- <button type="button" id="skillAddForm"><i class="fa fa-plus"></i>Ajouter</button> -->
                             </div>
                             <div class="body">
-                                <div class="skill-list">
-                                    <div class="skill-detail" id="skill-detail">
+                                <div class="skill-list" id="skillList">
+                                    <!-- <div class="skill-detail" id="skillDetail">
+                                        <input type="text" class="d-none" name="skill">
                                         <span>Java</span>
-                                        <button class="deleteSkill"><i class="fa-solid fa-xmark"></i>
+                                        <button class="deleteSkill" type="button"><i class="fa-solid fa-xmark"></i>
                                     </div>
-                                    <div class="skill-detail" id="skill-detail">
+                                    <div class="skill-detail" id="skillDetail">
+                                        <input type="text" class="d-none" name="skill">
                                         <span>Java</span>
-                                        <button class="deleteSkill"><i class="fa-solid fa-xmark"></i>
+                                        <button class="deleteSkill" type="button"><i class="fa-solid fa-xmark"></i>
                                     </div>
-                                    <div class="skill-detail" id="skill-detail">
+                                    <div class="skill-detail" id="skillDetail">
+                                        <input type="text" class="d-none" name="skill">
                                         <span>Java</span>
-                                        <button class="deleteSkill"><i class="fa-solid fa-xmark"></i>
-                                    </div>
+                                        <button class="deleteSkill" type="button"><i class="fa-solid fa-xmark"></i>
+                                    </div> -->
                                 </div>
                                 <div class="skill-list-add" id="skill-list-add">
                                     <div class="skill-add">
-                                        <input type="text" id="skill-text" placeholder="Ajouter une compétence">
+                                        <input type="text" id="skillText" placeholder="Ajouter une compétence">
                                         <div class="button-action">
-                                            <button type="button">Supprimer</button>
-                                            <button type="button">Ajouter</button>
+                                            <button type="button" id="delSkill" class="delSkill">Supprimer</button>
+                                            <button type="button" id="addSkill">Ajouter</button>
                                         </div>
                                     </div>
                                 </div>

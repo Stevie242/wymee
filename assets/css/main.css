@@ -1633,17 +1633,6 @@ body {
     margin: 10px 0;
 }
 
-.register .register-body #for-talent .register-info .experience-info {}
-
-.register .register-body #for-talent .register-info .skill-info,
-.register .register-body #for-talent .register-info .training-info,
-.register .register-body #for-talent .register-info .experience-info,
-.register .register-body #for-talent .register-info .personal-info {}
-
-.register .register-body #for-talent .register-info {}
-
-.register .register-body #for-talent .register-info {}
-
 .register .register-body form .input-button {
     display: flex;
     justify-content: center;
