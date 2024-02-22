@@ -42,10 +42,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var btnTalent = document.getElementById('talent');
   var btnBusiness = document.getElementById('business');
-
+  const pageReg = document.getElementById('pageReg');
+  pageReg.style.height =  '100vh';
   if (btnTalent != null || btnBusiness != null) {
     btnTalent.addEventListener('click', function (event) {
       event.stopPropagation();
+      pageReg.style.height =  'inherit';
       btnBusiness.classList.remove('active');
       btnTalent.classList.add('active');
       var showTalent = document.getElementById('for-talent');
@@ -55,6 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     btnBusiness.addEventListener('click', function (event) {
       event.stopPropagation();
+      pageReg.style.height =  'inherit';
       btnTalent.classList.remove('active');
       btnBusiness.classList.add('active');
       var showTalent = document.getElementById('for-talent');
@@ -595,6 +598,7 @@ if (zSpinner != null) {
 }
 
 
+
 const loader = document.getElementById('loader');
 if (loader != null) {
   const progressBar = document.getElementById('progress-bar');
@@ -622,3 +626,31 @@ if (loader != null) {
     }
   }, 15);
 }
+
+
+let currentFormStep = 1;
+
+function showStep(stepNumber) {
+    // Masquer toutes les étapes
+    document.querySelectorAll('.register-info-step').forEach(step => step.style.display = 'none');
+
+    // Afficher l'étape actuelle
+    document.getElementById(`info-step-${stepNumber}`).style.display = 'block';
+}
+
+function nextStep() {
+  if (currentFormStep < 3) {
+      currentFormStep++;
+      showStep(currentFormStep);
+  }
+}
+
+function prevStep() {
+  if (currentFormStep > 1) {
+      currentFormStep--;
+      showStep(currentFormStep);
+  }
+}
+
+// Afficher la première étape au chargement de la page
+showStep(currentFormStep);

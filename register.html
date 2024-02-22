@@ -32,7 +32,7 @@ Trouver la meilleure entreprise pour le talent et le meilleur talent pour l'entr
             <span></span>
         </div>
     </div> -->
-    <section class="register">
+    <section class="register" id="pageReg">
         <div class="register-head">
             <div class="logo">
                 <a href="./index.html">
@@ -49,217 +49,285 @@ Trouver la meilleure entreprise pour le talent et le meilleur talent pour l'entr
                 <button type="button" id="business">Entreprise</button>
             </div>
             <div id="for-talent">
-                <form action="#">
-                    <div class="form-drag-drop">
-                        <label for="fileInputCv" id="drag-container">
-                            <div id="draggable-element" draggable="true">
-                                <div id="spinner" class="spinner-border" role="status">
-                                    <span class="sr-only">Loading...</span>
-                                </div>
-                                <!-- <span id="file-name-text">Ajoutez votre cv on s'occupe du reste</span> -->
-                                <div id="file-name-text">
-                                    <span>Ajoutez votre cv on s'occupe du reste</span>
-                                    <div>
-                                        <span>Glisser-déposer votre CV dans la zone</span>
-                                        <span>OU</span>
-                                        <span>Choisir un fichier</span>
-                                        <!-- <span>(facultatif)</span> -->
-                                    </div>
-                                </div>
-                            </div>
-                        </label>
-                        <input type="file" name="cv" id="fileInputCv">
-                    </div>
+                <form action="./login.html">
                     <div class="register-info">
-                        <div class="personal-info">
-                            <div class="head">
-                                <h6>Informations personnelles</h6>
+                        <div class="register-info-step" id="info-step-1">
+                            <div class="form-drag-drop">
+                                <label for="fileInputCv" id="drag-container">
+                                    <div id="draggable-element" draggable="true">
+                                        <div id="spinner" class="spinner-border" role="status">
+                                            <span class="sr-only">Loading...</span>
+                                        </div>
+                                        <!-- <span id="file-name-text">Ajoutez votre cv on s'occupe du reste</span> -->
+                                        <div id="file-name-text">
+                                            <span>Ajoutez votre cv on s'occupe du reste</span>
+                                            <div>
+                                                <span>Glisser-déposer votre CV dans la zone</span>
+                                                <span>OU</span>
+                                                <span>Choisir un fichier</span>
+                                                <!-- <span>(facultatif)</span> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </label>
+                                <input type="file" name="cv" id="fileInputCv">
                             </div>
-                            <div class="body">
-                                <div class="input-form">
-                                    <label for="firstname">Prénom<span>*</span></label>
-                                    <input type="text" id="firstname" placeholder="Votre prénom">
+                            <div class="personal-info">
+                                <div class="head">
+                                    <h6>Informations personnelles</h6>
                                 </div>
-                                <div class="input-form">
-                                    <label for="lastname">Nom<span>*</span></label>
-                                    <input type="text" id="lastname" placeholder="Votre nom">
+                                <div class="body">
+                                    <div class="input-form">
+                                        <label for="firstname">Prénom<span>*</span></label>
+                                        <input type="text" id="firstname" placeholder="Votre prénom">
+                                    </div>
+                                    <div class="input-form">
+                                        <label for="lastname">Nom<span>*</span></label>
+                                        <input type="text" id="lastname" placeholder="Votre nom">
+                                    </div>
+                                    <div class="input-form">
+                                        <label for="email">E-mail<span>*</span></label>
+                                        <input type="email" id="email" placeholder="Votre email">
+                                    </div>
+                                    <div class="input-form">
+                                        <label for="email-confirmation">Confirmez e-mail<span>*</span></label>
+                                        <input type="email" id="email-confirmation" placeholder="Confirmez votre email">
+                                    </div>
+                                    <div class="input-form">
+                                        <label for="position">Lieu de résidence<span>*</span></label>
+                                        <input type="text" id="position" placeholder="Votre localisation">
+                                    </div>
+                                    <div class="input-form">
+                                        <label for="phone">Numéro de téléphone<span>*</span></label>
+                                        <input type="tel" id="phone" placeholder="Votre numéro de téléphone">
+                                    </div>
                                 </div>
-                                <div class="input-form">
-                                    <label for="email">E-mail<span>*</span></label>
-                                    <input type="email" id="email" placeholder="Votre email">
+                            </div>
+                            <div class="experience-info">
+                                <div class="head">
+                                    <h6>Expérience professionnelle</h6>
+                                    <!-- <button type="button"><i class="fa fa-plus"></i>Ajouter</button> -->
                                 </div>
-                                <div class="input-form">
-                                    <label for="email-confirmation">Confirmez e-mail<span>*</span></label>
-                                    <input type="email" id="email-confirmation" placeholder="Confirmez votre email">
+                                <div class="body">
+                                    <div class="list-xp" id="list-xp">
+                                        <!-- <div class="experience-detail">
+                                            <div class="group-input">
+                                                <div class="input-form">
+                                                    <label>Developpeur Java</label>
+                                                    <label>2022 - 2024</label>
+                                                    <input type="text"name="title">
+                                                    <input type="text" name="date">
+                                                </div>
+                                                <div class="input-form">
+                                                    <label>Ubisoft</label>
+                                                    <label>Paris 28 rue Armand Carrel</label>
+                                                    <input type="text" name="sociaty">
+                                                    <input type="text" name="address">
+                                                </div>
+                                                <div class="input-form">
+                                                    <span>J'avais pour rôle de concevoir, développer et maintenir du code Java pour des jeux vidéo </span>
+                                                    <textarea name="description"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="action">
+                                                <button type="button">
+                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                </button>
+                                                <div class="menu-action"></div>
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                    <div class="list-xp-add" id="list-xp-add">
+                                        <div class="experience-add" id="experience-add">
+                                            <div class="place">
+                                                <input type="text" id="title-add" placeholder="Titre">
+                                                <input type="text" id="sociaty-add" placeholder="Nom de la société">
+                                            </div>
+                                            <input type="text" id="address-add" placeholder="Adresse de la société">
+                                            <textarea  id="description-add" placeholder="Description"></textarea>
+                                            <div class="place">
+                                                <input type="text" id="date-start-add" placeholder="Date debut MM/AAAA">
+                                                <input type="text" id="date-end-add" placeholder="Date fin MM/AAAA">
+                                            </div>
+                                            <div class="button-action">
+                                                <button type="button" id="del-xp">Supprimer</button>
+                                                <button type="button" id="add-xp">Ajouter</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="input-form">
-                                    <label for="position">Lieu de résidence<span>*</span></label>
-                                    <input type="text" id="position" placeholder="Votre localisation">
+                            </div>
+                            <div class="training-info">
+                                <div class="head">
+                                    <h6>Formation</h6>
+                                    <!-- <button type="button"><i class="fa fa-plus"></i>Ajouter</button> -->
                                 </div>
-                                <div class="input-form">
-                                    <label for="phone">Numéro de téléphone<span>*</span></label>
-                                    <input type="tel" id="phone" placeholder="Votre numéro de téléphone">
+                                <div class="body">
+                                    <div class="list-training" id="list-training">
+                                        <!-- <div class="training-detail">
+                                            <div class="group-input">
+                                                <div class="input-form">
+                                                    <label>Universté Nantes</label>
+                                                    <label>2022 - 2024</label>
+                                                    <input type="text"name="school">
+                                                    <input type="text" name="date">
+                                                </div>
+                                                <div class="input-form">
+                                                    <label>Informatique</label>
+                                                    <label>Licence</label>
+                                                    <input type="text" name="speciality">
+                                                    <input type="text" name="level">
+                                                </div>
+                                                <div class="input-form">
+                                                    <label class="none">Nantes, 23 rue recteur Schmitt</label>
+                                                    <input type="text" name="school-city">
+                                                    <input type="text" name="address">
+                                                </div>
+                                                <div class="input-form">
+                                                    <span>Apprendre à concevoir, développer et maintenir du code Java pour des jeux vidéo </span>
+                                                    <textarea name="description-b"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="action">
+                                                <button type="button">
+                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                </button>
+                                                <div class="menu-action"></div>
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                    <div class="list-training-add" id="list-training-add">
+                                        <div class="training-add" id="training-add">
+                                            <div class="place">
+                                                <input type="text" id="school-add" placeholder="Nom de l'établissement">
+                                                <input type="text" id="speciality-add" placeholder="Formation">
+                                            </div>
+                                            <div class="place">
+                                                <input type="text" id="level-add" placeholder="Niveau d'étude">
+                                                <input type="text" id="training-address-add" placeholder="Adresse de l'établissement'">
+                                            </div>
+                                            <textarea  id="description-b-add" placeholder="Description"></textarea>
+                                            <div class="place">
+                                                <input type="text" id="training-date-start-add" placeholder="Date debut MM/AAAA">
+                                                <input type="text" id="training-date-end-add" placeholder="Date fin MM/AAAA">
+                                            </div>
+                                            <div class="button-action">
+                                                <button type="button" id="delTraining">Supprimer</button>
+                                                <button type="button" id="addTraining">Ajouter</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+                            </div>
+                            <div class="skill-info">
+                                <div class="head">
+                                    <h6>Compétence</h6>
+                                    <!-- <button type="button" id="skillAddForm"><i class="fa fa-plus"></i>Ajouter</button> -->
+                                </div>
+                                <div class="body">
+                                    <div class="skill-list" id="skillList">
+                                        <!-- <div class="skill-detail" id="skillDetail">
+                                            <input type="text" class="d-none" name="skill">
+                                            <span>Java</span>
+                                            <button class="deleteSkill" type="button"><i class="fa-solid fa-xmark"></i>
+                                        </div>
+                                        <div class="skill-detail" id="skillDetail">
+                                            <input type="text" class="d-none" name="skill">
+                                            <span>Java</span>
+                                            <button class="deleteSkill" type="button"><i class="fa-solid fa-xmark"></i>
+                                        </div>
+                                        <div class="skill-detail" id="skillDetail">
+                                            <input type="text" class="d-none" name="skill">
+                                            <span>Java</span>
+                                            <button class="deleteSkill" type="button"><i class="fa-solid fa-xmark"></i>
+                                        </div> -->
+                                    </div>
+                                    <div class="skill-list-add" id="skill-list-add">
+                                        <div class="skill-add">
+                                            <input type="text" id="skillText" placeholder="Ajouter une compétence">
+                                            <div class="button-action">
+                                                <button type="button" id="delSkill" class="delSkill">Supprimer</button>
+                                                <button type="button" id="addSkill">Ajouter</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-button">
+                                <button type="button" class="next" onclick="nextStep()">Suivant</button>
                             </div>
                         </div>
-                        <div class="experience-info">
-                            <div class="head">
-                                <h6>Expérience professionnelle</h6>
-                                <!-- <button type="button"><i class="fa fa-plus"></i>Ajouter</button> -->
-                            </div>
-                            <div class="body">
-                                <div class="list-xp" id="list-xp">
-                                    <!-- <div class="experience-detail">
-                                        <div class="group-input">
-                                            <div class="input-form">
-                                                <label>Developpeur Java</label>
-                                                <label>2022 - 2024</label>
-                                                <input type="text"name="title">
-                                                <input type="text" name="date">
-                                            </div>
-                                            <div class="input-form">
-                                                <label>Ubisoft</label>
-                                                <label>Paris 28 rue Armand Carrel</label>
-                                                <input type="text" name="sociaty">
-                                                <input type="text" name="address">
-                                            </div>
-                                            <div class="input-form">
-                                                <span>J'avais pour rôle de concevoir, développer et maintenir du code Java pour des jeux vidéo </span>
-                                                <textarea name="description"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="action">
-                                            <button type="button">
-                                                <i class="fa-solid fa-ellipsis"></i>
-                                            </button>
-                                            <div class="menu-action"></div>
-                                        </div>
-                                    </div> -->
+                        <div class="register-info-step" id="info-step-2">
+                            <div class="credential">
+                                <div class="credential-head">
+                                    <h6>Informations de connexion</h6>
                                 </div>
-                                <div class="list-xp-add" id="list-xp-add">
-                                    <div class="experience-add" id="experience-add">
-                                        <div class="place">
-                                            <input type="text" id="title-add" placeholder="Titre">
-                                            <input type="text" id="sociaty-add" placeholder="Nom de la société">
-                                        </div>
-                                        <input type="text" id="address-add" placeholder="Adresse de la société">
-                                        <textarea  id="description-add" placeholder="Description"></textarea>
-                                        <div class="place">
-                                            <input type="text" id="date-start-add" placeholder="Date debut MM/AAAA">
-                                            <input type="text" id="date-end-add" placeholder="Date fin MM/AAAA">
-                                        </div>
-                                        <div class="button-action">
-                                            <button type="button" id="del-xp">Supprimer</button>
-                                            <button type="button" id="add-xp">Ajouter</button>
-                                        </div>
+                                <div class="credential-body">
+                                    <div class="input-form">
+                                        <label for="pwd">Mot de passe</label>
+                                        <input type="password" id="pwd" placeholder="Mot de passe">
+                                    </div>
+                                    <div class="input-form">
+                                        <label for="pwd">Confirmez mot de passe</label>
+                                        <input type="password" id="pwd" placeholder="Mot de passe">
                                     </div>
                                 </div>
+                            </div>
+                            <div class="input-button">
+                                <button type="button" class="last" onclick="prevStep()">Précedent</button>
+                                <button type="submit">Créez votre WyMee</button>
                             </div>
                         </div>
-                        <div class="training-info">
-                            <div class="head">
-                                <h6>Formation</h6>
-                                <!-- <button type="button"><i class="fa fa-plus"></i>Ajouter</button> -->
-                            </div>
-                            <div class="body">
-                                <div class="list-training" id="list-training">
-                                    <!-- <div class="training-detail">
-                                        <div class="group-input">
-                                            <div class="input-form">
-                                                <label>Universté Nantes</label>
-                                                <label>2022 - 2024</label>
-                                                <input type="text"name="school">
-                                                <input type="text" name="date">
-                                            </div>
-                                            <div class="input-form">
-                                                <label>Informatique</label>
-                                                <label>Licence</label>
-                                                <input type="text" name="speciality">
-                                                <input type="text" name="level">
-                                            </div>
-                                            <div class="input-form">
-                                                <label class="none">Nantes, 23 rue recteur Schmitt</label>
-                                                <input type="text" name="school-city">
-                                                <input type="text" name="address">
-                                            </div>
-                                            <div class="input-form">
-                                                <span>Apprendre à concevoir, développer et maintenir du code Java pour des jeux vidéo </span>
-                                                <textarea name="description-b"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="action">
-                                            <button type="button">
-                                                <i class="fa-solid fa-ellipsis"></i>
-                                            </button>
-                                            <div class="menu-action"></div>
-                                        </div>
-                                    </div> -->
-                                </div>
-                                <div class="list-training-add" id="list-training-add">
-                                    <div class="training-add" id="training-add">
-                                        <div class="place">
-                                            <input type="text" id="school-add" placeholder="Nom de l'établissement">
-                                            <input type="text" id="speciality-add" placeholder="Formation">
-                                        </div>
-                                        <div class="place">
-                                            <input type="text" id="level-add" placeholder="Niveau d'étude">
-                                            <input type="text" id="training-address-add" placeholder="Adresse de l'établissement'">
-                                        </div>
-                                        <textarea  id="description-b-add" placeholder="Description"></textarea>
-                                        <div class="place">
-                                            <input type="text" id="training-date-start-add" placeholder="Date debut MM/AAAA">
-                                            <input type="text" id="training-date-end-add" placeholder="Date fin MM/AAAA">
-                                        </div>
-                                        <div class="button-action">
-                                            <button type="button" id="delTraining">Supprimer</button>
-                                            <button type="button" id="addTraining">Ajouter</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-info">
-                            <div class="head">
-                                <h6>Compétence</h6>
-                                <!-- <button type="button" id="skillAddForm"><i class="fa fa-plus"></i>Ajouter</button> -->
-                            </div>
-                            <div class="body">
-                                <div class="skill-list" id="skillList">
-                                    <!-- <div class="skill-detail" id="skillDetail">
-                                        <input type="text" class="d-none" name="skill">
-                                        <span>Java</span>
-                                        <button class="deleteSkill" type="button"><i class="fa-solid fa-xmark"></i>
-                                    </div>
-                                    <div class="skill-detail" id="skillDetail">
-                                        <input type="text" class="d-none" name="skill">
-                                        <span>Java</span>
-                                        <button class="deleteSkill" type="button"><i class="fa-solid fa-xmark"></i>
-                                    </div>
-                                    <div class="skill-detail" id="skillDetail">
-                                        <input type="text" class="d-none" name="skill">
-                                        <span>Java</span>
-                                        <button class="deleteSkill" type="button"><i class="fa-solid fa-xmark"></i>
-                                    </div> -->
-                                </div>
-                                <div class="skill-list-add" id="skill-list-add">
-                                    <div class="skill-add">
-                                        <input type="text" id="skillText" placeholder="Ajouter une compétence">
-                                        <div class="button-action">
-                                            <button type="button" id="delSkill" class="delSkill">Supprimer</button>
-                                            <button type="button" id="addSkill">Ajouter</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="input-button">
-                        <button type="submit">Créez votre WyMee</button>
                     </div>
                 </form>
             </div>
             <div id="for-business">
                 <form action="#">
+                    <h6>Informations de l'entreprise</h6>
+                    <div class="input-group">
+                        <div class="place">
+                            <div class="input-form">
+                                <label for="">Nom de l'entreprise</label>
+                                <input type="text" placeholder="Nom de l'entreprise">
+                            </div>
+                            <div class="input-form">
+                                <label for="">SIRET de l'entreprise</label>
+                                <input type="text" placeholder="SIRET de l'entreprise">
+                            </div>
+                        </div>
+                        <div class="place">
+                            <div class="input-form">
+                                <label for="">Adresse de l'entreprise</label>
+                                <input type="text" placeholder="Adresse de l'entreprise">
+                            </div>
+                            <div class="input-form">
+                                <label for="">Téléphone de l'entreprise</label>
+                                <input type="text" placeholder="Téléphone de l'entreprise">
+                            </div>
+                        </div>
+                    </div>
+                    <h6>Informations du déposant</h6>
+                    <div class="input-group">
+                        <div class="place">
+                            <div class="input-form">
+                                <label for="">Nom</label>
+                                <input type="text" placeholder="Nom du déposant">
+                            </div>
+                            <div class="input-form">
+                                <label for="">Email</label>
+                                <input type="email" placeholder="Email pro du déposant">
+                            </div>
+                        </div>
+                        <div class="input-form">
+                            <label for="">Piece jointe</label>
+                            <p>(PDF, fiche de poste, ou autre information relative à la fiche de poste)</p>
+                            <input class="form-control" type="file" multiple placeholder="PDF, fiche de poste, ou autre information relative à la fiche de poste">
+                        </div>
+                        <div class="input-form">
+                            <label for="">Message</label>
+                            <textarea placeholder="Description de la demande"></textarea>
+                        </div>
+                    </div>
                     <div class="input-button">
                         <button type="submit">Créez votre WyMee</button>
                     </div>

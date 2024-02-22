@@ -31,6 +31,12 @@
     font-family: var(--main-font);
 }
 
+select,
+input{
+    border: 1px solid;
+    border-color: #5e5e5e !important;
+}
+
 body {
     box-sizing: border-box;
     padding: 0;
@@ -291,6 +297,11 @@ body {
 
 .footer .footer-toggle .dropdown-list li a:hover {
     color: var(--second-color);
+}
+
+.footer .footer-toggle .dropdown-list li a svg,
+.footer .footer-toggle .dropdown-list li a i{
+    margin-right: 5px;
 }
 
 .footer .footer-foot {
@@ -1354,6 +1365,7 @@ body {
     padding-bottom: 20px;
 }
 
+.register .register-body #for-talent .register-info .credential .credential-head,
 .register .register-body #for-talent .register-info .skill-info .head,
 .register .register-body #for-talent .register-info .training-info .head,
 .register .register-body #for-talent .register-info .experience-info .head,
@@ -1363,7 +1375,7 @@ body {
     align-items: center;
     margin-bottom: 10px;
 }
-
+.register .register-body #for-talent .register-info .credential .credential-head h6,
 .register .register-body #for-talent .register-info .skill-info .head h6,
 .register .register-body #for-talent .register-info .training-info .head h6,
 .register .register-body #for-talent .register-info .experience-info .head h6,
@@ -1409,7 +1421,7 @@ body {
 .register .register-body #for-talent .register-info .personal-info .body .input-form {
     width: 100%;
     min-width: 220px;
-    max-width: 500px;
+    /* max-width: 500px; */
     display: flex;
     flex-direction: column;
 }
@@ -1571,7 +1583,7 @@ body {
 
 .register .register-body #for-talent .register-info .training-info .body .list-training-add .training-add .place input,
 .register .register-body #for-talent .register-info .experience-info .body .list-xp-add .experience-add .place input {
-    max-width: 500px;
+    max-width: 1050px;
 }
 
 .register .register-body #for-talent .register-info .skill-info .body .skill-list-add .skill-add .button-action,
@@ -1633,10 +1645,41 @@ body {
     margin: 10px 0;
 }
 
+.register .register-body #for-talent .register-info .credential{
+    margin-top: 20px;
+}
+.register .register-body #for-talent .register-info .credential .credential-body{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+.register .register-body #for-talent .register-info .credential .credential-body .input-form{
+    width: 100%;
+    min-width: 220px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+.register .register-body #for-talent .register-info .credential .credential-body .input-form label{
+    text-transform: initial;
+}
+.register .register-body #for-talent .register-info .credential .credential-body .input-form label span{
+    color: #F80000;
+    margin-left: 5px;
+}
+.register .register-body #for-talent .register-info .credential .credential-body .input-form input{
+    width: 100%;
+    outline: none;
+    padding: 5px 15px;
+}
+
 .register .register-body form .input-button {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px;
+    margin-top: 20px;
 }
 
 .register .register-body form .input-button button {
@@ -1648,6 +1691,9 @@ body {
     transition: ease-in-out .3s;
 }
 
+.register .register-body #for-talent .input-button button.last {
+    background-color: var(--first-color-light);
+}
 .register .register-body #for-talent .input-button button {
     background-color: var(--first-color);
 }
@@ -1656,7 +1702,51 @@ body {
     background-color: var(--first-color-2);
 }
 
-.register .register-body #for-business {}
+.register .register-body #for-business h6 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--second-color);
+}
+.register .register-body #for-business .input-group{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 100%;
+    /* margin-bottom: 20px; */
+}
+.register .register-body #for-business .input-group .place{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.register .register-body #for-business .input-group .input-form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.register .register-body #for-business .input-group .input-form p{
+    margin-bottom: 0px !important;
+    font-size: 13px;
+    color: gray;
+}
+.register .register-body #for-business .input-group .input-form input{
+    padding: 5px 15px;
+    outline: none;
+    width: 100%;
+}
+.register .register-body #for-business .input-group .input-form label{
+    text-transform: initial;
+}
+.register .register-body #for-business .input-group .input-form label span{
+    color: #F80000;
+    margin-left: 5px;
+}
+.register .register-body #for-business .input-group .input-form textarea{
+    padding: 5px 15px;
+    outline: none;
+    width: 100%;
+    height: 100px;
+}
 
 .register .register-body #for-business .input-button button {
     background-color: var(--second-color);
@@ -2611,7 +2701,8 @@ body {
     outline: none;
     font-size: 16px;
     border: none;
-    border-bottom: 3px solid var(--first-color-2);
+    border-bottom: 3px solid ;
+    border-color: var(--first-color-2) !important;
 }
 
 .section-contact .contact-body .form-contact .input-form textarea {
@@ -2684,7 +2775,6 @@ body {
     padding-left: 0px !important;
 }
 
-.section-all-skill .all-skill-body .list-skill {}
 
 /* Section recruitment */
 .section-recruitment {
@@ -2725,7 +2815,7 @@ body {
 .section-recruitment .recruitment-head .recruitment-search .group-form .group-input input {
     padding: 10px 15px;
     outline: none;
-    border: 2px solid var(--first-color);
+    border-color: var(--first-color) !important;
     width: 100%;
 }
 
@@ -4350,7 +4440,7 @@ body {
         justify-content: center;
         align-items: center;
         width: 100%;
-        padding: 20px;
+        padding: 0px !important;
     }
 
     .register .register-body .choose {
@@ -4406,8 +4496,6 @@ body {
         color: var(--white-color);
     }
 
-    .register .register-body #for-talent {}
-
     .register .register-body #for-talent .register-info .personal-info .body {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -4430,7 +4518,19 @@ body {
         width: 100%;
         gap: 20px;
     }
-
+    .register .register-body #for-talent .register-info .credential .credential-body{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+    .register .register-body form .input-button {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
     .register .register-body form .input-button button {
         width: 200px;
         padding: 10px 15px;
@@ -4448,7 +4548,11 @@ body {
         background-color: var(--first-color-2);
     }
 
-    .register .register-body #for-business {}
+    .register .register-body #for-business .input-group .place{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 0px;
+    }
 
     .register .register-body #for-business .input-button button {
         background-color: var(--second-color);
@@ -4871,6 +4975,11 @@ body {
 
     .create-talent-work {
         padding: 20px;
+    }
+
+    /* Page register */
+    .register .register-body {
+        padding: 0px !important;
     }
 }
 

@@ -1,0 +1,455 @@
+@font-face {
+    font-family: 'Museo';
+    src: url('./../assets/font/Museo700-Regular.otf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo';
+    src: url('./../assets/font/Museo300-Regular.otf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+:root {
+    /* Colors */
+    --first-color: #F0733B;
+    --first-color-2: #EB5C4F;
+    --first-color-3: #f1956a;
+    --first-color-4: #f84030;
+    --first-color-light: #fcb899e5;
+    --second-color: #E32481;
+    --second-color-2: #a00550;
+    --second-color-light: #df4b9293;
+    --black-color: #000000;
+    --white-color: #ffffff;
+    --gray-color: #a5a3a3;
+    /* Fonts */
+    --main-font: 'Museo';
+}
+
+* {
+    font-family: var(--main-font);
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: block;
+    position: relative;
+    overflow-x: hidden;
+}
+.content{
+    padding: 20px;
+}
+
+/* Header */
+header{
+    /* position: fixed; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--white-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    height: 82px;
+    
+}
+
+header .header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px !important;
+    width: 20%;
+}
+
+header .header-content button:hover {
+    color: var(--first-color-2);
+}
+header .header-content button {
+    display: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--black-color);
+    transition: ease-in-out .3s;
+}
+
+header .header-content button i,
+header .header-content button svg {
+    font-size: 30px;
+}
+
+
+header .logo{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+header .logo a{
+    text-decoration: none;
+}
+header .logo a img{
+    position: relative;
+    height: 50px;
+    width: 130px;
+}
+header .logo span{
+    position: absolute;
+    bottom: -5px;
+    right: -16px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: var(--main-font);
+    color: var(--black-color);
+}
+
+header .head-profil{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 20px !important;
+    gap: 20px;
+    width: 100%;
+}
+header .head-profil > button{
+    display: none;
+}
+header .head-profil .head-content{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+header .head-profil .navigation{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+header .head-profil .navigation a{
+    text-decoration: none;
+    transition: ease-in-out .3s;
+    color: var(--black-color);
+    font-size: 18px;
+}
+header .head-profil .navigation a.active{
+    font-weight: 700;
+}
+header .head-profil .navigation a.active,
+header .head-profil .navigation a:hover{
+    color: var(--first-color-2);
+}
+header .head-profil .notif-group{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+header .head-profil .notif{
+    position: relative;
+}
+header .head-profil .notif button{
+    padding: 5px !important;
+    border-radius: 7px;
+    border: 1px solid var(--gray-color);
+    cursor: pointer;
+    font-size: 18px;
+    position: relative;
+    transition: ease-in-out .3s;
+    background-color: transparent;
+}
+header .head-profil .notif button:hover{
+    border-color: var(--first-color-2);
+    background-color: var(--first-color-2);
+    color: var(--white-color);
+}
+header .head-profil .notif button .count span{
+    position: absolute;
+    top: -14px;
+    right: -16px;
+    font-size: 12px;
+    padding: 5px 7px;
+    background-color: var(--first-color);
+    color: var(--white-color) !important;
+    border-radius: 50%;
+}
+header .head-profil .notif .notif-list{
+    position: absolute;
+    display: none;
+    top: 40px;
+    left: 0px;
+    width: 100%;
+    min-width: 320px;
+    max-width: 320px;
+    padding: 10px;
+    border: 1px solid var(--gray-color);
+    border-radius: 20px;
+    background-color: var(--white-color);
+    height: 400px;
+    max-height: 400px;
+}
+header .head-profil .notif .notif-list ul{
+    list-style: none;
+}
+header .head-profil .mail-talent span{
+    font-size: 14px;
+}
+header .head-profil .profil-talent a{
+    text-decoration: none;
+}
+header .head-profil .profil-talent a img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+header .head-profil .profil-logout button{
+    border: none;
+    background: transparent;
+    font-size: 22px;
+    cursor: pointer;
+    color: var(--black-color);
+    transition: ease-in-out .3s;
+    outline: none;
+}
+header .head-profil .profil-logout button:hover{
+    color: var(--first-color-2);
+}
+/* Chat bot */
+.chat-bot{
+    position: absolute;
+    top: 80vh;
+    right: 20px;
+    z-index: 999;
+}
+.chat-bot .chat-btn{
+    position: relative;
+}
+.chat-bot .chat-btn span{
+    position: absolute;
+    top: -10px;
+    right: -4px;
+    border-radius: 50%;
+    background-color: #f00000;
+    color: var(--white-color);
+    font-size: 12px;
+    padding: 5px 8px;
+}
+.chat-bot .chat-btn button{
+    background-color: var(--first-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    box-shadow: -1px 1px 10px 3px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: ease-in-out .3s;
+}
+.chat-bot .chat-btn button:hover{
+    background-color: var(--first-color-2);
+}
+.chat-bot .chat-btn button svg,
+.chat-bot .chat-btn button i{
+    font-size:44px;
+    color: var(--white-color);
+}
+
+.chat-bot .chat-view{
+    display: none;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 300px;
+    height: 450px;
+    background-color: var(--white-color);
+    box-shadow: -1px 1px 10px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    border: 1px solid var(--gray-color);
+    overflow: hidden;
+}
+.chat-bot .chat-view .chat-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+    border-bottom: 2px solid rgb(219, 219, 219);
+    box-shadow: -1px 2px 14px 0px rgba(0, 0, 0, 0.3);
+}
+.chat-bot .chat-view .chat-head span{
+    text-transform: capitalize;
+    font-size: 18px;
+    color: var(--first-color-2);
+    font-weight: 700;
+}
+.chat-bot .chat-view .chat-head button{
+    background-color: var(--first-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 50%;
+    padding: 5px 8px;
+    transition: ease-in-out .3s;
+    cursor: pointer;
+}
+.chat-bot .chat-view .chat-head button:hover{
+    background-color: var(--first-color-2);
+}
+.chat-bot .chat-view .chat-head button svg,
+.chat-bot .chat-view .chat-head button i{
+    font-size: 22px;
+    color: var(--white-color);
+}
+.chat-bot .chat-view .chat{
+    width: 100%;
+    height: 358px;
+    padding: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: #ddd4d4;
+}
+.chat-bot .chat-view .chat .chat-wymee,
+.chat-bot .chat-view .chat .chat-talent{
+    font-size: 14px;
+    width: 85%;
+    padding: 5px 10px;
+}
+.chat-bot .chat-view .chat .chat-wymee{
+    position: relative;
+    left: 0px;
+    background-color: var(--second-color-light);
+    border-radius: 20px;
+}
+.chat-bot .chat-view .chat .chat-talent{
+    position: relative;
+    left: 40px;
+    background-color: var(--first-color-light);
+    border-radius: 20px;
+}
+.chat-bot .chat-view .chat-input form{
+    /* position: absolute;
+    bottom: 0px; */
+    width: 100%;
+    display: flex;
+    justify-content: start;
+}
+.chat-bot .chat-view .chat-input input{
+    padding: 10px 15px;
+    outline: none;
+    width: 258px;
+    border: none;
+    border-top: 1px solid var(--gray-color);
+}
+.chat-bot .chat-view .chat-input button{
+    border: none;
+    background-color: var(--gray-color);
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: ease-in-out .3s;
+}
+.chat-bot .chat-view .chat-input button:hover{
+    background-color: var(--first-color-2);
+}
+.chat-bot .chat-view .chat-input button svg,
+.chat-bot .chat-view .chat-input button i{
+    font-size: 20px;
+    color: #ffffff;
+}
+/* Footer */
+footer{
+    border-top: 1px solid var(--gray-color);
+    padding: 20px;
+    text-align: center;
+}
+footer{
+    font-size: 12px;
+    color: var(--gray-color);
+}
+
+/* Version Mobile */
+@media only screen and (max-width: 940px) {
+    body {
+        overflow-x: hidden;
+    }
+    header{}
+    header .header-content{
+        width: 100%;
+    }
+    header .header-content button {
+        display: block;
+    }
+    header .head-profil.show{
+        display: flex;
+    }
+    header .head-profil{
+        display: none;
+        position: absolute;
+        top: 0;
+        height: 100vh;
+        width: 100vw;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(5, 5, 5, 0.4);
+        backdrop-filter: blur(1px);
+        transition: ease .3s;
+        z-index: 9999;
+        color: var(--white-color);
+    }
+    header .head-profil .navigation{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    header .head-profil .navigation a{
+        color: var(--white-color);
+    }
+    header .head-profil{
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100vw;
+    }
+    header .head-profil > button{
+        display: block;
+        position: absolute;
+        right: 22px;
+        top: 22px;
+        border: none;
+        background-color: transparent;
+        font-size: 30px;
+        color: var(--white-color);
+        cursor: pointer;
+    }
+    header .head-profil .head-content{
+        flex-direction: column;
+        position: relative;
+    }
+    
+    header .head-profil .notif button{
+        padding: 5px !important;
+        border-radius: 7px;
+        border: 1px solid var(--white-color);
+        cursor: pointer;
+        font-size: 18px;
+        position: relative;
+        transition: ease-in-out .3s;
+        background-color: transparent;
+    }
+    header .head-profil .notif button svg,
+    header .head-profil .notif button i{
+        color: var(--white-color);
+    }
+    header .head-profil .profil-talent a img{
+        width: 120px;
+        height: 120px;
+    }
+    header .head-profil .profil-logout button{
+        color: var(--white-color);
+    }
+}
