@@ -35,17 +35,19 @@
     margin: 0px;
     box-sizing: border-box;
 }
-body{
+
+body {
     display: block;
     position: relative;
     overflow-x: hidden;
 }
-.content{
+
+.content {
     padding: 20px;
 }
 
 /* Header */
-header{
+header {
     /* position: fixed; */
     width: 100%;
     display: flex;
@@ -55,10 +57,10 @@ header{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     z-index: 1000;
     height: 82px;
-    
+
 }
 
-header .header-content{
+header .header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -69,6 +71,7 @@ header .header-content{
 header .header-content button:hover {
     color: var(--first-color-2);
 }
+
 header .header-content button {
     display: none;
     background-color: transparent;
@@ -84,21 +87,23 @@ header .header-content button svg {
 }
 
 
-header .logo{
+header .logo {
     display: flex;
     flex-direction: column;
     position: relative;
 }
 
-header .logo a{
+header .logo a {
     text-decoration: none;
 }
-header .logo a img{
+
+header .logo a img {
     position: relative;
     height: 50px;
     width: 130px;
 }
-header .logo span{
+
+header .logo span {
     position: absolute;
     bottom: -5px;
     right: -16px;
@@ -108,7 +113,7 @@ header .logo span{
     color: var(--black-color);
 }
 
-header .head-profil{
+header .head-profil {
     display: flex;
     justify-content: end;
     align-items: center;
@@ -116,42 +121,51 @@ header .head-profil{
     gap: 20px;
     width: 100%;
 }
-header .head-profil > button{
+
+header .head-profil>button {
     display: none;
 }
-header .head-profil .head-content{
+
+header .head-profil .head-content {
     display: flex;
     align-items: center;
     flex-direction: row;
     gap: 20px;
 }
-header .head-profil .navigation{
+
+header .head-profil .navigation {
     display: flex;
     flex-direction: row;
     gap: 20px;
 }
-header .head-profil .navigation a{
+
+header .head-profil .navigation a {
     text-decoration: none;
     transition: ease-in-out .3s;
     color: var(--black-color);
     font-size: 18px;
 }
-header .head-profil .navigation a.active{
+
+header .head-profil .navigation a.active {
     font-weight: 700;
 }
+
 header .head-profil .navigation a.active,
-header .head-profil .navigation a:hover{
+header .head-profil .navigation a:hover {
     color: var(--first-color-2);
 }
-header .head-profil .notif-group{
+
+header .head-profil .notif-group {
     display: flex;
     flex-direction: row;
     gap: 20px;
 }
-header .head-profil .notif{
+
+header .head-profil .notif {
     position: relative;
 }
-header .head-profil .notif button{
+
+header .head-profil .notif button {
     padding: 5px !important;
     border-radius: 7px;
     border: 1px solid var(--gray-color);
@@ -161,12 +175,14 @@ header .head-profil .notif button{
     transition: ease-in-out .3s;
     background-color: transparent;
 }
-header .head-profil .notif button:hover{
+
+header .head-profil .notif button:hover {
     border-color: var(--first-color-2);
     background-color: var(--first-color-2);
     color: var(--white-color);
 }
-header .head-profil .notif button .count span{
+
+header .head-profil .notif button .count span {
     position: absolute;
     top: -14px;
     right: -16px;
@@ -176,7 +192,8 @@ header .head-profil .notif button .count span{
     color: var(--white-color) !important;
     border-radius: 50%;
 }
-header .head-profil .notif .notif-list{
+
+header .head-profil .notif .notif-list {
     position: absolute;
     display: none;
     top: 40px;
@@ -188,24 +205,45 @@ header .head-profil .notif .notif-list{
     border: 1px solid var(--gray-color);
     border-radius: 20px;
     background-color: var(--white-color);
-    height: 400px;
+    /* height: 400px; */
     max-height: 400px;
 }
-header .head-profil .notif .notif-list ul{
+
+header .head-profil .notif .notif-list ul {
     list-style: none;
 }
-header .head-profil .mail-talent span{
+
+header .head-profil .notif .notif-list ul li.no-notif {
+    text-align: center;
+    font-size: 14px;
+    color: var(--gray-color);
+}
+
+header .head-profil .notif .notif-list ul .close-notif {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid var(--gray-color);
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+header .head-profil .mail-talent span {
     font-size: 14px;
 }
-header .head-profil .profil-talent a{
+
+header .head-profil .profil-talent a {
     text-decoration: none;
 }
-header .head-profil .profil-talent a img{
+
+header .head-profil .profil-talent a img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
 }
-header .head-profil .profil-logout button{
+
+header .head-profil .profil-logout button {
     border: none;
     background: transparent;
     font-size: 22px;
@@ -214,20 +252,24 @@ header .head-profil .profil-logout button{
     transition: ease-in-out .3s;
     outline: none;
 }
-header .head-profil .profil-logout button:hover{
+
+header .head-profil .profil-logout button:hover {
     color: var(--first-color-2);
 }
+
 /* Chat bot */
-.chat-bot{
-    position: absolute;
+.chat-bot {
+    position: fixed;
     top: 80vh;
     right: 20px;
     z-index: 999;
 }
-.chat-bot .chat-btn{
+
+.chat-bot .chat-btn {
     position: relative;
 }
-.chat-bot .chat-btn span{
+
+.chat-bot .chat-btn span {
     position: absolute;
     top: -10px;
     right: -4px;
@@ -237,7 +279,8 @@ header .head-profil .profil-logout button:hover{
     font-size: 12px;
     padding: 5px 8px;
 }
-.chat-bot .chat-btn button{
+
+.chat-bot .chat-btn button {
     background-color: var(--first-color);
     color: var(--white-color);
     border: none;
@@ -248,20 +291,22 @@ header .head-profil .profil-logout button:hover{
     cursor: pointer;
     transition: ease-in-out .3s;
 }
-.chat-bot .chat-btn button:hover{
+
+.chat-bot .chat-btn button:hover {
     background-color: var(--first-color-2);
 }
+
 .chat-bot .chat-btn button svg,
-.chat-bot .chat-btn button i{
-    font-size:44px;
+.chat-bot .chat-btn button i {
+    font-size: 44px;
     color: var(--white-color);
 }
 
-.chat-bot .chat-view{
+.chat-bot .chat-view {
     display: none;
     position: absolute;
-    bottom: 0px;
-    right: 0px;
+    bottom: -10px;
+    right: -10px;
     width: 300px;
     height: 450px;
     background-color: var(--white-color);
@@ -270,21 +315,24 @@ header .head-profil .profil-logout button:hover{
     border: 1px solid var(--gray-color);
     overflow: hidden;
 }
-.chat-bot .chat-view .chat-head{
+
+.chat-bot .chat-view .chat-head {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:10px;
+    padding: 10px;
     border-bottom: 2px solid rgb(219, 219, 219);
     box-shadow: -1px 2px 14px 0px rgba(0, 0, 0, 0.3);
 }
-.chat-bot .chat-view .chat-head span{
+
+.chat-bot .chat-view .chat-head span {
     text-transform: capitalize;
     font-size: 18px;
     color: var(--first-color-2);
     font-weight: 700;
 }
-.chat-bot .chat-view .chat-head button{
+
+.chat-bot .chat-view .chat-head button {
     background-color: var(--first-color);
     color: var(--white-color);
     border: none;
@@ -293,15 +341,18 @@ header .head-profil .profil-logout button:hover{
     transition: ease-in-out .3s;
     cursor: pointer;
 }
-.chat-bot .chat-view .chat-head button:hover{
+
+.chat-bot .chat-view .chat-head button:hover {
     background-color: var(--first-color-2);
 }
+
 .chat-bot .chat-view .chat-head button svg,
-.chat-bot .chat-view .chat-head button i{
+.chat-bot .chat-view .chat-head button i {
     font-size: 22px;
     color: var(--white-color);
 }
-.chat-bot .chat-view .chat{
+
+.chat-bot .chat-view .chat {
     width: 100%;
     height: 358px;
     padding: 5px;
@@ -313,80 +364,438 @@ header .head-profil .profil-logout button:hover{
     overflow-y: scroll;
     background-color: #ddd4d4;
 }
+
 .chat-bot .chat-view .chat .chat-wymee,
-.chat-bot .chat-view .chat .chat-talent{
+.chat-bot .chat-view .chat .chat-talent {
     font-size: 14px;
     width: 85%;
     padding: 5px 10px;
 }
-.chat-bot .chat-view .chat .chat-wymee{
+
+.chat-bot .chat-view .chat .chat-wymee {
     position: relative;
     left: 0px;
     background-color: var(--second-color-light);
     border-radius: 20px;
 }
-.chat-bot .chat-view .chat .chat-talent{
+
+.chat-bot .chat-view .chat .chat-talent {
     position: relative;
     left: 40px;
     background-color: var(--first-color-light);
     border-radius: 20px;
 }
-.chat-bot .chat-view .chat-input form{
+
+.chat-bot .chat-view .chat-input form {
     /* position: absolute;
     bottom: 0px; */
     width: 100%;
     display: flex;
     justify-content: start;
 }
-.chat-bot .chat-view .chat-input input{
+
+.chat-bot .chat-view .chat-input input {
     padding: 10px 15px;
     outline: none;
     width: 258px;
     border: none;
     border-top: 1px solid var(--gray-color);
 }
-.chat-bot .chat-view .chat-input button{
+
+.chat-bot .chat-view .chat-input button {
     border: none;
     background-color: var(--gray-color);
     padding: 5px 10px;
     cursor: pointer;
     transition: ease-in-out .3s;
 }
-.chat-bot .chat-view .chat-input button:hover{
+
+.chat-bot .chat-view .chat-input button:hover {
     background-color: var(--first-color-2);
 }
+
 .chat-bot .chat-view .chat-input button svg,
-.chat-bot .chat-view .chat-input button i{
+.chat-bot .chat-view .chat-input button i {
     font-size: 20px;
     color: #ffffff;
 }
+
 /* Footer */
-footer{
+footer {
     border-top: 1px solid var(--gray-color);
     padding: 20px;
     text-align: center;
 }
-footer{
+
+footer {
     font-size: 12px;
     color: var(--gray-color);
 }
 
+/* Page profil */
+.content.profil {
+    padding: 20px 100px;
+}
+
+.talent-profil {
+    background-color: #f5f0f0;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.talent-profil {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.talent-profil .talent-img img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+}
+
+.talent-profil .talent-ref {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.talent-profil .talent-ref .talent-name {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px 0;
+    color: var(--first-color-2);
+}
+
+.talent-profil .talent-ref .talent-name span {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--black-color);
+}
+
+.talent-profil .talent-ref .talent-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--black-color);
+}
+
+.talent-profil .talent-ref .talent-desc {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--black-color);
+}
+
+.talent-profil .talent-state {
+    margin-top: 10px;
+}
+
+.talent-profil .talent-state .state {
+    border: none;
+    background-color: #d6d2d279;
+    border-radius: 20px;
+    display: flex;
+    padding: 8px 10px;
+    outline: none;
+}
+
+.talent-profil .talent-state .state.online {
+    color: #00e000;
+}
+
+.talent-profil .talent-state .state.offline {
+    color: #f00000;
+}
+
+.talent-profil .talent-state .state.standby {
+    color: #a5a3a3;
+}
+
+.talent-profil .talent-state .state>span {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.talent-profil .talent-state .state .online {
+    background-color: #00e000;
+}
+
+.talent-profil .talent-state .state .offline {
+    background-color: #f00000;
+}
+
+.talent-profil .talent-state .state .standy {
+    background-color: #a5a3a3;
+}
+
+.talent-profil .talent-state .state>span span {
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    background-color: var(--white-color);
+}
+
+.talent-profil .talent-state button {
+    margin-top: 10px;
+    border: none;
+    background-color: var(--first-color);
+    color: var(--white-color);
+    font-size: 12px;
+    width: 150px;
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+    transition: ease-in-out .3s;
+}
+
+.talent-profil .talent-state button:hover {
+    background-color: var(--first-color-2);
+}
+
+.talent-detail {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+    /* padding: 20px; */
+}
+
+.talent-detail .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+    width: 40%;
+}
+
+.talent-detail .location,
+.talent-detail .language,
+.talent-detail .skill,
+.talent-detail .externe-link {
+    padding: 20px;
+    border: 1px solid var(--gray-color);
+    border-radius: 20px;
+}
+
+.talent-detail .location .location-head,
+.talent-detail .language .language-head,
+.talent-detail .skill .skill-head,
+.talent-detail .externe-link .externe-link-head {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.talent-detail .location .location-head button,
+.talent-detail .language .language-head button,
+.talent-detail .skill .skill-head button,
+.talent-detail .externe-link .externe-link-head button {
+    border: none;
+    background-color: transparent;
+    color: var(--black-color);
+    font-size: 18px;
+    transition: ease-in-out .3s;
+    cursor: pointer;
+}
+
+.talent-detail .location .location-head button:hover,
+.talent-detail .language .language-head button:hover,
+.talent-detail .skill .skill-head button:hover,
+.talent-detail .externe-link .externe-link-head button:hover {
+    color: var(--first-color-2);
+}
+
+.talent-detail .location h6,
+.talent-detail .language h6,
+.talent-detail .skill h6,
+.talent-detail .externe-link h6 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--first-color-2);
+    margin-bottom: 5px;
+}
+
+.talent-detail .location .talent-location,
+.talent-detail .language .talent-language,
+.talent-detail .skill .talent-skill {
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.talent-detail .location .talent-location svg,
+.talent-detail .language .talent-language svg,
+.talent-detail .skill .talent-skill svg {
+    color: var(--gray-color);
+    font-size: 16px;
+}
+
+.talent-detail .location .talent-location span,
+.talent-detail .language .talent-language span,
+.talent-detail .skill .talent-skill span {
+    font-size: 16px;
+    color: var(--black-color);
+}
+
+.talent-detail .externe-link .links {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    padding-left: 10px;
+}
+
+.talent-detail .externe-link .links a {
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--black-color);
+    transition: ease-in-out .3s;
+}
+
+.talent-detail .externe-link .links a:hover {
+    color: var(--first-color-2);
+}
+
+/* .talent-detail .location,
+.talent-detail .language,
+.talent-detail .skill,
+.talent-detail .externe-link{} */
 /* Version Mobile */
+
+.talent-detail .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+    width: 100%;
+}
+
+.talent-detail .talent-xp,
+.talent-detail .talent-training {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid var(--gray-color);
+    border-radius: 20px;
+}
+
+.talent-detail .talent-xp .talent-xp-head,
+.talent-detail .talent-training .talent-training-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--gray-color);
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.talent-detail .talent-xp .talent-xp-head h6,
+.talent-detail .talent-training .talent-training-head h6 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--first-color-2);
+}
+
+.talent-detail .talent-xp .talent-xp-head button,
+.talent-detail .talent-training .talent-training-head button {
+    border: none;
+    padding: 5px 10px;
+    background-color: var(--first-color);
+    color: var(--white-color);
+    cursor: pointer;
+    transition: ease-in-out .3s;
+}
+
+.talent-detail .talent-xp .talent-xp-head button:hover,
+.talent-detail .talent-training .talent-training-head button:hover {
+    background-color: var(--first-color-2);
+}
+
+.talent-detail .talent-xp .detail-xp,
+.talent-detail .talent-training .detail-training {
+    border-bottom: 1px solid var(--gray-color);
+    padding-bottom: 10px;
+    width: 100%;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.talent-detail .talent-xp .detail-xp:last-child,
+.talent-detail .talent-training .detail-training:last-child {
+    border-bottom: none;
+    padding: 0px;
+}
+
+.talent-detail .talent-xp .detail-xp .xp-sociaty,
+.talent-detail .talent-training .detail-training .training-name {
+    font-weight: 700;
+    color: var(--black-color);
+    font-size: 18px;
+}
+
+.talent-detail .talent-xp .detail-xp .xp-post,
+.talent-detail .talent-training .detail-training .speciality {
+    font-weight: 300;
+    color: var(--black-color);
+    font-size: 16px;
+}
+
+.talent-detail .talent-xp .detail-xp .xp-date-location span,
+.talent-detail .talent-training .detail-training .training-date-location span {
+    font-size: 14px;
+}
+
+.talent-detail .talent-xp .detail-xp .xp-desc p,
+.talent-detail .talent-training .detail-training .training-desc p {
+    font-size: 14px;
+}
+
+.talent-detail .talent-xp .detail-xp .xp-skills {
+    margin-top: 5px;
+}
+
+.talent-detail .talent-xp .detail-xp .xp-skills span {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: var(--first-color-light);
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
 @media only screen and (max-width: 940px) {
     body {
         overflow-x: hidden;
     }
-    header{}
-    header .header-content{
+
+    header .header-content {
         width: 100%;
     }
+
     header .header-content button {
         display: block;
     }
-    header .head-profil.show{
+
+    header .head-profil.show {
         display: flex;
     }
-    header .head-profil{
+
+    header .head-profil {
         display: none;
         position: absolute;
         top: 0;
@@ -401,21 +810,25 @@ footer{
         z-index: 9999;
         color: var(--white-color);
     }
-    header .head-profil .navigation{
+
+    header .head-profil .navigation {
         display: flex;
         flex-direction: column;
         text-align: center;
     }
-    header .head-profil .navigation a{
+
+    header .head-profil .navigation a {
         color: var(--white-color);
     }
-    header .head-profil{
+
+    header .head-profil {
         position: fixed;
         top: 0px;
         left: 0px;
         width: 100vw;
     }
-    header .head-profil > button{
+
+    header .head-profil>button {
         display: block;
         position: absolute;
         right: 22px;
@@ -426,12 +839,13 @@ footer{
         color: var(--white-color);
         cursor: pointer;
     }
-    header .head-profil .head-content{
+
+    header .head-profil .head-content {
         flex-direction: column;
         position: relative;
     }
-    
-    header .head-profil .notif button{
+
+    header .head-profil .notif button {
         padding: 5px !important;
         border-radius: 7px;
         border: 1px solid var(--white-color);
@@ -441,15 +855,50 @@ footer{
         transition: ease-in-out .3s;
         background-color: transparent;
     }
+
     header .head-profil .notif button svg,
-    header .head-profil .notif button i{
+    header .head-profil .notif button i {
         color: var(--white-color);
     }
-    header .head-profil .profil-talent a img{
+
+    header .head-profil .notif:first-child .notif-list {
+        left: -117px;
+    }
+
+    header .head-profil .notif:last-child .notif-list {
+        left: -165px;
+    }
+
+    header .head-profil .profil-talent a img {
         width: 120px;
         height: 120px;
     }
-    header .head-profil .profil-logout button{
+
+    header .head-profil .profil-logout button {
         color: var(--white-color);
+    }
+
+    /* Page profil */
+    .content.profil {
+        padding: 20px;
+    }
+    .talent-profil {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .talent-profil .talent-ref {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .talent-detail {
+        flex-direction: column;
+    }
+    .talent-detail .left {
+        width: 100%;
     }
 }

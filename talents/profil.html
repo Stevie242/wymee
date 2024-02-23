@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../assets/vendors/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./main.css">
+    <title>Profil | WyMee Talent</title>
+</head>
+
+<body>
+    <header id="topBar">
+        <div class="header-content">
+            <div class="logo">
+                <a href="./dashboard.html">
+                    <img src="./../assets/img/logo/logo.png" alt="Logo WyMee">
+                </a>
+                <!-- <span>WyMee</span> -->
+                <span>Talent</span>
+            </div>
+            <button type="button" id="toggleMenu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <div class="head-profil" id="head-profil">
+            <button type="button" id="closeMenu">
+                <i class="fa-solid fa-x"></i>
+            </button>
+            <nav class="navigation">
+                <a href="./dashboard.html">Tableau de bord</a>
+                <a href="./offer.html">Mes offres</a>
+                <a href="./jobs.html">Jobs</a>
+            </nav>
+            <div class="head-content">
+                <div class="notif-group">
+                    <div class="notif">
+                        <button type="button" id="showNotif">
+                            <i class="fa-regular fa-bell"></i>
+                            <div class="count">
+                                <span id="count-notif">0</span>
+                            </div>
+                        </button>
+                        <div class="notif-list" id="viewNotif">
+                            <ul>
+                                <li class="no-notif">Aucune notification</li>
+                                <!-- <li>Vous avez reçu une offre</li> -->
+                                <div class="close-notif">
+                                    <button type="button" id="closeNotif">Fermer</button>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="notif">
+                        <button type="button" id="showMsg">
+                            <i class="fa-regular fa-envelope"></i>
+                            <div class="count">
+                                <span id="count-msg">0</span>
+                            </div>
+                        </button>
+                        <div class="notif-list" id="viewMsg">
+                            <ul>
+                                <li class="no-notif">Aucun message</li>
+                                <!-- <li>Vous avez reçu un message</li> -->
+                                <div class="close-notif">
+                                    <button type="button" id="closeMsg">Fermer</button>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="mail-talent">
+                    <span>Talent Name</span>
+                </div>
+                <div class="profil-talent">
+                    <a href="./profil.html">
+                        <img src="./../assets/img/people/talent-2.jpg" alt="profil talent">
+                    </a>
+                </div>
+                <div class="profil-logout">
+                    <form action="./../index.html">
+                        <button type="submit">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="content profil">
+        <div class="talent-profil">
+            <div class="talent-img">
+                <img src="./../assets/img/people/talent-2.jpg" alt="profil-talent">
+            </div>
+            <div class="talent-ref">
+                <h5 class="talent-name">Julia Marshall <span>,27ans</span></h5>
+                <h6 class="talent-title">Dev Front-End & Infographe</h6>
+                <p class="talent-desc">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium laudantium itaque ipsum, repellat magnam expedita, odio quisquam optio, dolorem maiores debitis ratione nostrum totam dolore sequi quos quo eveniet? Numquam!
+                </p>
+            </div>
+            <div class="talent-state">
+                <div class="state online"><span class="online"><span></span></span> Disponible</div>
+                <button type="button">Editer mon profil</button>
+            </div>
+        </div>
+        <div class="talent-detail">
+            <div class="left">
+                <div class="location">
+                    <div class="location-head">
+                        <h6>Localisation et déplacement</h6>
+                        <button type="button">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </button>
+                    </div>
+                    <div class="talent-location">
+                        <h6>Localisation</h6>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Paris, France</span>
+                    </div>
+                    <div class="talent-location">
+                        <h6>Peut travailler dans vos locaux à</h6>
+                        <i class="fa-solid fa-person-walking"></i>
+                        <span>Paris et 50km autour, ou en remote</span>
+                    </div>
+                </div>
+                <div class="language">
+                    <div class="language-head">
+                        <h6>Langue</h6>
+                        <button type="button">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </button>
+                    </div>
+                    <div class="talent-language">
+                        <i class="fa-solid fa-volume-high"></i>
+                        <span>Français</span>
+                    </div>
+                    <div class="talent-language">
+                        <i class="fa-solid fa-volume-high"></i>
+                        <span>Anglais</span>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-head">
+                        <h6>compétences</h6>
+                        <button type="button">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </button>
+                    </div>
+                    <div class="talent-skill">
+                        <i class="fa-solid fa-gears"></i>
+                        <span>Java</span>
+                    </div>
+                    <div class="talent-skill">
+                        <i class="fa-solid fa-gears"></i>
+                        <span>React Js</span>
+                    </div>
+                </div>
+                <div class="externe-link">
+                    <div class="externe-link-head">
+                        <h6>Liens externes</h6>
+                        <button type="button">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </button>
+                    </div>
+                    <div class="links">
+                        <a href="#">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="talent-xp">
+                    <div class="talent-xp-head">
+                        <h6>Expériences</h6>
+                        <button type="button">Ajouter</button>
+                    </div>
+                    <div class="detail-xp">
+                        <div class="xp-sociaty">Ubisoft</div>
+                        <div class="xp-post">Developpeur Java</div>
+                        <div class="xp-date-location">
+                            <span>2022 - 2024</span>
+                            <span>,Paris 28 rue Armand Carrel</span>
+                        </div>
+                        <div class="xp-desc">
+                            <p>J'avais pour rôle de concevoir, développer et maintenir du code Java pour des jeux vidéo </p>
+                        </div>
+                        <div class="xp-skills">
+                            <span>Java</span>
+                            <span>Java</span>
+                            <span>Java</span>
+                            <span>Java</span>
+                            <span>Java</span>
+                            <span>Java</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="talent-training">
+                    <div class="talent-training-head">
+                        <h6>Formations</h6>
+                        <button type="button">Ajouter</button>
+                    </div>
+                    <div class="detail-training">
+                        <div class="training-name">Universté Nantes</div>
+                        <div class="training-speciality">Informatique, <span class="training-level">Licence</span></div>
+                        <div class="training-date-location">
+                            <span>2022 - 2024</span>
+                            <span>Nantes, 23 rue recteur Schmitt</span>
+                        </div>
+                        <div class="training-desc">
+                            <p>Apprendre à concevoir, développer et maintenir du code Java pour des jeux vidéo </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="chat-bot">
+        <div class="chat-btn" id="chatBtn">
+            <span>13</span>
+            <button type="button" id="showChat"><i class="fa-regular fa-comment"></i></button>
+        </div>
+        <div class="chat-view" id="chatView">
+            <div class="chat-head">
+                <span>Chat</span>
+                <button type="button" id="closeChat"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="chat">
+                <div class="chat-wymee">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus debitis, sit libero voluptatibus,
+                        harum amet excepturi enim nemo tempora ex est in culpa aut consequuntur quam odio! Ipsam,
+                        aperiam voluptates.</p>
+                </div>
+                <div class="chat-talent">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus doloremque eveniet culpa quaerat
+                        consectetur iste cum aspernatur hic possimus magnam iure temporibus obcaecati est eum aliquid
+                        voluptas, perspiciatis eligendi quia!</p>
+                </div>
+                <div class="chat-talent">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus doloremque eveniet culpa quaerat
+                        consectetur iste cum aspernatur hic possimus magnam iure temporibus obcaecati est eum aliquid
+                        voluptas, perspiciatis eligendi quia!</p>
+                </div>
+                <div class="chat-wymee">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus debitis, sit libero voluptatibus,
+                        harum amet excepturi enim nemo tempora ex est in culpa aut consequuntur quam odio! Ipsam,
+                        aperiam voluptates.</p>
+                </div>
+                <div class="chat-wymee">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus debitis, sit libero voluptatibus,
+                        harum amet excepturi enim nemo tempora ex est in culpa aut consequuntur quam odio! Ipsam,
+                        aperiam voluptates.</p>
+                </div>
+            </div>
+            <div class="chat-input">
+                <form action="#">
+                    <input type="text" name="" id="chatText" placeholder="Commencer la discussion">
+                    <button type="button" id="chatSend"><i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; WyMee - Recrutement & Consulting</p>
+    </footer>
+    <script src="./../assets/vendors/fontawesome/js/all.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
