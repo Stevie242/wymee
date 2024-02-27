@@ -340,6 +340,7 @@ header .head-profil .profil-logout button:hover {
     padding: 5px 8px;
     transition: ease-in-out .3s;
     cursor: pointer;
+    display: flex;
 }
 
 .chat-bot .chat-view .chat-head button:hover {
@@ -354,7 +355,7 @@ header .head-profil .profil-logout button:hover {
 
 .chat-bot .chat-view .chat {
     width: 100%;
-    height: 358px;
+    height: 350px;
     padding: 5px;
     position: relative;
     display: flex;
@@ -1041,6 +1042,112 @@ footer {
     margin-bottom: 10px;
 }
 
+.edit-profil .profil-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+.edit-profil .profil-img img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+}
+.edit-profil .profil-img label{
+    position: absolute;
+    bottom: -10px;
+    background-color: var(--first-color);
+    color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 30px !important;
+    height: 30px !important;
+    cursor: pointer;
+    transition: ease-in-out .3s;
+}
+.edit-profil .profil-img label:hover{
+    background-color: var(--first-color-2);
+}
+
+.edit-profil .profil-img input{
+    visibility: hidden;
+    height: 0px;
+    width: 0px;
+}
+.edit-profil .statut{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.edit-profil .statut select{
+    padding: 5px 10px;
+    outline: none;
+    font-size: 16px;
+    width: 200px;
+}
+.edit-profil .personal-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+}
+.edit-profil .personal-info .input-group{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    width: 100%;
+}
+.edit-profil .personal-info .input-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.edit-profil .personal-info .input-form textarea,
+.edit-profil .personal-info .input-form input{
+    width: 100%;
+    padding: 5px 10px;
+    outline: none;
+    font-size: 16px;
+}
+.edit-profil .personal-info .input-form textarea{
+    width: 100%;
+    height: 100px;
+    resize: none;
+}
+.edit-profil .personal-info .input-form label{
+    font-size: 16px;
+    color: var(--black-color);
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.edit-password .input-form{
+    margin-bottom: 10px;
+}
+.edit-password .input-form label{
+    font-size: 16px;
+    color: var(--black-color);
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.edit-password .input-form input{
+    width: 100%;
+    padding: 5px 10px;
+    outline: none;
+    font-size: 16px;
+}
+
 /* Paginate WyMee */
 .wymee-paginate {
     width: 100%;
@@ -1618,6 +1725,12 @@ footer {
     }
 
     .talent-detail .left {
+        width: 100%;
+    }
+    .edit-profil .personal-info .input-group{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 10px;
         width: 100%;
     }
 

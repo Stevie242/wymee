@@ -4,8 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./../assets/vendors/bootstrap/js/bootstrap.min.js" defer></script>
+    <link rel="stylesheet" href="./../assets/vendors/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./../assets/vendors/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="./main.css">
+
     <title>Profil | WyMee Talent</title>
 </head>
 
@@ -101,12 +104,15 @@
                 <h5 class="talent-name">Julia Marshall <span>,27ans</span></h5>
                 <h6 class="talent-title">Dev Front-End & Infographe</h6>
                 <p class="talent-desc">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium laudantium itaque ipsum, repellat magnam expedita, odio quisquam optio, dolorem maiores debitis ratione nostrum totam dolore sequi quos quo eveniet? Numquam!
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium laudantium itaque ipsum,
+                    repellat magnam expedita, odio quisquam optio, dolorem maiores debitis ratione nostrum totam dolore
+                    sequi quos quo eveniet? Numquam!
                 </p>
             </div>
             <div class="talent-state">
                 <div class="state online"><span class="online"><span></span></span> Disponible</div>
-                <button type="button">Editer mon profil</button>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#editProfilModal">Editer mon
+                    profil</button>
             </div>
         </div>
         <div class="talent-detail">
@@ -185,7 +191,7 @@
                 <div class="talent-xp">
                     <div class="talent-xp-head">
                         <h6>Expériences</h6>
-                        <button type="button">Ajouter</button>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#addXpModal">Ajouter</button>
                     </div>
                     <div class="detail-xp">
                         <div class="xp-sociaty">
@@ -204,7 +210,8 @@
                             <span>,Paris 28 rue Armand Carrel</span>
                         </div>
                         <div class="xp-desc">
-                            <p>J'avais pour rôle de concevoir, développer et maintenir du code Java pour des jeux vidéo </p>
+                            <p>J'avais pour rôle de concevoir, développer et maintenir du code Java pour des jeux vidéo
+                            </p>
                         </div>
                         <div class="xp-skills">
                             <span>Java</span>
@@ -219,7 +226,7 @@
                 <div class="talent-training">
                     <div class="talent-training-head">
                         <h6>Formations</h6>
-                        <button type="button">Ajouter</button>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#addTrainingModal">Ajouter</button>
                     </div>
                     <div class="detail-training">
                         <div class="training-name">
@@ -291,6 +298,224 @@
             </div>
         </div>
     </div>
+
+    <!-- Fenetre Modal Start -->
+        <!-- Modal Edit profil -->
+        <div class="modal fade" id="editProfilModal" tabindex="-1" aria-labelledby="editProfilModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Modifier profil</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="#" id="formEditProfile">
+                            <div class="edit-profil">
+                                <div class="profil-img">
+                                    <img src="./../assets/img/people/talent-2.jpg" alt="photos de profil" width="150px">
+                                    <label for="picture">
+                                        <i class="fa-solid fa-pencil"></i>
+                                    </label>
+                                    <input type="file" id="picture">
+                                </div>
+                                <div class="statut">
+                                    <label for="statut">Statut</label>
+                                    <select name="" id="statut">
+                                        <option value="">Disponible</option>
+                                        <option value="">Indisponible</option>
+                                        <option value="">En veille</option>
+                                    </select>
+                                </div>
+                                <div class="personal-info">
+                                    <div class="input-group">
+                                        <div class="input-form">
+                                            <label for="lastname">Nom</label>
+                                            <input type="text" name="" id="lastname" placeholder="Votre nom">
+                                        </div>
+                                        <div class="input-form">
+                                            <label for="firstname">Prénom</label>
+                                            <input type="text" name="" id="firstname" placeholder="Votre prénom">
+                                        </div>
+                                    </div>
+                                    <div class="input-group">
+                                        <div class="input-form">
+                                            <label for="birthday">Date naissance</label>
+                                            <input type="date" name="" id="birthday" placeholder="Votre date de naissance">
+                                        </div>
+                                        <div class="input-form">
+                                            <label for="title">Titre</label>
+                                            <input type="text" name="" id="title" placeholder="Votre titre: ex= Comptable">
+                                        </div>
+                                    </div>
+                                    <div class="input-form">
+                                        <label for="desc">Description de vous</label>
+                                        <textarea name="" id="desc" placeholder="Description de vous"></textarea>
+                                    </div>
+                                    <div class="input-form">
+                                        <label for="password">Confirmez votre mot de passe</label>
+                                        <input type="password" name="" id="password" placeholder="Votre mot de passe">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-target="#changePasswordModal" data-bs-toggle="modal">Changer Mot de passe</button>
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fermer</button>
+                        <button type="button" class="btn btn-success">Enregistrer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="changePasswordModal" aria-hidden="true" aria-labelledby="changePasswordModalLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="changePasswordModalLabel">Changer votre mot de passe</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" id="formChangePassword">
+                        <div class="edit-password">
+                            <div class="input-form">
+                                <label for="lastPassword">Votre mot de passe actuel</label>
+                                <input type="password" name="" id="lastPassword" placeholder="Votre mot de passe">
+                            </div>
+                            <div class="input-form">
+                                <label for="newPassword">Nouveau mot de passe</label>
+                                <input type="password" name="" id="newPassword" placeholder="Votre mot de passe">
+                            </div>
+                            <div class="input-form">
+                                <label for="confirmationPassword">Confirmez nouveau mot de passe</label>
+                                <input type="password" name="" id="confirmationPassword" placeholder="Votre mot de passe">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-success" id="changePassword">Changez</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- Modal Edit profil -->
+        <!-- Modal Add training -->
+        <div class="modal fade" id="addTrainingModal" tabindex="-1" aria-labelledby="addTrainingModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Ajouter une formation</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="#" id="addTrainingForm">
+                            <div class="edit-profil">
+                                <div class="personal-info">
+                                    <div class="input-group">
+                                        <div class="input-form">
+                                            <label for="school-add">Nom de l'établissement</label>
+                                            <input type="text" id="school-add" placeholder="Nom de l'établissement">
+                                        </div>
+                                        <div class="input-form">
+                                            <label for="speciality-add">Spécialité</label>
+                                            <input type="text" id="speciality-add" placeholder="Ex = Genie Logiciel">
+                                        </div>
+                                    </div>
+                                    <div class="input-group">
+                                        <div class="input-form">
+                                            <label for="level-add">Niveau d'étude</label>
+                                            <input type="text" id="level-add" placeholder="Niveau d'étude">
+                                        </div>
+                                        <div class="input-form">
+                                            <label for="training-address-add">Adresse de l'établissement</label>
+                                            <input type="text" id="training-address-add" placeholder="Adresse de l'établissement">
+                                        </div>
+                                    </div>
+                                    <div class="input-group">
+                                        <div class="input-form">
+                                            <label for="training-date-start-add">Date debut</label>
+                                            <input type="text" id="training-date-start-add" placeholder="Date debut MM/AAAA">
+                                        </div>
+                                        <div class="input-form">
+                                            <label for="training-date-end-add">Date fin</label>
+                                            <input type="text" id="training-date-end-add" placeholder="Date fin MM/AAAA">
+                                        </div>
+                                    </div>
+                                    <div class="input-form">
+                                        <label for="description-b-add">Description votre formation</label>
+                                        <textarea  id="description-b-add" placeholder="Description"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fermer</button>
+                        <button type="button" class="btn btn-success" id="subAddTraining">Ajouter</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Add training -->
+        <!-- Modal Add Xp -->
+        <div class="modal fade" id="addXpModal" tabindex="-1" aria-labelledby="addXpModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="#" id="addTrainingForm">
+                            <div class="edit-profil">
+                                <div class="personal-info">
+                                    <div class="input-group">
+                                        <div class="input-form">
+                                            <label for="school-add">Nom de l'établissement</label>
+                                            <input type="text" id="school-add" placeholder="Nom de l'établissement">
+                                        </div>
+                                        <div class="input-form">
+                                            <label for="speciality-add">Spécialité</label>
+                                            <input type="text" id="speciality-add" placeholder="Ex = Genie Logiciel">
+                                        </div>
+                                    </div>
+                                    <div class="input-group">
+                                        <div class="input-form">
+                                            <label for="level-add">Niveau d'étude</label>
+                                            <input type="text" id="level-add" placeholder="Niveau d'étude">
+                                        </div>
+                                        <div class="input-form">
+                                            <label for="training-address-add">Adresse de l'établissement</label>
+                                            <input type="text" id="training-address-add" placeholder="Adresse de l'établissement">
+                                        </div>
+                                    </div>
+                                    <div class="input-group">
+                                        <div class="input-form">
+                                            <label for="training-date-start-add">Date debut</label>
+                                            <input type="text" id="training-date-start-add" placeholder="Date debut MM/AAAA">
+                                        </div>
+                                        <div class="input-form">
+                                            <label for="training-date-end-add">Date fin</label>
+                                            <input type="text" id="training-date-end-add" placeholder="Date fin MM/AAAA">
+                                        </div>
+                                    </div>
+                                    <div class="input-form">
+                                        <label for="description-b-add">Description votre formation</label>
+                                        <textarea  id="description-b-add" placeholder="Description"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                        <button type="button" class="btn btn-primary">Ajouter</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Add Xp -->
+    <!-- Fenetre Modal  End -->
 
     <footer>
         <p>&copy; WyMee - Recrutement & Consulting</p>
