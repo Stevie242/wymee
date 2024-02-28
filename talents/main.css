@@ -1004,10 +1004,10 @@ footer {
     position: absolute;
     width: 150px;
     background-color: var(--first-color-light);
-    border-radius: 20px;
+    /* border-radius: 20px; */
     padding: 20px;
-    left: -136px;
-    top: 24px;
+    left: -145px;
+    top: 27px;
 }
 
 .talent-detail .talent-xp .detail-xp .xp-sociaty .action .menu-action button,
@@ -1137,30 +1137,40 @@ footer {
     font-weight: 700;
     margin-bottom: 5px;
 }
-
+.edit-profil .personal-info .input-form .list-language,
 .edit-profil .personal-info .input-form .list-skill{
     margin-top: 5px;
-    display: -webkit-box;
-    overflow-x: auto;
+    display: block;
+    width: 100%;
 }
+.edit-profil .personal-info .input-form .list-language input,
 .edit-profil .personal-info .input-form .list-skill input{
     visibility: hidden;
+    position: absolute;
     width: 0px;
     height: 0px;
 }
+.edit-profil .personal-info .input-form .list-language span,
 .edit-profil .personal-info .input-form .list-skill span{
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
     padding: 5px 10px;
     background-color: var(--first-color-light);
     border-radius: 20px;
     margin-bottom: 10px;
     border: none;
 }
+.edit-profil .personal-info .input-form .list-language span i,
+.edit-profil .personal-info .input-form .list-language span svg,
 .edit-profil .personal-info .input-form .list-skill span i,
 .edit-profil .personal-info .input-form .list-skill span svg{
     cursor: pointer;
     transition: ease-in-out .3s;
 }
+.edit-profil .personal-info .input-form .list-language span i:hover,
+.edit-profil .personal-info .input-form .list-language span svg:hover,
 .edit-profil .personal-info .input-form .list-skill span i:hover,
 .edit-profil .personal-info .input-form .list-skill span svg:hover{
     color: red;

@@ -113,7 +113,8 @@
                 <div class="state online"><span class="online"><span></span></span> Disponible</div>
                 <button type="button" data-bs-toggle="modal" data-bs-target="#editProfilModal">Editer mon
                     profil</button>
-                <button type="button" data-bs-toggle="modal" data-bs-target="#editProfilModal">Aperçu <i class="fa-solid fa-eye"></i></button>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#editProfilModal">Aperçu <i
+                        class="fa-solid fa-eye"></i></button>
             </div>
         </div>
         <div class="talent-detail">
@@ -197,12 +198,22 @@
                     <div class="detail-xp">
                         <div class="xp-sociaty">
                             Ubisoft
-                            <div class="action">
-                                <button type="button"><i class="fa-solid fa-ellipsis-vertical"></i></button>
-                                <div class="menu-action">
-                                    <button type="button">Modifier <i class="fa-solid fa-pen-to-square"></i></button>
-                                    <button type="button">Supprimer <i class="fa-solid fa-trash"></i></button>
-                                </div>
+
+                            <div class="dropdown">
+                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <button class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#updateXpModal">Modifier <i
+                                                class="fa-solid fa-pen-to-square"></i></button>
+                                    </li>
+                                    <li>
+                                        <button class="dropdown-item" type="button">Supprimer <i
+                                                class="fa-solid fa-trash"></i></button>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                         <div class="xp-post">Developpeur Java</div>
@@ -232,12 +243,21 @@
                     <div class="detail-training">
                         <div class="training-name">
                             Universté Nantes
-                            <div class="action">
-                                <button type="button"><i class="fa-solid fa-ellipsis-vertical"></i></button>
-                                <div class="menu-action">
-                                    <button type="button">Modifier <i class="fa-solid fa-pen-to-square"></i></button>
-                                    <button type="button">Supprimer <i class="fa-solid fa-trash"></i></button>
-                                </div>
+                            <div class="dropdown">
+                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <button class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#updateTrainingModal">Modifier <i
+                                                class="fa-solid fa-pen-to-square"></i></button>
+                                    </li>
+                                    <li>
+                                        <button class="dropdown-item" type="button">Supprimer <i
+                                                class="fa-solid fa-trash"></i></button>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                         <div class="training-speciality">Informatique, <span class="training-level">Licence</span></div>
@@ -301,79 +321,82 @@
     </div>
 
     <!-- Fenetre Modal Start -->
-        <!-- Modal Edit profil -->
-        <div class="modal fade" id="editProfilModal" tabindex="-1" aria-labelledby="editProfilModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Modifier profil</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form action="#" id="formEditProfile">
-                            <div class="edit-profil">
-                                <div class="profil-img">
-                                    <img src="./../assets/img/people/talent-2.jpg" alt="photos de profil" width="150px">
-                                    <label for="picture">
-                                        <i class="fa-solid fa-pencil"></i>
-                                    </label>
-                                    <input type="file" id="picture">
-                                </div>
-                                <div class="statut">
-                                    <label for="statut">Statut</label>
-                                    <select name="" id="statut">
-                                        <option value="">Disponible</option>
-                                        <option value="">Indisponible</option>
-                                        <option value="">En veille</option>
-                                    </select>
-                                </div>
-                                <div class="personal-info">
-                                    <div class="input-group">
-                                        <div class="input-form">
-                                            <label for="lastname">Nom</label>
-                                            <input type="text" name="" id="lastname" placeholder="Votre nom">
-                                        </div>
-                                        <div class="input-form">
-                                            <label for="firstname">Prénom</label>
-                                            <input type="text" name="" id="firstname" placeholder="Votre prénom">
-                                        </div>
-                                    </div>
-                                    <div class="input-group">
-                                        <div class="input-form">
-                                            <label for="birthday">Date naissance</label>
-                                            <input type="date" name="" id="birthday" placeholder="Votre date de naissance">
-                                        </div>
-                                        <div class="input-form">
-                                            <label for="title">Titre</label>
-                                            <input type="text" name="" id="title" placeholder="Votre titre: ex= Comptable">
-                                        </div>
+    <!-- Modal Edit profil -->
+    <div class="modal fade" id="editProfilModal" tabindex="-1" aria-labelledby="editProfilModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modifier profil</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" id="formEditProfile">
+                        <div class="edit-profil">
+                            <div class="profil-img">
+                                <img src="./../assets/img/people/talent-2.jpg" alt="photos de profil" width="150px">
+                                <label for="picture">
+                                    <i class="fa-solid fa-pencil"></i>
+                                </label>
+                                <input type="file" id="picture">
+                            </div>
+                            <div class="statut">
+                                <label for="statut">Statut</label>
+                                <select name="" id="statut">
+                                    <option value="">Disponible</option>
+                                    <option value="">Indisponible</option>
+                                    <option value="">En veille</option>
+                                </select>
+                            </div>
+                            <div class="personal-info">
+                                <div class="input-group">
+                                    <div class="input-form">
+                                        <label for="lastname">Nom</label>
+                                        <input type="text" name="" id="lastname" placeholder="Votre nom">
                                     </div>
                                     <div class="input-form">
-                                        <label for="desc">Description de vous</label>
-                                        <textarea name="" id="desc" placeholder="Description de vous"></textarea>
+                                        <label for="firstname">Prénom</label>
+                                        <input type="text" name="" id="firstname" placeholder="Votre prénom">
+                                    </div>
+                                </div>
+                                <div class="input-group">
+                                    <div class="input-form">
+                                        <label for="birthday">Date naissance</label>
+                                        <input type="date" name="" id="birthday" placeholder="Votre date de naissance">
                                     </div>
                                     <div class="input-form">
-                                        <label for="password">Confirmez votre mot de passe</label>
-                                        <input type="password" name="" id="password" placeholder="Votre mot de passe">
+                                        <label for="title">Titre</label>
+                                        <input type="text" name="" id="title" placeholder="Votre titre: ex= Comptable">
                                     </div>
+                                </div>
+                                <div class="input-form">
+                                    <label for="desc">Description de vous</label>
+                                    <textarea name="" id="desc" placeholder="Description de vous"></textarea>
+                                </div>
+                                <div class="input-form">
+                                    <label for="password">Confirmez votre mot de passe</label>
+                                    <input type="password" name="" id="password" placeholder="Votre mot de passe">
                                 </div>
                             </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-target="#changePasswordModal" data-bs-toggle="modal">Changer Mot de passe</button>
-                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fermer</button>
-                        <button type="button" class="btn btn-success">Enregistrer</button>
-                    </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-target="#changePasswordModal"
+                        data-bs-toggle="modal">Changer Mot de passe</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-success">Enregistrer</button>
                 </div>
             </div>
         </div>
-        <div class="modal fade" id="changePasswordModal" aria-hidden="true" aria-labelledby="changePasswordModalLabel" tabindex="-1">
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
+    </div>
+    <div class="modal fade" id="changePasswordModal" aria-hidden="true" aria-labelledby="changePasswordModalLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
                 <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="changePasswordModalLabel">Changer votre mot de passe</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h1 class="modal-title fs-5" id="changePasswordModalLabel">Changer votre mot de passe</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <form action="#" id="formChangePassword">
@@ -388,119 +411,426 @@
                             </div>
                             <div class="input-form">
                                 <label for="confirmationPassword">Confirmez nouveau mot de passe</label>
-                                <input type="password" name="" id="confirmationPassword" placeholder="Votre mot de passe">
+                                <input type="password" name="" id="confirmationPassword"
+                                    placeholder="Votre mot de passe">
                             </div>
                         </div>
                     </form>
                 </div>
                 <div class="modal-footer">
-                  <button class="btn btn-success" id="changePassword">Changez</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        <!-- Modal Edit profil -->
-        <!-- Modal Add training -->
-        <div class="modal fade" id="addTrainingModal" tabindex="-1" aria-labelledby="addTrainingModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Ajouter une formation</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form action="#" id="addTrainingForm">
-                            <div class="edit-profil">
-                                <div class="personal-info">
-                                    <div class="input-group">
-                                        <div class="input-form">
-                                            <label for="school-add">Nom de l'établissement</label>
-                                            <input type="text" id="school-add" placeholder="Nom de l'établissement">
-                                        </div>
-                                        <div class="input-form">
-                                            <label for="speciality-add">Spécialité</label>
-                                            <input type="text" id="speciality-add" placeholder="Ex = Genie Logiciel">
-                                        </div>
-                                    </div>
-                                    <div class="input-group">
-                                        <div class="input-form">
-                                            <label for="level-add">Niveau d'étude</label>
-                                            <input type="text" id="level-add" placeholder="Niveau d'étude">
-                                        </div>
-                                        <div class="input-form">
-                                            <label for="training-address-add">Adresse de l'établissement</label>
-                                            <input type="text" id="training-address-add" placeholder="Adresse de l'établissement">
-                                        </div>
-                                    </div>
-                                    <div class="input-group">
-                                        <div class="input-form">
-                                            <label for="training-date-start-add">Date debut</label>
-                                            <input type="text" id="training-date-start-add" placeholder="Date debut MM/AAAA">
-                                        </div>
-                                        <div class="input-form">
-                                            <label for="training-date-end-add">Date fin</label>
-                                            <input type="text" id="training-date-end-add" placeholder="Date fin MM/AAAA">
-                                        </div>
-                                    </div>
-                                    <div class="input-form">
-                                        <label for="description-b-add">Description votre formation</label>
-                                        <textarea  id="description-b-add" placeholder="Description"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fermer</button>
-                        <button type="button" class="btn btn-success" id="subAddTraining">Ajouter</button>
-                    </div>
+                    <button class="btn btn-success" id="changePassword">Changez</button>
                 </div>
             </div>
         </div>
-        <!-- Modal Add training -->
-        <!-- Modal Add Xp -->
-        <div class="modal fade" id="addXpModal" tabindex="-1" aria-labelledby="addXpModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Ajouter une experience</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form action="#" id="addXpForm">
-                            <div class="edit-profil">
-                                <div class="personal-info">
-                                    <div class="input-group">
-                                        <div class="input-form">
-                                            <label for="sociaty-add">Nom de la société</label>
-                                            <input type="text" id="sociaty-add" placeholder="Nom de la société">
-                                        </div>
-                                        <div class="input-form">
-                                            <label for="title-add">Titre</label>
-                                            <input type="text" id="title-add" placeholder="Titre ex: Expert comptable">
-                                        </div>
+    </div>
+    <!-- Modal Edit profil -->
+    <!-- Modal Add training -->
+    <div class="modal fade" id="addTrainingModal" tabindex="-1" aria-labelledby="addTrainingModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Ajouter une formation</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" id="addTrainingForm">
+                        <div class="edit-profil">
+                            <div class="personal-info">
+                                <div class="input-group">
+                                    <div class="input-form">
+                                        <label for="school-add">Nom de l'établissement</label>
+                                        <input type="text" id="school-add" placeholder="Nom de l'établissement">
                                     </div>
                                     <div class="input-form">
-                                        <label for="address-add">Adresse de la société</label>
-                                        <input type="text" id="address-add" placeholder="Adresse de la société">
+                                        <label for="speciality-add">Spécialité</label>
+                                        <input type="text" id="speciality-add" placeholder="Ex = Genie Logiciel">
                                     </div>
-                                    <div class="input-group">
-                                        <div class="input-form">
-                                            <label for="date-start-add">Date debut</label>
-                                            <input type="text" id="date-start-add" placeholder="Date debut MM/AAAA">
-                                        </div>
-                                        <div class="input-form">
-                                            <label for="date-end-add">Date fin</label>
-                                            <input type="text" id="date-end-add" placeholder="Date fin MM/AAAA">
-                                        </div>
+                                </div>
+                                <div class="input-group">
+                                    <div class="input-form">
+                                        <label for="level-add">Niveau d'étude</label>
+                                        <input type="text" id="level-add" placeholder="Niveau d'étude">
                                     </div>
                                     <div class="input-form">
-                                        <label for="description-add">Description votre experience</label>
-                                        <textarea  id="description-add" placeholder="Description"></textarea>
+                                        <label for="training-address-add">Adresse de l'établissement</label>
+                                        <input type="text" id="training-address-add"
+                                            placeholder="Adresse de l'établissement">
                                     </div>
+                                </div>
+                                <div class="input-group">
+                                    <div class="input-form">
+                                        <label for="training-date-start-add">Date debut</label>
+                                        <input type="text" id="training-date-start-add"
+                                            placeholder="Date debut MM/AAAA">
+                                    </div>
+                                    <div class="input-form">
+                                        <label for="training-date-end-add">Date fin</label>
+                                        <input type="text" id="training-date-end-add" placeholder="Date fin MM/AAAA">
+                                    </div>
+                                </div>
+                                <div class="input-form">
+                                    <label for="description-b-add">Description votre formation</label>
+                                    <textarea id="description-b-add" placeholder="Description"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-success" id="subAddTraining">Ajouter</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Add training -->
+    <!-- Modal Update training -->
+    <div class="modal fade" id="updateTrainingModal" tabindex="-1" aria-labelledby="updateTrainingModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Ajouter une formation</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" id="updateTrainingForm">
+                        <div class="edit-profil">
+                            <div class="personal-info">
+                                <div class="input-group">
+                                    <div class="input-form">
+                                        <label for="school-add2">Nom de l'établissement</label>
+                                        <input type="text" id="school-add2" placeholder="Nom de l'établissement">
+                                    </div>
+                                    <div class="input-form">
+                                        <label for="speciality-add2">Spécialité</label>
+                                        <input type="text" id="speciality-add2" placeholder="Ex = Genie Logiciel">
+                                    </div>
+                                </div>
+                                <div class="input-group">
+                                    <div class="input-form">
+                                        <label for="level-add2">Niveau d'étude</label>
+                                        <input type="text" id="level-add2" placeholder="Niveau d'étude">
+                                    </div>
+                                    <div class="input-form">
+                                        <label for="training-address-add2">Adresse de l'établissement</label>
+                                        <input type="text" id="training-address-add2"
+                                            placeholder="Adresse de l'établissement">
+                                    </div>
+                                </div>
+                                <div class="input-group">
+                                    <div class="input-form">
+                                        <label for="training-date-start-add2">Date debut</label>
+                                        <input type="text" id="training-date-start-add2"
+                                            placeholder="Date debut MM/AAAA">
+                                    </div>
+                                    <div class="input-form">
+                                        <label for="training-date-end-add2">Date fin</label>
+                                        <input type="text" id="training-date-end-add2" placeholder="Date fin MM/AAAA">
+                                    </div>
+                                </div>
+                                <div class="input-form">
+                                    <label for="description-b-add2">Description votre formation</label>
+                                    <textarea id="description-b-add2" placeholder="Description"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-success" id="subUpdateTraining">Ajouter</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Update training -->
+    <!-- Modal Add Xp -->
+    <div class="modal fade" id="addXpModal" tabindex="-1" aria-labelledby="addXpModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Ajouter une experience</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" id="addXpForm">
+                        <div class="edit-profil">
+                            <div class="personal-info">
+                                <div class="input-group">
+                                    <div class="input-form">
+                                        <label for="sociaty-add">Nom de la société</label>
+                                        <input type="text" id="sociaty-add" placeholder="Nom de la société">
+                                    </div>
+                                    <div class="input-form">
+                                        <label for="title-add">Titre</label>
+                                        <input type="text" id="title-add" placeholder="Titre ex: Expert comptable">
+                                    </div>
+                                </div>
+                                <div class="input-form">
+                                    <label for="address-add">Adresse de la société</label>
+                                    <input type="text" id="address-add" placeholder="Adresse de la société">
+                                </div>
+                                <div class="input-group">
+                                    <div class="input-form">
+                                        <label for="date-start-add">Date debut</label>
+                                        <input type="text" id="date-start-add" placeholder="Date debut MM/AAAA">
+                                    </div>
+                                    <div class="input-form">
+                                        <label for="date-end-add">Date fin</label>
+                                        <input type="text" id="date-end-add" placeholder="Date fin MM/AAAA">
+                                    </div>
+                                </div>
+                                <div class="input-form">
+                                    <label for="description-add">Description votre experience</label>
+                                    <textarea id="description-add" placeholder="Description"></textarea>
+                                </div>
+                                <div class="input-form">
+                                    <label>Liste des compétences</label>
+                                    <div class="list-skill" id="listSkill">
+                                        <!-- <div class="skill-item">
+                                            <span>Java <i class="fa-solid fa-xmark"></i></span>
+                                            <input type="text" name="" id="" class="skill-input">
+                                        </div>
+                                        <div class="skill-item">
+                                            <span>Java <i class="fa-solid fa-xmark"></i></span>
+                                            <input type="text" name="" id="" class="skill-input">
+                                        </div>
+                                        <div class="skill-item">
+                                            <span>Java <i class="fa-solid fa-xmark"></i></span>
+                                            <input type="text" name="" id="" class="skill-input">
+                                        </div>
+                                        <div class="skill-item">
+                                            <span>Java <i class="fa-solid fa-xmark"></i></span>
+                                            <input type="text" name="" id="" class="skill-input">
+                                        </div>
+                                        <div class="skill-item">
+                                            <span>Java <i class="fa-solid fa-xmark"></i></span>
+                                            <input type="text" name="" id="" class="skill-input">
+                                        </div>
+                                        <div class="skill-item">
+                                            <span>Java <i class="fa-solid fa-xmark"></i></span>
+                                            <input type="text" name="" id="" class="skill-input">
+                                        </div>
+                                        <div class="skill-item">
+                                            <span>Java <i class="fa-solid fa-xmark"></i></span>
+                                            <input type="text" name="" id="" class="skill-input">
+                                        </div> -->
+                                    </div>
+                                    <div class="input-button-form">
+                                        <input type="text" name="" id="skillText">
+                                        <button type="button" id="skillAddBtn"><i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-success" id="subAddXp">Ajouter</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Add Xp -->
+    <!-- Modal Update Xp -->
+    <div class="modal fade" id="updateXpModal" tabindex="-1" aria-labelledby="updateXpModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modifier experience</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" id="updateXpForm">
+                        <div class="edit-profil">
+                            <div class="personal-info">
+                                <div class="input-group">
+                                    <div class="input-form">
+                                        <label for="sociaty-add2">Nom de la société</label>
+                                        <input type="text" id="sociaty-add2" placeholder="Nom de la société">
+                                    </div>
+                                    <div class="input-form">
+                                        <label for="title-add2">Titre</label>
+                                        <input type="text" id="title-add2" placeholder="Titre ex: Expert comptable">
+                                    </div>
+                                </div>
+                                <div class="input-form">
+                                    <label for="address-add2">Adresse de la société</label>
+                                    <input type="text" id="address-add2" placeholder="Adresse de la société">
+                                </div>
+                                <div class="input-group">
+                                    <div class="input-form">
+                                        <label for="date-start-add2">Date debut</label>
+                                        <input type="text" id="date-start-add2" placeholder="Date debut MM/AAAA">
+                                    </div>
+                                    <div class="input-form">
+                                        <label for="date-end-add2">Date fin</label>
+                                        <input type="text" id="date-end-add2" placeholder="Date fin MM/AAAA">
+                                    </div>
+                                </div>
+                                <div class="input-form">
+                                    <label for="description-add2">Description votre experience</label>
+                                    <textarea id="description-add2" placeholder="Description"></textarea>
+                                </div>
+                                <div class="input-form">
+                                    <label>Liste des compétences</label>
+                                    <div class="list-skill" id="listSkill2">
+                                        <!-- <div class="skill-item">
+                                            <span>Java <i class="fa-solid fa-xmark"></i></span>
+                                            <input type="text" name="" id="" class="skill-input">
+                                        </div>
+                                        <div class="skill-item">
+                                            <span>Java <i class="fa-solid fa-xmark"></i></span>
+                                            <input type="text" name="" id="" class="skill-input">
+                                        </div>
+                                        <div class="skill-item">
+                                            <span>Java <i class="fa-solid fa-xmark"></i></span>
+                                            <input type="text" name="" id="" class="skill-input">
+                                        </div>
+                                        <div class="skill-item">
+                                            <span>Java <i class="fa-solid fa-xmark"></i></span>
+                                            <input type="text" name="" id="" class="skill-input">
+                                        </div>
+                                        <div class="skill-item">
+                                            <span>Java <i class="fa-solid fa-xmark"></i></span>
+                                            <input type="text" name="" id="" class="skill-input">
+                                        </div>
+                                        <div class="skill-item">
+                                            <span>Java <i class="fa-solid fa-xmark"></i></span>
+                                            <input type="text" name="" id="" class="skill-input">
+                                        </div>
+                                        <div class="skill-item">
+                                            <span>Java <i class="fa-solid fa-xmark"></i></span>
+                                            <input type="text" name="" id="" class="skill-input">
+                                        </div> -->
+                                    </div>
+                                    <div class="input-button-form">
+                                        <input type="text" name="" id="skillText2">
+                                        <button type="button" id="skillAddBtn2"><i
+                                                class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-success" id="subUpdateXp">Ajouter</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Update Xp -->
+    <!-- Modal Update Location -->
+    <div class="modal fade" id="updateLocationModal" tabindex="-1" aria-labelledby="updateLocationModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modifier la localisation et déplacement</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" id="updateLocationForm">
+                        <div class="edit-profil">
+                            <div class="personal-info">
+                                <div class="input-form">
+                                    <label for="countrie-add">Pays</label>
+                                    <input type="text" id="countrie-add" placeholder="Pays">
+                                </div>
+                                <div class="input-form">
+                                    <label for="city-add">Ville</label>
+                                    <input type="text" id="city-add" placeholder="Ville">
+                                </div>
+                                <div class="input-form">
+                                    <label for="work-around">Peut travailler autour de (<span id="rangeValue">50</span>)
+                                        km</label>
+                                    <input type="range" min="5" max="200" value="50" step="5" id="work-around"
+                                        oninput="updateValue()">
+                                </div>
+                                <div class="input-form">
+                                    <label for="date-start-add">Travail en remote</label>
+                                    <select name="" id="">
+                                        <option value="1">Oui</option>
+                                        <option value="0">Non</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-success" id="subUpdateLocation">Enregistrer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Update Location -->
+    <!-- Modal Update Language -->
+    <div class="modal fade" id="updateLanguageModal" tabindex="-1" aria-labelledby="updateLanguageModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modifier les langues</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" id="updateLanguageForm">
+                        <div class="edit-profil">
+                            <div class="personal-info">
+                                <div class="input-form">
+                                    <label>Liste des langues</label>
+                                    <div class="list-language" id="listLanguage">
+                                        <div class="language-item">
+                                            <span>Français <i class="fa-solid fa-xmark"></i></span>
+                                            <input type="text" name="" id="" class="skill-input">
+                                        </div>
+                                        <div class="language-item">
+                                            <span>Anglais <i class="fa-solid fa-xmark"></i></span>
+                                            <input type="text" name="" id="" class="skill-input">
+                                        </div>
+                                    </div>
+                                    <div class="input-button-form">
+                                        <input type="text" name="" id="languageText">
+                                        <button type="button" id="languageAddBtn"><i
+                                                class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-success" id="subUpdateLanguage">Enregistrer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Update Language -->
+    <!-- Modal Update Skill -->
+    <div class="modal fade" id="updateSkillModal" tabindex="-1" aria-labelledby="updateSkillModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modifier la localisation et déplacement</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" id="updateSkillForm">
+                        <div class="edit-profil">
+                            <div class="personal-info">
+                                <div class="input-form">
                                     <div class="input-form">
                                         <label>Liste des compétences</label>
-                                        <div class="list-skill" id="listSkill">
+                                        <div class="list-skill" id="skillList">
                                             <div class="skill-item">
                                                 <span>Java <i class="fa-solid fa-xmark"></i></span>
                                                 <input type="text" name="" id="" class="skill-input">
@@ -531,205 +861,80 @@
                                             </div>
                                         </div>
                                         <div class="input-button-form">
-                                            <input type="text" name="" id="skillText">
-                                            <button type="button" id="skillAddBtn"><i class="fa-solid fa-plus"></i></button>
+                                            <input type="text" name="" id="textSkill">
+                                            <button type="button" id="addSkillBtn"><i
+                                                    class="fa-solid fa-plus"></i></button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fermer</button>
-                        <button type="button" class="btn btn-success" id="subAddXp">Ajouter</button>
-                    </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-success" id="subUpdateSkill">Enregistrer</button>
                 </div>
             </div>
         </div>
-        <!-- Modal Add Xp -->
-        <!-- Modal Update Location -->
-        <div class="modal fade" id="updateLocationModal" tabindex="-1" aria-labelledby="updateLocationModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Modifier la localisation et déplacement</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form action="#" id="updateLocationForm">
-                            <div class="edit-profil">
-                                <div class="personal-info">
-                                    <div class="input-form">
-                                        <label for="countrie-add">Pays</label>
-                                        <input type="text" id="countrie-add" placeholder="Pays">
-                                    </div>
-                                    <div class="input-form">
-                                        <label for="city-add">Ville</label>
-                                        <input type="text" id="city-add" placeholder="Ville">
-                                    </div>
-                                    <div class="input-form">
-                                        <label for="work-around">Peut travailler autour de (<span id="rangeValue">50</span>) km</label>
-                                        <input type="range" min="5" max="100" value="50" step="5" id="work-around" oninput="updateValue()">
-                                    </div>
-                                    <div class="input-form">
-                                        <label for="date-start-add">Travail en remote</label>
-                                        <select name="" id="">
-                                            <option value="1">Oui</option>
-                                            <option value="0">Non</option>
-                                        </select>
+    </div>
+    <!-- Modal Update Skill -->
+    <!-- Modal Update LinkExt -->
+    <div class="modal fade" id="updateLinkExtModal" tabindex="-1" aria-labelledby="updateLinkExtModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modifier les liens externes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" id="updateLinkExtForm">
+                        <div class="edit-profil">
+                            <div class="personal-info">
+                                <div class="input-form">
+                                    <label>Linkedin</label>
+                                    <div class="input-button-form">
+                                        <input type="text" name="" id="" placeholder="Lien vers profil Linkedin">
+                                        <span><i class="fa-brands fa-linkedin"></i></span>
                                     </div>
                                 </div>
                             </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fermer</button>
-                        <button type="button" class="btn btn-success" id="subUpdateLocation">Enregistrer</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal Update Location -->
-        <!-- Modal Update Language -->
-        <div class="modal fade" id="updateLanguageModal" tabindex="-1" aria-labelledby="updateLanguageModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Modifier la localisation et déplacement</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form action="#" id="updateLocationForm">
-                            <div class="edit-profil">
-                                <div class="personal-info">
-                                    <div class="input-form">
-                                        <label for="countrie-add">Pays</label>
-                                        <input type="text" id="countrie-add" placeholder="Pays">
-                                    </div>
-                                    <div class="input-form">
-                                        <label for="city-add">Ville</label>
-                                        <input type="text" id="city-add" placeholder="Ville">
-                                    </div>
-                                    <div class="input-form">
-                                        <label for="work-around">Peut travailler autour de (<span id="rangeValue">50</span>) km</label>
-                                        <input type="range" min="5" max="100" value="50" step="5" id="work-around" oninput="updateValue()">
-                                    </div>
-                                    <div class="input-form">
-                                        <label for="date-start-add">Travail en remote</label>
-                                        <select name="" id="">
-                                            <option value="1">Oui</option>
-                                            <option value="0">Non</option>
-                                        </select>
+                            <div class="personal-info">
+                                <div class="input-form">
+                                    <label>Facebook</label>
+                                    <div class="input-button-form">
+                                        <input type="text" name="" id="" placeholder="Lien vers profil Facebook">
+                                        <span><i class="fa-brands fa-facebook"></i></span>
                                     </div>
                                 </div>
                             </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fermer</button>
-                        <button type="button" class="btn btn-success" id="subUpdateLocation">Enregistrer</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal Update Language -->
-        <!-- Modal Update Skill -->
-        <div class="modal fade" id="updateSkillModal" tabindex="-1" aria-labelledby="updateSkillModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Modifier la localisation et déplacement</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form action="#" id="updateLocationForm">
-                            <div class="edit-profil">
-                                <div class="personal-info">
-                                    <div class="input-form">
-                                        <label for="countrie-add">Pays</label>
-                                        <input type="text" id="countrie-add" placeholder="Pays">
-                                    </div>
-                                    <div class="input-form">
-                                        <label for="city-add">Ville</label>
-                                        <input type="text" id="city-add" placeholder="Ville">
-                                    </div>
-                                    <div class="input-form">
-                                        <label for="work-around">Peut travailler autour de (<span id="rangeValue">50</span>) km</label>
-                                        <input type="range" min="5" max="100" value="50" step="5" id="work-around" oninput="updateValue()">
-                                    </div>
-                                    <div class="input-form">
-                                        <label for="date-start-add">Travail en remote</label>
-                                        <select name="" id="">
-                                            <option value="1">Oui</option>
-                                            <option value="0">Non</option>
-                                        </select>
+                            <div class="personal-info">
+                                <div class="input-form">
+                                    <label>Instagram</label>
+                                    <div class="input-button-form">
+                                        <input type="text" name="" id="" placeholder="Lien vers profil Instagram">
+                                        <span><i class="fa-brands fa-instagram"></i></span>
                                     </div>
                                 </div>
                             </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fermer</button>
-                        <button type="button" class="btn btn-success" id="subUpdateLocation">Enregistrer</button>
-                    </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-success" id="subUpdateLinkExt">Enregistrer</button>
                 </div>
             </div>
         </div>
-        <!-- Modal Update Skill -->
-        <!-- Modal Update LinkExt -->
-        <div class="modal fade" id="updateLinkExtModal" tabindex="-1" aria-labelledby="updateLinkExtModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Modifier les liens externes</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form action="#" id="updateLocationForm">
-                            <div class="edit-profil">
-                                <div class="personal-info">
-                                    <div class="input-form">
-                                        <label>Linkedin</label>
-                                        <div class="input-button-form">
-                                            <input type="text" name="" id="" placeholder="Lien vers profil Linkedin">
-                                            <span><i class="fa-brands fa-linkedin"></i></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="personal-info">
-                                    <div class="input-form">
-                                        <label>Facebook</label>
-                                        <div class="input-button-form">
-                                            <input type="text" name="" id="" placeholder="Lien vers profil Facebook">
-                                            <span><i class="fa-brands fa-facebook"></i></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="personal-info">
-                                    <div class="input-form">
-                                        <label>Instagram</label>
-                                        <div class="input-button-form">
-                                            <input type="text" name="" id="" placeholder="Lien vers profil Instagram">
-                                            <span><i class="fa-brands fa-instagram"></i></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fermer</button>
-                        <button type="button" class="btn btn-success" id="subUpdateLocation">Enregistrer</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal Update LinkExt -->
+    </div>
+    <!-- Modal Update LinkExt -->
     <!-- Fenetre Modal  End -->
 
     <footer>
         <p>&copy; WyMee - Recrutement & Consulting</p>
     </footer>
+    <script src="./popper.js"></script>
     <script src="./../assets/vendors/fontawesome/js/all.min.js"></script>
     <script src="./main.js"></script>
 </body>
