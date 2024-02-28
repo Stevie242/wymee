@@ -78,3 +78,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     })
 })
+function updateValue() {
+    var value = document.getElementById("work-around").value;
+    document.getElementById("rangeValue").innerHTML = value;
+}

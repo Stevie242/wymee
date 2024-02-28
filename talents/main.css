@@ -211,6 +211,7 @@ header .head-profil .notif .notif-list {
 
 header .head-profil .notif .notif-list ul {
     list-style: none;
+    padding-left: 0px !important;
 }
 
 header .head-profil .notif .notif-list ul li.no-notif {
@@ -704,6 +705,8 @@ footer {
 
 .talent-profil .talent-state {
     margin-top: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .talent-profil .talent-state .state {
@@ -1114,12 +1117,14 @@ footer {
     margin-bottom: 10px;
 }
 
+.edit-profil .personal-info .input-form select,
 .edit-profil .personal-info .input-form textarea,
 .edit-profil .personal-info .input-form input{
     width: 100%;
     padding: 5px 10px;
     outline: none;
     font-size: 16px;
+    border: 1px solid var(--gray-color);
 }
 .edit-profil .personal-info .input-form textarea{
     width: 100%;
@@ -1132,6 +1137,75 @@ footer {
     font-weight: 700;
     margin-bottom: 5px;
 }
+
+.edit-profil .personal-info .input-form .list-skill{
+    margin-top: 5px;
+    display: -webkit-box;
+    overflow-x: auto;
+}
+.edit-profil .personal-info .input-form .list-skill input{
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+}
+.edit-profil .personal-info .input-form .list-skill span{
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: var(--first-color-light);
+    border-radius: 20px;
+    margin-bottom: 10px;
+    border: none;
+}
+.edit-profil .personal-info .input-form .list-skill span i,
+.edit-profil .personal-info .input-form .list-skill span svg{
+    cursor: pointer;
+    transition: ease-in-out .3s;
+}
+.edit-profil .personal-info .input-form .list-skill span i:hover,
+.edit-profil .personal-info .input-form .list-skill span svg:hover{
+    color: red;
+}
+
+.edit-profil .personal-info .input-form .input-button-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+}
+.edit-profil .personal-info .input-form .input-button-form input{
+    padding: 5px 10px;
+    border: 1px solid var(--gray-color);
+    outline: none;
+    width: 90%;
+    height: 40px;
+}
+.edit-profil .personal-info .input-form .input-button-form button{
+    color: var(--white-color);
+    background-color: var(--first-color);
+    font-size: 18px;
+    border: none;
+    width: 10%;
+    height: 40px;
+    cursor: pointer;
+    transition: ease-in-out .3s;
+}
+.edit-profil .personal-info .input-form .input-button-form span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white-color);
+    background-color: var(--first-color-2);
+    font-size: 20px;
+    border: none;
+    width: 10%;
+    height: 40px;
+}
+.edit-profil .personal-info .input-form .input-button-form button:hover{
+    background-color: var(--first-color-2);
+}
+
+
 .edit-password .input-form{
     margin-bottom: 10px;
 }
