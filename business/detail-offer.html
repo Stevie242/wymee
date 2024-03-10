@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../assets/vendors/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./main.css">
+    <title>Detail du job | WyMee Talent</title>
+</head>
+
+<body>
+    <header id="topBar">
+        <div class="header-content">
+            <div class="logo">
+                <a href="./dashboard.html">
+                    <img src="./../assets/img/logo/logo.png" alt="Logo WyMee">
+                </a>
+                <!-- <span>WyMee</span> -->
+                <span>Business</span>
+            </div>
+            <button type="button" id="toggleMenu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <div class="head-profil" id="head-profil">
+            <button type="button" id="closeMenu">
+                <i class="fa-solid fa-x"></i>
+            </button>
+            <nav class="navigation">
+                <a href="./dashboard.html">Tableau de bord</a>
+                <a href="./offers.html">Mes offres</a>
+            </nav>
+            <div class="head-content">
+                <div class="notif-group">
+                    <div class="notif">
+                        <button type="button" id="showNotif">
+                            <i class="fa-regular fa-bell"></i>
+                            <div class="count">
+                                <span id="count-notif">0</span>
+                            </div>
+                        </button>
+                        <div class="notif-list" id="viewNotif">
+                            <ul>
+                                <li class="no-notif">Aucune notification</li>
+                                <!-- <li>Vous avez reçu une offre</li> -->
+                                <div class="close-notif">
+                                    <button type="button" id="closeNotif">Fermer</button>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="notif">
+                        <button type="button" id="showMsg">
+                            <i class="fa-regular fa-envelope"></i>
+                            <div class="count">
+                                <span id="count-msg">0</span>
+                            </div>
+                        </button>
+                        <div class="notif-list" id="viewMsg">
+                            <ul>
+                                <li class="no-notif">Aucun message</li>
+                                <!-- <li>Vous avez reçu un message</li> -->
+                                <div class="close-notif">
+                                    <button type="button" id="closeMsg">Fermer</button>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="mail-talent">
+                    <span>Business Name</span>
+                </div>
+                <div class="profil-talent">
+                    <a href="./profil.html">
+                        <img src="./../assets/img/people/talent.jpg" alt="profil talent">
+                    </a>
+                </div>
+                <div class="profil-logout">
+                    <form action="./../index.html">
+                        <button type="submit">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="content offers">
+        <div class="offer-detail-head">
+            <h5>Business > Details de l'offre</h5>
+        </div>
+        <div class="offer-detail-body">
+            <div class="head">
+                <span class="published">Publié il y'a 2 semaine</span>
+                <h5>Lead développeur java</h5>
+                <ul>
+                    <li>CDI</li>
+                    <li>
+                        <!-- <i class="fa-solid fa-location-dot"></i> -->
+                        Paris - Remote
+                    </li>
+                </ul>
+                <h6>Nombre de candidatures: <span>6</span></h6>
+            </div>
+            <div class="body">
+                <div class="left">
+                    <div class="content-f">
+                        <h5>Infos sur l'offre</h5>
+                        <div class="about-recruiter">
+                            <h6>A propos du recruteur</h6>
+                            <p>Notre client est une start-up qui développe une solution de paiement basée sur la BlockChain.
+                                <br>
+                                Intégrée sur une plateforme e-commerce, elle permet de payer un produit ou un service
+                                affiché en
+                                euro en cryptomonnaies.
+                            </p>
+                        </div>
+                        <div class="about-mission">
+                            <h6>La mission confiée</h6>
+                            <p>L’objectif est de pérenniser et structurer une équipe tech composée uniquement de
+                                prestataires
+                                pour
+                                le moment (7 développeurs).</p>
+                            <ul>
+                                <li>Développement de la solution
+                                    <ul>
+                                        <li>
+                                            Participation au développement de la partie Core et risque LCB/FT de concert
+                                            avec
+                                            l’équipe de développement du coeur de service et sous étroite supervision du CTO
+                                        </li>
+                                        <li>
+                                            Participation, quand nécessaire, au développement du Backend et du Frontend, de
+                                            concert avec l’équipe de développement et sous la supervision directe du CTO
+                                        </li>
+                                        <li>
+                                            Gestion de la qualité du code et de la recette pré-production
+                                        </li>
+                                        <li>
+                                            Technos: Java, Spring, Hibernate, Quarkus, Postgresql, GraphQL, NextJS, Vaadin,
+                                            Kafka
+                                        </li>
+                                        <li>
+                                            Outils: Gitlab (repo + CI), Slack, Trello pour des TDD efficaces
+                                        </li>
+                                        <li>
+                                            Equipe: entre 2 et 8 développeurs prestataires séniors et experts
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>Pilotage projet
+                                    <ul>
+                                        <li>
+                                            Votre rôle est aussi d’affiner le pilotage des équipes et du staffing tech
+                                        </li>
+                                        <li>
+                                            Suivre de manière très opérationnelle la roadmap et les différentes features
+                                        </li>
+                                        <li>
+                                            Révéler les pains et les facteurs de risques
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>Appui au CTO
+                                    <ul>
+                                        <li>Bras droit du CTO, votre séniorité vous permet d'accompagner notre CTO dans sa
+                                            vision et
+                                            la structuration de ses équipes et du produit</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="required-profile">
+                            <h6>Profil recherché</h6>
+                            <ul>
+                                <li>
+                                    BAC +4/5 école d’ingénieur
+                                </li>
+                                <li>
+                                    7 ans d’expérience significative en Java/Spring
+                                </li>
+                                <li>
+                                    Vous êtes curieux, vous lisez régulièrement sur les sujets du développement Java moderne
+                                    et
+                                    de la Block Chain
+                                </li>
+                                <li>
+                                    Vous avez une démarche structurée, de test & learn
+                                </li>
+                                <li>
+                                    Vous êtes autonome et vous effectuez de la veille techno spontanément
+                                </li>
+                                <li>
+                                    Vous avez des compétences en gestion de projets et d’humain (physique et remote)
+                                </li>
+                                <li>
+                                    Potentiellement, vous avez une expérience de PO ou PM
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="action-offer">
+                            <a href="#" target="_blank" rel="noopener noreferrer">Modifier</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="content-f">
+                        <h5>Candidatures reçues</h5>
+                        <div class="cand-list">
+                            <div class="cand-item">
+                                <div class="profil-img">
+                                    <img src="./../assets/img/people/talent-2.jpg" alt="">
+                                </div>
+                                <div class="profil-detail">
+                                    <h6>Marie Durand</h6>
+                                    <h6>Ingénieur logiciel</h6>
+                                    <p>mariedurand@exemple.com</p>
+                                    <div class="action">
+                                        <a href="#">Voir profil</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cand-item">
+                                <div class="profil-img">
+                                    <img src="./../assets/img/people/talent-2.jpg" alt="">
+                                </div>
+                                <div class="profil-detail">
+                                    <h6>Marie Durand</h6>
+                                    <h6>Ingénieur logiciel</h6>
+                                    <p>mariedurand@exemple.com</p>
+                                    <div class="action">
+                                        <a href="#">Voir profil</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cand-item">
+                                <div class="profil-img">
+                                    <img src="./../assets/img/people/talent-2.jpg" alt="">
+                                </div>
+                                <div class="profil-detail">
+                                    <h6>Marie Durand</h6>
+                                    <h6>Ingénieur logiciel</h6>
+                                    <p>mariedurand@exemple.com</p>
+                                    <div class="action">
+                                        <a href="#">Voir profil</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cand-item">
+                                <div class="profil-img">
+                                    <img src="./../assets/img/people/talent-2.jpg" alt="">
+                                </div>
+                                <div class="profil-detail">
+                                    <h6>Marie Durand</h6>
+                                    <h6>Ingénieur logiciel</h6>
+                                    <p>mariedurand@exemple.com</p>
+                                    <div class="action">
+                                        <a href="#">Voir profil</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cand-item">
+                                <div class="profil-img">
+                                    <img src="./../assets/img/people/talent-2.jpg" alt="">
+                                </div>
+                                <div class="profil-detail">
+                                    <h6>Marie Durand</h6>
+                                    <h6>Ingénieur logiciel</h6>
+                                    <p>mariedurand@exemple.com</p>
+                                    <div class="action">
+                                        <a href="#">Voir profil</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="chat-bot">
+        <div class="chat-btn" id="chatBtn">
+            <span>13</span>
+            <button type="button" id="showChat"><i class="fa-regular fa-comment"></i></button>
+        </div>
+        <div class="chat-view" id="chatView">
+            <div class="chat-head">
+                <span>Chat</span>
+                <button type="button" id="closeChat"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="chat">
+                <div class="chat-wymee">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus debitis, sit libero voluptatibus,
+                        harum amet excepturi enim nemo tempora ex est in culpa aut consequuntur quam odio! Ipsam,
+                        aperiam voluptates.</p>
+                </div>
+                <div class="chat-talent">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus doloremque eveniet culpa quaerat
+                        consectetur iste cum aspernatur hic possimus magnam iure temporibus obcaecati est eum aliquid
+                        voluptas, perspiciatis eligendi quia!</p>
+                </div>
+                <div class="chat-talent">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus doloremque eveniet culpa quaerat
+                        consectetur iste cum aspernatur hic possimus magnam iure temporibus obcaecati est eum aliquid
+                        voluptas, perspiciatis eligendi quia!</p>
+                </div>
+                <div class="chat-wymee">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus debitis, sit libero voluptatibus,
+                        harum amet excepturi enim nemo tempora ex est in culpa aut consequuntur quam odio! Ipsam,
+                        aperiam voluptates.</p>
+                </div>
+                <div class="chat-wymee">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus debitis, sit libero voluptatibus,
+                        harum amet excepturi enim nemo tempora ex est in culpa aut consequuntur quam odio! Ipsam,
+                        aperiam voluptates.</p>
+                </div>
+            </div>
+            <div class="chat-input">
+                <form action="#">
+                    <input type="text" name="" id="chatText" placeholder="Commencer la discussion">
+                    <button type="button" id="chatSend"><i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; WyMee - Recrutement & Consulting</p>
+    </footer>
+    <script src="./../assets/vendors/fontawesome/js/all.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
