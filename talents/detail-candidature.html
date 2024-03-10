@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./../assets/vendors/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="./main.css">
-    <title>Mes candidatures | WyMee Talent</title>
+    <title>Detail de la candidature | WyMee Talent</title>
 </head>
 
 <body>
@@ -29,7 +29,7 @@
             </button>
             <nav class="navigation">
                 <a href="./dashboard.html">Tableau de bord</a>
-                <a href="./offer.html" class="active">Mes candidatures</a>
+                <a href="./offer.html">Mes candidatures</a>
                 <a href="./jobs.html">Jobs</a>
             </nav>
             <div class="head-content">
@@ -88,45 +88,32 @@
         </div>
     </header>
 
-    <div class="content candidature">
-        <div class="candidature-head">
-            <h5>Talent > Mes candidatures</h5>
+    <div class="content cands">
+        <div class="cand-detail-head">
+            <h5>Talent > Details de la candidature</h5>
         </div>
-        <div class="candidature-body">
-            <div class="item-cand">
-                <div class="job-title"><h6>Poste: <span>Developpeur Java</span></h6><a href="./detail-candidature.html"><i class="fa-solid fa-eye"></i></a></div>
-                <div class="busness-name">Entreprise: <span>Ubisoft</span></div>
-                <div class="cand-date">Date de postulation: <span>23/02/2024</span></div>
-                <div class="cand-state">Statut: <span class="success">Accepter</span></div>
+        <div class="cand-detail-body">
+            <div class="state-cand">
+                <h6>État de la candidature</h6>
+                <p><span class="processing">En cours de traitement</span> Votre candidature pour le poste de Developpeur Java est en cours de traitement.</p>
+                <span>Soumis le 23/02/2024</span>
             </div>
-            <div class="item-cand">
-                <div class="job-title"><h6>Poste: <span>Developpeur Java</span></h6><a href="./detail-candidature.html"><i class="fa-solid fa-eye"></i></a></div>
-                <div class="busness-name">Entreprise: <span>Ubisoft</span></div>
-                <div class="cand-date">Date de postulation: <span>23/02/2024</span></div>
-                <div class="cand-state">Statut: <span class="processing">En traitement</span></div>
+            <div class="detail-job">
+                <h6>Détails du poste</h6>
+                <div class="item-job">
+                    <div class="job-title"><h6>Poste: <span>Developpeur Java</span></h6><a href="./job-detail.html"><i class="fa-solid fa-eye"></i></a></div>
+                    <div class="busness-name">Entreprise: <span>Ubisoft</span></div>
+                    <div class="cand-date">Date de publication: <span>23/02/2024</span></div>
+                </div>
             </div>
-            <div class="item-cand">
-                <div class="job-title"><h6>Poste: <span>Developpeur Java</span></h6><a href="./detail-candidature.html"><i class="fa-solid fa-eye"></i></a></div>
-                <div class="busness-name">Entreprise: <span>Ubisoft</span></div>
-                <div class="cand-date">Date de postulation: <span>23/02/2024</span></div>
-                <div class="cand-state">Statut: <span class="rejected">Rejeté</span></div>
-            </div>
-            <div class="item-cand">
-                <div class="job-title"><h6>Poste: <span>Developpeur Java</span></h6><a href="./detail-candidature.html"><i class="fa-solid fa-eye"></i></a></div>
-                <div class="busness-name">Entreprise: <span>Ubisoft</span></div>
-                <div class="cand-date">Date de postulation: <span>23/02/2024</span></div>
-                <div class="cand-state">Statut: <span class="modify">A Modifier</span></div>
-            </div>
-        </div>
-        <div class="candidature-foot">
-            <div class="wymee-paginate">
-                <ul class="paginate-block" id="paginateWymee">
-                    <li><a href="#" class="prev first">Précédent</a></li>
-                    <li><a href="#" class="active">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#" class="next">Suivant</a></li>
-                </ul>
+            <div class="history-cand">
+                <h6>Historique des interactions</h6>
+                <div class="step">
+                    <p><span class="started">23/02/2024</span> Votre candidature a été soumise.</p>
+                </div>
+                <div class="step">
+                    <p><span class="processing">24/02/2024</span> Votre candidature est en cours de traitement.</p>
+                </div>
             </div>
         </div>
     </div>

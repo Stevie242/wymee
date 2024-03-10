@@ -450,25 +450,27 @@ footer {
     font-size: 18px;
     color: var(--white-color);
 }
+
 .dashboard-body {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.dashboard-body .dash-stat{
+.dashboard-body .dash-stat {
     margin-bottom: 10px;
     user-select: none;
 }
 
-.dashboard-body .dash-stat > h6{
+.dashboard-body .dash-stat>h6 {
     margin-bottom: 10px;
     color: var(--first-color-2);
     font-size: 16px;
     padding-bottom: 5px;
     border-bottom: 1px solid var(--gray-color);
 }
-.dashboard-body .dash-stat .stat-cards{
+
+.dashboard-body .dash-stat .stat-cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
@@ -477,7 +479,7 @@ footer {
     margin-bottom: 10px;
 }
 
-.dashboard-body .dash-stat .stat-cards .stat-card{
+.dashboard-body .dash-stat .stat-cards .stat-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -488,18 +490,21 @@ footer {
     width: 100%;
     padding: 5px;
 }
-.dashboard-body .dash-stat .stat-cards .stat-card span:first-child{
+
+.dashboard-body .dash-stat .stat-cards .stat-card span:first-child {
     font-weight: 700;
     color: var(--black-color);
     margin-bottom: 5px;
     text-align: center;
 }
-.dashboard-body .dash-stat .stat-cards .stat-card span:last-child{
+
+.dashboard-body .dash-stat .stat-cards .stat-card span:last-child {
     font-weight: 300;
     color: var(--white-color);
     margin-bottom: 5px;
 }
-.dashboard-body .dash-stat .state-cand{
+
+.dashboard-body .dash-stat .state-cand {
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -507,7 +512,8 @@ footer {
     gap: 10px;
     width: 100%;
 }
-.dashboard-body .dash-stat .state-cand .item-cand{
+
+.dashboard-body .dash-stat .state-cand .item-cand {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -515,29 +521,34 @@ footer {
     width: 100%;
     box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.3);
 }
-.dashboard-body .dash-stat .state-cand .item-cand .job-title{
+
+.dashboard-body .dash-stat .state-cand .item-cand .job-title {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
-.dashboard-body .dash-stat .state-cand .job-title h6{
+
+.dashboard-body .dash-stat .state-cand .job-title h6 {
     font-size: 16px;
     font-weight: 300;
     color: var(--black-color)
 }
-.dashboard-body .dash-stat .state-cand .job-title h6 span{
+
+.dashboard-body .dash-stat .state-cand .job-title h6 span {
     font-weight: 700;
     color: var(--first-color);
 }
-.dashboard-body .dash-stat .state-cand .job-title a{
+
+.dashboard-body .dash-stat .state-cand .job-title a {
     font-size: 18px;
     color: var(--black-color);
     text-decoration: none;
     transition: ease-in-out .3s;
     cursor: pointer;
 }
-.dashboard-body .dash-stat .state-cand .job-title a:hover{
+
+.dashboard-body .dash-stat .state-cand .job-title a:hover {
     color: var(--first-color-2);
 }
 
@@ -570,13 +581,20 @@ footer {
     font-size: 14px
 }
 
-.dashboard-body .dash-stat-foot{
+.dashboard-body .dash-stat .state-cand .item-cand .cand-state span.started {
+    background-color: #d6d6d2;
+    color: #494949;
+    font-size: 14px
+}
+
+.dashboard-body .dash-stat-foot {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
 }
-.dashboard-body .dash-stat-foot a{
+
+.dashboard-body .dash-stat-foot a {
     transition: ease-in-out .3s;
     text-decoration: none;
     padding: 5px 10px;
@@ -590,7 +608,8 @@ footer {
     justify-content: center;
     align-items: center;
 }
-.dashboard-body .dash-stat-foot a:hover{
+
+.dashboard-body .dash-stat-foot a:hover {
     background-color: var(--first-color-2);
 }
 
@@ -1045,20 +1064,22 @@ footer {
     margin-bottom: 10px;
 }
 
-.edit-profil .profil-img{
+.edit-profil .profil-img {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     margin-bottom: 20px;
 }
-.edit-profil .profil-img img{
+
+.edit-profil .profil-img img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     position: relative;
 }
-.edit-profil .profil-img label{
+
+.edit-profil .profil-img label {
     position: absolute;
     bottom: -10px;
     background-color: var(--first-color);
@@ -1072,16 +1093,18 @@ footer {
     cursor: pointer;
     transition: ease-in-out .3s;
 }
-.edit-profil .profil-img label:hover{
+
+.edit-profil .profil-img label:hover {
     background-color: var(--first-color-2);
 }
 
-.edit-profil .profil-img input{
+.edit-profil .profil-img input {
     visibility: hidden;
     height: 0px;
     width: 0px;
 }
-.edit-profil .statut{
+
+.edit-profil .statut {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1089,26 +1112,30 @@ footer {
     flex-direction: column;
     margin-bottom: 10px;
 }
-.edit-profil .statut select{
+
+.edit-profil .statut select {
     padding: 5px 10px;
     outline: none;
     font-size: 16px;
     width: 200px;
 }
-.edit-profil .personal-info{
+
+.edit-profil .personal-info {
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start;
     width: 100%;
 }
-.edit-profil .personal-info .input-group{
+
+.edit-profil .personal-info .input-group {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     width: 100%;
 }
-.edit-profil .personal-info .input-form{
+
+.edit-profil .personal-info .input-form {
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -1119,39 +1146,44 @@ footer {
 
 .edit-profil .personal-info .input-form select,
 .edit-profil .personal-info .input-form textarea,
-.edit-profil .personal-info .input-form input{
+.edit-profil .personal-info .input-form input {
     width: 100%;
     padding: 5px 10px;
     outline: none;
     font-size: 16px;
     border: 1px solid var(--gray-color);
 }
-.edit-profil .personal-info .input-form textarea{
+
+.edit-profil .personal-info .input-form textarea {
     width: 100%;
     height: 100px;
     resize: none;
 }
-.edit-profil .personal-info .input-form label{
+
+.edit-profil .personal-info .input-form label {
     font-size: 16px;
     color: var(--black-color);
     font-weight: 700;
     margin-bottom: 5px;
 }
+
 .edit-profil .personal-info .input-form .list-language,
-.edit-profil .personal-info .input-form .list-skill{
+.edit-profil .personal-info .input-form .list-skill {
     margin-top: 5px;
     display: block;
     width: 100%;
 }
+
 .edit-profil .personal-info .input-form .list-language input,
-.edit-profil .personal-info .input-form .list-skill input{
+.edit-profil .personal-info .input-form .list-skill input {
     visibility: hidden;
     position: absolute;
     width: 0px;
     height: 0px;
 }
+
 .edit-profil .personal-info .input-form .list-language span,
-.edit-profil .personal-info .input-form .list-skill span{
+.edit-profil .personal-info .input-form .list-skill span {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1162,35 +1194,39 @@ footer {
     margin-bottom: 10px;
     border: none;
 }
+
 .edit-profil .personal-info .input-form .list-language span i,
 .edit-profil .personal-info .input-form .list-language span svg,
 .edit-profil .personal-info .input-form .list-skill span i,
-.edit-profil .personal-info .input-form .list-skill span svg{
+.edit-profil .personal-info .input-form .list-skill span svg {
     cursor: pointer;
     transition: ease-in-out .3s;
 }
+
 .edit-profil .personal-info .input-form .list-language span i:hover,
 .edit-profil .personal-info .input-form .list-language span svg:hover,
 .edit-profil .personal-info .input-form .list-skill span i:hover,
-.edit-profil .personal-info .input-form .list-skill span svg:hover{
+.edit-profil .personal-info .input-form .list-skill span svg:hover {
     color: red;
 }
 
-.edit-profil .personal-info .input-form .input-button-form{
+.edit-profil .personal-info .input-form .input-button-form {
     display: flex;
     flex-direction: row;
     justify-content: start;
     align-items: start;
     width: 100%;
 }
-.edit-profil .personal-info .input-form .input-button-form input{
+
+.edit-profil .personal-info .input-form .input-button-form input {
     padding: 5px 10px;
     border: 1px solid var(--gray-color);
     outline: none;
     width: 90%;
     height: 40px;
 }
-.edit-profil .personal-info .input-form .input-button-form button{
+
+.edit-profil .personal-info .input-form .input-button-form button {
     color: var(--white-color);
     background-color: var(--first-color);
     font-size: 18px;
@@ -1200,7 +1236,8 @@ footer {
     cursor: pointer;
     transition: ease-in-out .3s;
 }
-.edit-profil .personal-info .input-form .input-button-form span{
+
+.edit-profil .personal-info .input-form .input-button-form span {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1211,21 +1248,24 @@ footer {
     width: 10%;
     height: 40px;
 }
-.edit-profil .personal-info .input-form .input-button-form button:hover{
+
+.edit-profil .personal-info .input-form .input-button-form button:hover {
     background-color: var(--first-color-2);
 }
 
 
-.edit-password .input-form{
+.edit-password .input-form {
     margin-bottom: 10px;
 }
-.edit-password .input-form label{
+
+.edit-password .input-form label {
     font-size: 16px;
     color: var(--black-color);
     font-weight: 700;
     margin-bottom: 5px;
 }
-.edit-password .input-form input{
+
+.edit-password .input-form input {
     width: 100%;
     padding: 5px 10px;
     outline: none;
@@ -1392,11 +1432,163 @@ footer {
     font-size: 14px
 }
 
+.candidature-body .item-cand .cand-state span.started {
+    background-color: #d6d6d2;
+    color: #494949;
+    font-size: 14px
+}
+
+/* Pade detail candidature */
+.content.cands {
+    padding: 20px 100px;
+}
+
+.cands .cand-detail-head {
+    padding: 10px 20px;
+    background: linear-gradient(to right, var(--first-color), var(--first-color-2));
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px;
+}
+
+.cands .cand-detail-head h5 {
+    font-size: 18px;
+    color: var(--white-color);
+}
+
+.cands .cand-detail-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.cands .cand-detail-body .history-cand,
+.cands .cand-detail-body .detail-job,
+.cands .cand-detail-body .state-cand {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 20px;
+    width: 100%;
+    border: 1px solid var(--gray-color);
+    background-color: var(--white-color);
+    box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.3);
+}
+
+.cands .cand-detail-body .history-cand>h6,
+.cands .cand-detail-body .detail-job>h6,
+.cands .cand-detail-body .state-cand>h6 {
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--first-color);
+}
+
+.cands .cand-detail-body .state-cand>span {
+    color: var(--gray-color);
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.cands .cand-detail-body .history-cand p,
+.cands .cand-detail-body .state-cand p {
+    font-size: 14px;
+    margin-top: 10px;
+    line-height: 22px;
+}
+.cands .cand-detail-body .history-cand .step {
+    margin-bottom: -5px;
+}
+
+.cands .cand-detail-body .state-cand p span,
+.cands .cand-detail-body .history-cand p span,
+.cands .cand-detail-body .state-cand p span {
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.cands .cand-detail-body .state-cand p span.processing,
+.cands .cand-detail-body .history-cand p span.processing,
+.cands .cand-detail-body .state-cand p span.processing {
+    background-color: #ffbe88;
+    color: #c75a01;
+}
+
+.cands .cand-detail-body .state-cand p span.rejected,
+.cands .cand-detail-body .history-cand p span.rejected,
+.cands .cand-detail-body .state-cand p span.rejected {
+    background-color: #ff7171;
+    color: #f00000;
+}
+
+.cands .cand-detail-body .state-cand p span.modify,
+.cands .cand-detail-body .history-cand p span.modify,
+.cands .cand-detail-body .state-cand p span.modify {
+    background-color: #79b1fa;
+    color: #004db1;
+}
+
+.cands .cand-detail-body .state-cand p span.started,
+.cands .cand-detail-body .history-cand p span.started,
+.cands .cand-detail-body .state-cand p span.started {
+    background-color: #d6d6d2;
+    color: #494949;
+}
+
+.cands .cand-detail-body .state-cand p span.success,
+.cands .cand-detail-body .history-cand p span.success,
+.cands .cand-detail-body .state-cand p span.success {
+    background-color: #9aff9a;
+    color: #008800;
+}
+
+.cands .cand-detail-body .item-job{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+.cands .cand-detail-body .item-job .job-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cands .cand-detail-body .item-job .job-title h6 {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--black-color);
+}
+
+.cands .cand-detail-body .item-job .job-title h6 span {
+    font-weight: 700;
+    color: var(--first-color);
+}
+
+.cands .cand-detail-body .item-job .job-title a {
+    font-size: 18px;
+    color: var(--black-color);
+    text-decoration: none;
+    transition: ease-in-out .3s;
+    cursor: pointer;
+}
+
+.cands .cand-detail-body .item-job .job-title a:hover {
+    color: var(--first-color-2);
+}
+
+
 /* Page jobs */
 .content.jobs {
     padding: 20px 100px;
     user-select: none;
 }
+
 .jobs-head {
     padding: 10px 20px;
     background: linear-gradient(to right, var(--first-color), var(--first-color-2));
@@ -1418,7 +1610,8 @@ footer {
     width: 100%;
     margin-bottom: 10px;
 }
-.jobs-body > h6{
+
+.jobs-body>h6 {
     text-align: center;
     font-size: 16px;
     color: var(--first-color-2);
@@ -1426,7 +1619,7 @@ footer {
     margin-bottom: 10px;
 }
 
-.jobs-body .list-job{
+.jobs-body .list-job {
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -1597,12 +1790,12 @@ footer {
     margin-bottom: 0px !important;
 }
 
-.job-detail-foot{
+.job-detail-foot {
     border-top: 1px solid var(--gray-color);
     margin-top: 20px;
 }
 
-.job-detail-foot h5{
+.job-detail-foot h5 {
     padding-top: 10px;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -1613,7 +1806,7 @@ footer {
 }
 
 
-.job-detail-foot .list-job{
+.job-detail-foot .list-job {
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -1767,7 +1960,7 @@ footer {
         padding: 20px;
     }
 
-    .dashboard-body .dash-stat .stat-cards{
+    .dashboard-body .dash-stat .stat-cards {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
@@ -1811,9 +2004,10 @@ footer {
     .talent-detail .left {
         width: 100%;
     }
-    .edit-profil .personal-info .input-group{
+
+    .edit-profil .personal-info .input-group {
         display: grid;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: 10px;
         width: 100%;
     }
@@ -1822,8 +2016,15 @@ footer {
     .content.candidature {
         padding: 20px;
     }
+
+    /* Pade detail candidature */
+    .content.cands {
+        padding: 20px;
+    }
+
     /* Page jobs */
-.content.jobs {
-    padding: 20px;
-}
+    .content.jobs {
+        padding: 20px;
+    }
+
 }
