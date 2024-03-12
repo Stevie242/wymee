@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./../assets/vendors/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="./main.css">
-    <title>Mes offres d'emploies | WyMee Business</title>
+    <title>Nouvelle offre d'emploie | WyMee Business</title>
 </head>
 
 <body>
@@ -36,7 +36,7 @@
             </button>
             <nav class="navigation">
                 <a href="./dashboard.html">Tableau de bord</a>
-                <a href="./offers.html"  class="active">Mes offres</a>
+                <a href="./offers.html">Mes offres</a>
             </nav>
             <div class="head-content">
                 <div class="notif-group">
@@ -94,63 +94,61 @@
         </div>
     </header>
 
-    <div class="content offers">
+    <div class="content offers add-offer">
         <div class="offer-head">
-            <h5>Business > Mes offres d'emploies</h5>
-        </div>
-        <div class="offer-action">
-            <a href="./add-jobs.html">Publier une nouvelle offre</a>
+            <h5>Business > Nouvelle offre d'emploie</h5>
         </div>
         <div class="offer-body">
-            <h6>Statut des offres</h6>
-            <div class="list-item-offer">
-                <div class="item-offer">
-                    <div class="job-title"><h6>Poste: <span>Developpeur Java</span></h6><a href="./detail-offer.html"><i class="fa-solid fa-eye"></i></a></div>
-                    <div class="offer-date">Date de postulation: <span>23/02/2024</span></div>
-                    <div class="offer-date">Date fin de recrutement: <span>15/03/2024</span></div>
-                    <div class="busness-name">Candidatures reçues: <span>5</span></div>
-                    <div class="offer-state">Statut: <span class="started">En attente</span></div>
+            <h6>Information poste</h6>
+            <form action="#">
+                <div class="input-group">
+                    <div class="input-form">
+                        <label for="title-job">Titre poste</label>
+                        <input type="text" name="" id="title-job" placeholder="Titre poste">
+                    </div>
+                    <div class="input-form">
+                        <label for="contrat">Type contrat</label>
+                        <select name="" id="contrat">
+                            <option value="CDI" selected>CDI</option>
+                            <option value="CDD">CDD</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="item-offer">
-                    <div class="job-title"><h6>Poste: <span>Developpeur Java</span></h6><a href="./detail-offer.html"><i class="fa-solid fa-eye"></i></a></div>
-                    <div class="offer-date">Date de postulation: <span>23/02/2024</span></div>
-                    <div class="offer-date">Date fin de recrutement: <span>15/03/2024</span></div>
-                    <div class="busness-name">Candidatures reçues: <span>5</span></div>
-                    <div class="offer-state">Statut: <span class="processing">En cours</span></div>
+                <div class="input-group">
+                    <div class="input-form">
+                        <label for="location">Localisation</label>
+                        <input type="text" name="" id="location" placeholder="Localisation">
+                    </div>
+                    <div class="input-form">
+                        <label for="remote-job">Travail à distance</label>
+                        <select name="" id="remote-job">
+                            <option value="CDI" selected>Non</option>
+                            <option value="CDD">Oui</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="item-offer">
-                    <div class="job-title"><h6>Poste: <span>Developpeur Java</span></h6><a href="./detail-offer.html"><i class="fa-solid fa-eye"></i></a></div>
-                    <div class="offer-date">Date de postulation: <span>23/02/2024</span></div>
-                    <div class="offer-date">Date fin de recrutement: <span>15/03/2024</span></div>
-                    <div class="busness-name">Candidatures reçues: <span>5</span></div>
-                    <div class="offer-state">Statut: <span class="processing">En cours</span></div>
+                <div class="input-group">
+                    <div class="input-form">
+                        <label for="number-place">Nombre de poste</label>
+                        <input type="number" name="" min="1" value="1" id="number-place">
+                    </div>
+                    <div class="input-form">
+                        <label for="number-place">Durée recrutement <span>(en jour)</span></label>
+                        <input type="number" name="" min="7" value="7" id="number-place">
+                    </div>
                 </div>
-                <div class="item-offer">
-                    <div class="job-title"><h6>Poste: <span>Developpeur Java</span></h6><a href="./detail-offer.html"><i class="fa-solid fa-eye"></i></a></div>
-                    <div class="offer-date">Date de postulation: <span>23/02/2024</span></div>
-                    <div class="offer-date">Date fin de recrutement: <span>08/03/2024</span></div>
-                    <div class="busness-name">Candidatures reçues: <span>7</span></div>
-                    <div class="offer-state">Statut: <span class="success">Terminer</span></div>
+                <h6>Profil rechercher</h6>
+                <div class="input-group">
+                    <div class="input-form"></div>
                 </div>
-                <div class="item-offer">
-                    <div class="job-title"><h6>Poste: <span>Developpeur Java</span></h6><a href="./detail-offer.html"><i class="fa-solid fa-eye"></i></a></div>
-                    <div class="offer-date">Date de postulation: <span>23/02/2024</span></div>
-                    <div class="offer-date">Date fin de recrutement: <span>08/03/2024</span></div>
-                    <div class="busness-name">Candidatures reçues: <span>7</span></div>
-                    <div class="offer-state">Statut: <span class="success">Terminer</span></div>
+                <h6>Mission confiée</h6>
+                <div class="input-group">
+                    <div class="input-form"></div>
                 </div>
-            </div>
-            <div class="offer-foot">
-                <div class="wymee-paginate">
-                    <ul class="paginate-block" id="paginateWymee">
-                        <li><a href="#" class="prev first">Précédent</a></li>
-                        <li><a href="#" class="active">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#" class="next">Suivant</a></li>
-                    </ul>
+                <div class="input-btn">
+                    <button type="submit">Soumettre l'offre</button>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
 

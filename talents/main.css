@@ -258,6 +258,27 @@ header .head-profil .profil-logout button:hover {
     color: var(--first-color-2);
 }
 
+.return{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin: 10px 0;
+}
+
+.return a{
+    text-decoration: none;
+    font-size: 14px;
+    color: var(--black-color);
+    font-weight: 300;
+    background-color: var(--first-color-light);
+    padding: 5px 10px;
+    transition: ease-in-out .3s;
+}
+.return a:hover{
+    color: var(--white-color);
+    background-color: var(--first-color-2);
+}
 /* Chat bot */
 .chat-bot {
     position: fixed;

@@ -106,7 +106,7 @@ header .logo a img {
 header .logo span {
     position: absolute;
     bottom: -5px;
-    right: -24px;
+    right: -16px;
     font-size: 15px;
     font-weight: bold;
     font-family: var(--main-font);
@@ -1209,7 +1209,7 @@ footer {
 
 .offer-body .item-offer .job-title h6 span {
     font-weight: 700;
-    color: var(--first-color);
+    color: var(--second-color);
 }
 
 .offer-body .item-offer .job-title a {
@@ -1221,7 +1221,7 @@ footer {
 }
 
 .offer-body .item-offer .job-title a:hover {
-    color: var(--first-color-2);
+    color: var(--second-color-2);
 }
 
 .offer-body .item-offer .offer-state span {
@@ -2227,6 +2227,89 @@ footer {
     background-color: var(--first-color-light);
     border-radius: 20px;
     margin-bottom: 10px;
+}
+
+/* Page business */
+
+.dashboard-body .dash-stat .list-business {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+.dashboard-body .dash-stat .list-business .item-business {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.3);
+}
+
+.dashboard-body .dash-stat .list-business .item-business .business-name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard-body .dash-stat .list-business .business-name h6 {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--black-color)
+}
+
+.dashboard-body .dash-stat .list-business .business-name h6 span {
+    font-weight: 700;
+    color: var(--second-color);
+}
+
+.dashboard-body .dash-stat .list-business .business-name a {
+    font-size: 18px;
+    color: var(--black-color);
+    text-decoration: none;
+    transition: ease-in-out .3s;
+    cursor: pointer;
+}
+
+.dashboard-body .dash-stat .list-business .business-name a:hover {
+    color: var(--second-color-2);
+}
+
+.dashboard-body .dash-stat .list-business .item-business .business-status span {
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.dashboard-body .dash-stat .list-business .item-business .business-status span.processing {
+    background-color: #ffbe88;
+    color: #c75a01;
+    font-size: 14px
+}
+
+.dashboard-body .dash-stat .list-business .item-business .business-status span.rejected {
+    background-color: #ff7171;
+    color: #f00000;
+    font-size: 14px
+}
+
+.dashboard-body .dash-stat .list-business .item-business .business-status span.modify {
+    background-color: #79b1fa;
+    color: #004db1;
+    font-size: 14px
+}
+
+.dashboard-body .dash-stat .list-business .item-business .business-status span.success {
+    background-color: #9aff9a;
+    color: #008800;
+    font-size: 14px
+}
+
+.dashboard-body .dash-stat .list-business .item-business .business-status span.started{
+    background-color: #d6d6d2;
+    color: #494949;
+    font-size: 14px
 }
 
 

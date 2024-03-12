@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./../assets/vendors/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="./main.css">
 
-    <title>Profil | WyMee Business</title>
+    <title>Profil talent | WyMee Admin</title>
 </head>
 
 <body>
@@ -20,7 +20,7 @@
                     <img src="./../assets/img/logo/logo.png" alt="Logo WyMee">
                 </a>
                 <!-- <span>WyMee</span> -->
-                <span>Business</span>
+                <span>Admin</span>
             </div>
             <button type="button" id="toggleMenu">
                 <i class="fa-solid fa-bars"></i>
@@ -31,8 +31,10 @@
                 <i class="fa-solid fa-x"></i>
             </button>
             <nav class="navigation">
-                <a href="./dashboard.html">Tableau de bord</a>
-                <a href="./offers.html">Mes offres</a>
+                <a href="./dashboard.html" class="active">Tableau de bord</a>
+                <a href="./business.html">Entreprises</a>
+                <a href="./talents.html">Talents</a>
+                <a href="./offers.html">Offres emploies</a>
             </nav>
             <div class="head-content">
                 <div class="notif-group">
@@ -72,7 +74,7 @@
                     </div>
                 </div>
                 <div class="mail-talent">
-                    <span>Business Name</span>
+                    <span>Admin Name</span>
                 </div>
                 <div class="profil-talent">
                     <a href="./profil.html">
@@ -91,51 +93,140 @@
     </header>
 
     <div class="content profil">
+        <div class="return">
+            <a href="#"> < Retour</a>
+        </div>
         <div class="profil-head">
-            <h5>Business > Mon WyMee</h5>
+            <h5>Admin > Profil talent</h5>
         </div>
-        <div class="business-profil">
-            <h6>Information du responsable</h6>
-            <div class="content-profil">
-                <div class="business-img">
-                    <img src="./../assets/img/people/talent-2.jpg" alt="profil-talent">
+        <div class="talent-profil">
+            <div class="talent-img">
+                <span class="bulle online"><span></span></span>
+                <img src="./../assets/img/people/talent-2.jpg" alt="profil-talent">
+            </div>
+            <div class="talent-ref">
+                <h5 class="talent-name">Julia Marshall <span>,27ans</span></h5>
+                <h6 class="talent-title">Dev Front-End & Infographe</h6>
+                <p class="talent-desc">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium laudantium itaque ipsum,
+                    repellat magnam expedita, odio quisquam optio, dolorem maiores debitis ratione nostrum totam dolore
+                    sequi quos quo eveniet? Numquam!
+                </p>
+            </div>
+            <div class="talent-state">
+                <div class="state online"><span class="online"><span></span></span> Disponible</div>
+                <button class="valid">Valider</button>
+                <button class="no-valid">Refuser</button>
+            </div>
+        </div>
+        <div class="talent-detail">
+            <div class="left">
+                <div class="location">
+                    <div class="location-head">
+                        <h6>Localisation et déplacement</h6>
+                    </div>
+                    <div class="talent-location">
+                        <h6>Localisation</h6>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Paris, France</span>
+                    </div>
+                    <div class="talent-location">
+                        <h6>Peut travailler dans vos locaux à</h6>
+                        <i class="fa-solid fa-person-walking"></i>
+                        <span>Paris et 50km autour, ou en remote</span>
+                    </div>
                 </div>
-                <div class="business-ref">
-                    <h5 class="business-name">Julia Marshall <span>,32ans</span></h5>
-                    <h6 class="business-title">DRH</h6>
-                    <h6 class="business-mail">juliamarshall@exemple.com</h6>
-                    <h6 class="business-phone">(+000) 000 00 00 00</h6>
-                    <p class="business-desc">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium laudantium itaque ipsum,
-                        repellat magnam expedita, odio quisquam optio, dolorem maiores debitis ratione nostrum totam dolore
-                        sequi quos quo eveniet? Numquam!
-                    </p>
+                <div class="language">
+                    <div class="language-head">
+                        <h6>Langue</h6>
+                    </div>
+                    <div class="talent-language">
+                        <i class="fa-solid fa-volume-high"></i>
+                        <span>Français</span>
+                    </div>
+                    <div class="talent-language">
+                        <i class="fa-solid fa-volume-high"></i>
+                        <span>Anglais</span>
+                    </div>
                 </div>
-                <div class="business-state">
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#editProfilModal">Editer mon
-                        profil</button>
+                <div class="skill">
+                    <div class="skill-head">
+                        <h6>compétences</h6>
+                    </div>
+                    <div class="talent-skill">
+                        <i class="fa-solid fa-gears"></i>
+                        <span>Java</span>
+                    </div>
+                    <div class="talent-skill">
+                        <i class="fa-solid fa-gears"></i>
+                        <span>React Js</span>
+                    </div>
+                </div>
+                <div class="externe-link">
+                    <div class="externe-link-head">
+                        <h6>Liens externes</h6>
+                    </div>
+                    <div class="links">
+                        <a href="#">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="talent-xp">
+                    <div class="talent-xp-head">
+                        <h6>Expériences</h6>
+                    </div>
+                    <div class="detail-xp">
+                        <div class="xp-sociaty">
+                            Ubisoft
+                        </div>
+                        <div class="xp-post">Developpeur Java</div>
+                        <div class="xp-date-location">
+                            <span>2022 - 2024</span>
+                            <span>,Paris 28 rue Armand Carrel</span>
+                        </div>
+                        <div class="xp-desc">
+                            <p>J'avais pour rôle de concevoir, développer et maintenir du code Java pour des jeux vidéo
+                            </p>
+                        </div>
+                        <div class="xp-skills">
+                            <span>Java</span>
+                            <span>Java</span>
+                            <span>Java</span>
+                            <span>Java</span>
+                            <span>Java</span>
+                            <span>Java</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="talent-training">
+                    <div class="talent-training-head">
+                        <h6>Formations</h6>
+                    </div>
+                    <div class="detail-training">
+                        <div class="training-name">
+                            Universté Nantes
+                        </div>
+                        <div class="training-speciality">Informatique, <span class="training-level">Licence</span></div>
+                        <div class="training-date-location">
+                            <span>2022 - 2024</span>
+                            <span>Nantes, 23 rue recteur Schmitt</span>
+                        </div>
+                        <div class="training-desc">
+                            <p>Apprendre à concevoir, développer et maintenir du code Java pour des jeux vidéo </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="business-profil">
-            <h6>Information sur l'entreprise</h6>
-            <div class="content-profil">
-                <div class="business-ref">
-                    <h5 class="business-name">Ubisoft</h5>
-                    <h6 class="business-title">SIRET : 123 123 123 12345</h6>
-                    <h6 class="business-mail">contact@exemple.com</h6>
-                    <h6 class="business-phone">(+000) 000 00 00 00</h6>
-                    <p class="business-desc">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium laudantium itaque ipsum,
-                        repellat magnam expedita, odio quisquam optio, dolorem maiores debitis ratione nostrum totam dolore
-                        sequi quos quo eveniet? Numquam!
-                    </p>
-                </div>
-                <div class="business-state">
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#editProfilModal">Editer
-                        profil entreprise</button>
-                </div>
-            </div>
     </div>
 
     <div class="chat-bot">
@@ -185,109 +276,6 @@
     </div>
 
     <!-- Fenetre Modal Start -->
-    <!-- Modal Edit profil -->
-    <div class="modal fade" id="editProfilModal" tabindex="-1" aria-labelledby="editProfilModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Modifier profil</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form action="#" id="formEditProfile">
-                        <div class="edit-profil">
-                            <div class="profil-img">
-                                <img src="./../assets/img/people/talent-2.jpg" alt="photos de profil" width="150px">
-                                <label for="picture">
-                                    <i class="fa-solid fa-pencil"></i>
-                                </label>
-                                <input type="file" id="picture">
-                            </div>
-                            <div class="statut">
-                                <label for="statut">Statut</label>
-                                <select name="" id="statut">
-                                    <option value="">Disponible</option>
-                                    <option value="">Indisponible</option>
-                                    <option value="">En veille</option>
-                                </select>
-                            </div>
-                            <div class="personal-info">
-                                <div class="input-group">
-                                    <div class="input-form">
-                                        <label for="lastname">Nom</label>
-                                        <input type="text" name="" id="lastname" placeholder="Votre nom">
-                                    </div>
-                                    <div class="input-form">
-                                        <label for="firstname">Prénom</label>
-                                        <input type="text" name="" id="firstname" placeholder="Votre prénom">
-                                    </div>
-                                </div>
-                                <div class="input-group">
-                                    <div class="input-form">
-                                        <label for="birthday">Date naissance</label>
-                                        <input type="date" name="" id="birthday" placeholder="Votre date de naissance">
-                                    </div>
-                                    <div class="input-form">
-                                        <label for="title">Titre</label>
-                                        <input type="text" name="" id="title" placeholder="Votre titre: ex= Comptable">
-                                    </div>
-                                </div>
-                                <div class="input-form">
-                                    <label for="desc">Description de vous</label>
-                                    <textarea name="" id="desc" placeholder="Description de vous"></textarea>
-                                </div>
-                                <div class="input-form">
-                                    <label for="password">Confirmez votre mot de passe</label>
-                                    <input type="password" name="" id="password" placeholder="Votre mot de passe">
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-target="#changePasswordModal"
-                        data-bs-toggle="modal">Changer Mot de passe</button>
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fermer</button>
-                    <button type="button" class="btn btn-success">Enregistrer</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="changePasswordModal" aria-hidden="true" aria-labelledby="changePasswordModalLabel"
-        tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="changePasswordModalLabel">Changer votre mot de passe</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form action="#" id="formChangePassword">
-                        <div class="edit-password">
-                            <div class="input-form">
-                                <label for="lastPassword">Votre mot de passe actuel</label>
-                                <input type="password" name="" id="lastPassword" placeholder="Votre mot de passe">
-                            </div>
-                            <div class="input-form">
-                                <label for="newPassword">Nouveau mot de passe</label>
-                                <input type="password" name="" id="newPassword" placeholder="Votre mot de passe">
-                            </div>
-                            <div class="input-form">
-                                <label for="confirmationPassword">Confirmez nouveau mot de passe</label>
-                                <input type="password" name="" id="confirmationPassword"
-                                    placeholder="Votre mot de passe">
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-success" id="changePassword">Changez</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modal Edit profil -->
     <!-- Modal Update LinkExt -->
     <div class="modal fade" id="updateLinkExtModal" tabindex="-1" aria-labelledby="updateLinkExtModalLabel"
         aria-hidden="true">
